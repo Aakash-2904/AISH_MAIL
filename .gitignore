@@ -1,0 +1,15 @@
+# data & generated DB
+data/
+*.db
+*.db-wal
+*.db-shm
+# secrets
+.env
+.mcp.json
+mcp_config.json
+# tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
