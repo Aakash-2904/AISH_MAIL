@@ -1,0 +1,10 @@
+Message-ID: <2015.JavaMail.evans@thyme>
+Date: sometime next week
+From: vince.kaminski@enron.com
+To: sally.beck@enron.com
+Subject: bad date
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Unparseable date.

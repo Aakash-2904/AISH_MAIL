@@ -1,0 +1,10 @@
+Message-ID: <2014.JavaMail.evans@thyme>
+Date: Wed, 9 Jan 2002 13:00:00
+From: vince.kaminski@enron.com
+To: sally.beck@enron.com
+Subject: naive date
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+No zone on the date.
