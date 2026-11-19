@@ -1,5 +1,14 @@
 # spec-review: audit against "R2 - Take Home Assignment.docx"
 
+> **Note:** this is a mid-build snapshot (repo at `799bdb3`, 191 tests). Every FAIL and AT RISK item below was later fixed or documented as a deliberate choice:
+> - Notices are now plain 7bit/8bit text with no quoted-printable or base64.
+> - `duplicates_report.csv` has exactly the 7 required columns.
+> - `output/send_log.csv` holds 3 live sends.
+> - The README and AI_USAGE explain that `send_gmail_email` is the `send_email` tool.
+> - The redirected and capped live sends are explained in the README and AI_USAGE.
+>
+> The final state is in [README.md](../../README.md) (Results) and [AI_USAGE.md](../../AI_USAGE.md). The final suite is 214 tests passing.
+
 Reviewer: `spec-reviewer` (read-only; this file is the only one written).
 Inputs: the assignment text (extracted from `word/document.xml`), `plan.md`, and the repo at HEAD `799bdb3` plus the untracked README.md, AI_USAGE.md and outputs.
 Outputs inspected: the files from the 19:46 run (`extraction_stats.json`, `duplicates_report.csv`, `error_log.txt`, `output/replies/`). A newer full run is in progress, so re-check the post-run items in Section 4.
