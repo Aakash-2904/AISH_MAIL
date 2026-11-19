@@ -6,6 +6,7 @@ import csv
 import sqlite3
 import time
 from collections import Counter
+from dataclasses import dataclass
 from collections.abc import Iterable, Sequence
 from concurrent.futures import ProcessPoolExecutor
 from itertools import groupby
@@ -24,14 +25,13 @@ REPORT_COLUMNS = (
     "duplicate_date",
     "original_date",
     "similarity_score",
-    "is_primary_target",
 )
 
 # Candidate rows: only (from, normalized_subject) groups that have >= 2 emails
 # before body filtering; ordered so each block is contiguous and pre-sorted.
 _BLOCK_SQL = """
 WITH keyed AS (
-    SELECT id, message_id, date_utc, body, from_address,
+    SELECT id, message_id, date_utc, body, forwarded_content, from_address,
            COALESCE(normalized_subject, '') AS nsubj
     FROM emails
 ),
@@ -39,7 +39,7 @@ multi AS (
     SELECT from_address, nsubj FROM keyed
     GROUP BY from_address, nsubj HAVING COUNT(*) >= 2
 )
-SELECT k.from_address, k.nsubj, k.id, k.message_id, k.date_utc, k.body
+SELECT k.from_address, k.nsubj, k.id, k.message_id, k.date_utc, k.body, k.forwarded_content
 FROM keyed k JOIN multi m ON k.from_address = m.from_address AND k.nsubj = m.nsubj
 ORDER BY k.from_address, k.nsubj, k.date_utc, k.id
 """
@@ -50,25 +50,58 @@ _BATCH_MEMBERS = 2000
 _IN_CHUNK = 500
 
 
-def load_blocks(conn: sqlite3.Connection) -> tuple[list[list[BlockMember]], int]:
+@dataclass(slots=True)
+class BlockLoadStats:
+    """Counters from load_blocks."""
+
+    excluded_empty_body: int = 0  # body AND forwarded_content both normalise to ""
+    compared_on_forwarded: int = 0  # body empty, so forwarded_content is compared
+
+
+@dataclass(slots=True)
+class ForwardAwareDedupResult(DedupResult):
+    """DedupResult plus the compared_on_forwarded counter (AR-3).
+
+    Kept here because models.py is outside this change; asdict() in
+    stats.set_dedup picks the extra field up automatically."""
+
+    compared_on_forwarded: int = 0
+
+
+def comparison_text(body: str | None, forwarded: str | None) -> tuple[str, bool]:
+    """Text used for fuzzy comparison and whether it came from the forward.
+
+    The normalised primary body is used when non-empty; otherwise the
+    normalised forwarded_content (same normalisation). ("", False) means
+    both are empty and the row is excluded."""
+    body_norm = normalize_body(body)
+    if body_norm:
+        return body_norm, False
+    fwd_norm = normalize_body(forwarded)
+    return fwd_norm, bool(fwd_norm)
+
+
+def load_blocks(conn: sqlite3.Connection) -> tuple[list[list[BlockMember]], BlockLoadStats]:
     """Group emails by (from_address, normalized_subject); return blocks with
-    >= 2 non-empty-body members, sorted by size desc, members sorted by
-    (date_utc, id). Second value = count excluded for empty normalised body."""
+    >= 2 comparable members, sorted by size desc, members sorted by
+    (date_utc, id). Each member's body_norm is comparison_text(); rows whose
+    body and forwarded_content are both empty are excluded and counted."""
     blocks: list[list[BlockMember]] = []
-    excluded = 0
+    stats = BlockLoadStats()
     rows = conn.execute(_BLOCK_SQL)
     for _key, group in groupby(rows, key=lambda r: (r[0], r[1])):
         members: list[BlockMember] = []
-        for _f, _s, row_id, message_id, date_utc, body in group:
-            body_norm = normalize_body(body)
-            if not body_norm:
-                excluded += 1
+        for _f, _s, row_id, message_id, date_utc, body, forwarded in group:
+            text, from_forward = comparison_text(body, forwarded)
+            if not text:
+                stats.excluded_empty_body += 1
                 continue
-            members.append(BlockMember(row_id, message_id, date_utc, body_norm))
+            stats.compared_on_forwarded += from_forward
+            members.append(BlockMember(row_id, message_id, date_utc, text))
         if len(members) >= 2:
             blocks.append(members)
     blocks.sort(key=lambda b: (-len(b), b[0].date_utc, b[0].id))
-    return blocks, excluded
+    return blocks, stats
 
 
 def _length_allows(len_a: int, len_b: int, threshold: float) -> bool:
@@ -154,21 +187,22 @@ def _group_sizes(flags: Iterable[DuplicateFlag]) -> list[int]:
     return [n + 1 for n in counts.values()]
 
 
-def find_duplicates(conn: sqlite3.Connection, threshold: float = 90.0, workers: int = 1) -> DedupResult:
+def find_duplicates(conn: sqlite3.Connection, threshold: float = 90.0, workers: int = 1) -> ForwardAwareDedupResult:
     """Run blocking + clustering (ProcessPoolExecutor when workers > 1).
     Deterministic: identical output for any worker count. Does not write."""
     start = time.perf_counter()
-    blocks, excluded = load_blocks(conn)
+    blocks, load_stats = load_blocks(conn)
     flags = _run_clustering(blocks, threshold, workers)
     flags.sort(key=lambda f: (f.original_message_id, f.duplicate_message_id))
     sizes = _group_sizes(flags)
-    return DedupResult(
+    return ForwardAwareDedupResult(
         flags=flags,
         groups_found=len(sizes),
         emails_flagged=len(flags),
         avg_group_size=round(sum(sizes) / len(sizes), 2) if sizes else 0.0,
         max_group_size=max(sizes, default=0),
-        excluded_empty_body=excluded,
+        excluded_empty_body=load_stats.excluded_empty_body,
+        compared_on_forwarded=load_stats.compared_on_forwarded,
         blocks_compared=len(blocks),
         runtime_seconds=round(time.perf_counter() - start, 3),
     )
@@ -188,8 +222,9 @@ def _email_meta(conn: sqlite3.Connection, message_ids: Iterable[str]) -> dict[st
 
 
 def write_report(conn: sqlite3.Connection, flags: Sequence[DuplicateFlag], path: Path) -> int:
-    """Write duplicates_report.csv with REPORT_COLUMNS, sorted by original date
-    then duplicate date. Returns rows written."""
+    """Write duplicates_report.csv with exactly the 7 REPORT_COLUMNS (the
+    is_primary_target flag stays in the DB only), sorted by original date then
+    duplicate date. Returns rows written."""
     meta = _email_meta(conn, [m for f in flags for m in (f.duplicate_message_id, f.original_message_id)])
     rows = []
     for f in flags:
@@ -197,7 +232,7 @@ def write_report(conn: sqlite3.Connection, flags: Sequence[DuplicateFlag], path:
         orig_date = meta.get(f.original_message_id, ("", "", ""))[2]
         rows.append(
             (f.duplicate_message_id, f.original_message_id, subject, sender,
-             dup_date, orig_date, f"{f.similarity_score:.1f}", int(f.is_primary_target))
+             dup_date, orig_date, f"{f.similarity_score:.1f}")
         )
     rows.sort(key=lambda r: (r[5], r[1], r[4], r[0]))
     path = Path(path)

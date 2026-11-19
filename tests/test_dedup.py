@@ -43,14 +43,15 @@ def conn(tmp_path: Path) -> sqlite3.Connection:
     c.close()
 
 
-def add(conn: sqlite3.Connection, sender: str, subject: str, body: str, date: str, mid: str | None = None) -> str:
+def add(conn: sqlite3.Connection, sender: str, subject: str, body: str, date: str, mid: str | None = None,
+        forwarded: str | None = None) -> str:
     """Insert one synthetic email with raw SQL; return its message_id."""
     n = next(_counter)
     mid = mid or f"<{n}.test@enron>"
     conn.execute(
-        "INSERT INTO emails (message_id, date_utc, from_address, subject, normalized_subject, body, source_file)"
-        " VALUES (?, ?, ?, ?, ?, ?, ?)",
-        (mid, date, sender, subject, normalize_subject(subject), body, f"maildir/t/{n}"),
+        "INSERT INTO emails (message_id, date_utc, from_address, subject, normalized_subject, body,"
+        " forwarded_content, source_file) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (mid, date, sender, subject, normalize_subject(subject), body, forwarded, f"maildir/t/{n}"),
     )
     return mid
 
@@ -114,10 +115,58 @@ def test_empty_bodies_excluded_and_counted(conn: sqlite3.Connection) -> None:
     add(conn, "a@enron.com", "Empty", "   \n\t ", d(2))
     add(conn, "a@enron.com", "Mixed", "", d(3))
     add(conn, "a@enron.com", "Mixed", BASE, d(4))  # alone after exclusion -> no block
-    blocks, excluded = load_blocks(conn)
-    assert blocks == [] and excluded == 3
+    add(conn, "a@enron.com", "Empty", "", d(5), forwarded="  \n ")  # whitespace-only forward = empty
+    blocks, stats = load_blocks(conn)
+    assert blocks == [] and stats.excluded_empty_body == 4 and stats.compared_on_forwarded == 0
     res = find_duplicates(conn)
-    assert res.flags == [] and res.excluded_empty_body == 3 and res.blocks_compared == 0
+    assert res.flags == [] and res.excluded_empty_body == 4 and res.blocks_compared == 0
+    assert res.compared_on_forwarded == 0
+
+
+def test_empty_body_identical_forwards_are_duplicates(conn: sqlite3.Connection) -> None:
+    """AR-3: a pure forward sent twice is compared on normalised forwarded_content."""
+    orig = add(conn, "a@enron.com", "Fwd: Gas", "", d(1), forwarded=BASE)
+    dup = add(conn, "a@enron.com", "FW: Gas", " \n", d(2), forwarded="  " + BASE.upper() + "\n")
+    res = find_duplicates(conn)
+    assert {f.duplicate_message_id: (f.original_message_id, f.similarity_score) for f in res.flags} == {
+        dup: (orig, 100.0)}
+    assert res.compared_on_forwarded == 2 and res.excluded_empty_body == 0
+
+
+def test_empty_body_different_forwards_not_duplicates(conn: sqlite3.Connection) -> None:
+    add(conn, "a@enron.com", "Fwd: Gas", "", d(1), forwarded=BASE)
+    add(conn, "a@enron.com", "Fwd: Gas", "", d(2), forwarded=mutate(BASE, 15))
+    res = find_duplicates(conn)
+    assert res.flags == [] and res.compared_on_forwarded == 2
+
+
+def test_mixed_body_and_forward_compare_respective_text(conn: sqlite3.Connection) -> None:
+    """Chosen rule: each row uses its own comparison text (body if non-empty,
+    else forwarded_content). A body-only row and a forward-only row match when
+    those texts are >= 90% similar; a row with a body never uses its forward."""
+    orig = add(conn, "a@enron.com", "Gas", BASE, d(1), forwarded="unrelated forwarded text")
+    dup = add(conn, "a@enron.com", "Gas", "", d(2), forwarded=mutate(BASE, 8))
+    add(conn, "a@enron.com", "Gas", "a totally different reply body", d(3), forwarded=BASE)
+    res = find_duplicates(conn)
+    assert [(f.duplicate_message_id, f.original_message_id, f.similarity_score) for f in res.flags] == [
+        (dup, orig, 92.0)]
+    assert res.compared_on_forwarded == 1 and res.excluded_empty_body == 0
+
+
+def test_comparison_text() -> None:
+    assert dedup.comparison_text(" Hi  There ", "fwd") == ("hi there", False)
+    assert dedup.comparison_text("", " Fwd  Text ") == ("fwd text", True)
+    assert dedup.comparison_text(None, None) == ("", False)
+    assert dedup.comparison_text(" ", " \n ") == ("", False)
+
+
+def test_dedup_stats_include_compared_on_forwarded(conn: sqlite3.Connection) -> None:
+    from enron_pipeline.stats import StatsCollector
+    add(conn, "a@enron.com", "Fwd: Gas", "", d(1), forwarded=BASE)
+    add(conn, "a@enron.com", "Fwd: Gas", "", d(2), forwarded=BASE)
+    sc = StatsCollector()
+    sc.set_dedup(find_duplicates(conn))
+    assert sc.dedup["compared_on_forwarded"] == 2 and sc.dedup["excluded_empty_body"] == 0
 
 
 def test_load_blocks_ordering(conn: sqlite3.Connection) -> None:
@@ -171,6 +220,22 @@ def test_report_columns_and_order(conn: sqlite3.Connection, tmp_path: Path) -> N
     with out.open(newline="", encoding="utf-8") as fh:
         rows = list(csv.reader(fh))
     assert tuple(rows[0]) == REPORT_COLUMNS
-    assert REPORT_COLUMNS[-1] == "is_primary_target"
-    assert rows[1] == [d2, o2, "Power", "b@enron.com", d(2), d(1), "100.0", "1"]
-    assert rows[2] == [d1, o1, "Re: Gas", "a@enron.com", d(4), d(3), "92.0", "1"]
+    assert REPORT_COLUMNS == (
+        "duplicate_message_id", "original_message_id", "subject", "from_address",
+        "duplicate_date", "original_date", "similarity_score")
+    assert rows[1] == [d2, o2, "Power", "b@enron.com", d(2), d(1), "100.0"]
+    assert rows[2] == [d1, o1, "Re: Gas", "a@enron.com", d(4), d(3), "92.0"]
+    assert all(len(r) == 7 for r in rows)
+
+
+def test_workers_identical_with_forwards(conn: sqlite3.Connection, monkeypatch: pytest.MonkeyPatch) -> None:
+    """workers=1 vs N equivalence still holds when some rows compare on forwarded_content."""
+    for s in range(8):
+        for j in range(4):
+            body = "" if j % 2 else mutate(BASE, 1 + (j * s) % 14)
+            add(conn, f"fwd{s}@enron.com", f"Fwd: T{s % 3}", body, d(1 + j), forwarded=mutate(BASE, 1 + j))
+    monkeypatch.setattr(dedup, "_BATCH_MEMBERS", 5)
+    one = find_duplicates(conn, 90.0, workers=1)
+    two = find_duplicates(conn, 90.0, workers=2)
+    assert one.flags and one.flags == two.flags
+    assert one.compared_on_forwarded == two.compared_on_forwarded == 16

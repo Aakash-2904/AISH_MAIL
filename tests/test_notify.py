@@ -94,6 +94,46 @@ def test_non_ascii_subject_survives_round_trip(tmp_path: Path) -> None:
     assert "Subject:     Café meeting – Zürich" in parsed.get_content()
 
 
+LONG_SUBJECT = "Same Day Change - Revision #1 - Enron Nom for February 22, 2001 through February 28, 2001"
+NON_ASCII_SUBJECT = "Café meeting – Zürich – Größe"
+
+
+def _raw_dry_run(tmp_path: Path, n: NoticeInput) -> str:
+    """Write one dry-run .eml and return its raw bytes decoded as UTF-8 (no MIME parsing)."""
+    assert notify.write_dry_run([n], tmp_path, NOW) == 1
+    (eml,) = tmp_path.glob("*.eml")
+    return eml.read_bytes().decode("utf-8").replace("\r\n", "\n")
+
+
+@pytest.mark.parametrize("subject", [LONG_SUBJECT, NON_ASCII_SUBJECT, NON_ASCII_SUBJECT + " " + LONG_SUBJECT])
+def test_raw_eml_contains_template_verbatim(tmp_path: Path, subject: str) -> None:
+    """FAIL-1 regression: long / non-ASCII subjects must not trigger QP/base64 or wrapping."""
+    n = replace(NOTICE, dup_subject=subject, orig_subject=subject)
+    raw = _raw_dry_run(tmp_path, n)
+    head, _, body = raw.partition("\n\n")
+    assert body == notify.render_body(n)
+    for line in notify.render_body(n).splitlines():
+        assert line + "\n" in raw
+    assert f"    Subject:     {subject}\n" in raw
+    assert f"Subject: [Duplicate Notice] Re: {subject}\n" in head
+    assert "Content-Transfer-Encoding: 8bit" in head
+    assert "quoted-printable" not in raw.lower() and "base64" not in raw.lower()
+    assert "=?utf-8?" not in head.lower()
+
+
+def test_short_ascii_notice_stays_7bit(tmp_path: Path) -> None:
+    raw = _raw_dry_run(tmp_path, NOTICE)
+    assert "Content-Transfer-Encoding: 7bit\n" in raw
+
+
+@pytest.mark.parametrize(
+    ("body", "expected"),
+    [("short\nlines\n", "7bit"), ("x" * 78 + "\n", "7bit"), ("x" * 79 + "\n", "8bit"), ("café\n", "8bit")],
+)
+def test_body_cte(body: str, expected: str) -> None:
+    assert notify.body_cte(body) == expected
+
+
 # ---------------------------------------------------------------- file names
 
 @pytest.mark.parametrize(

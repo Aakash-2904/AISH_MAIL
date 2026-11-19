@@ -26,6 +26,10 @@ SEND_LOG_COLUMNS = ("timestamp", "recipient", "subject", "status", "error", "int
 SUBJECT_PREFIX = "[Duplicate Notice] Re: "
 REDIRECT_LINE = "[Redirected for testing; intended recipient: {recipient}]"
 MAX_STEM_LEN = 120
+SEVEN_BIT_MAX_LINE = 78
+# Generation policy for notices: no header folding (max_line_length=None) and
+# raw UTF-8 headers (utf8=True) so the .eml shows every template line verbatim.
+NOTICE_POLICY = policy.default.clone(max_line_length=None, utf8=True)
 _UNSAFE = re.compile(r"[^A-Za-z0-9._-]+")
 _WIN_RESERVED = {"CON", "PRN", "AUX", "NUL", *(f"COM{i}" for i in range(1, 10)), *(f"LPT{i}" for i in range(1, 10))}
 
@@ -90,15 +94,26 @@ def render_body(n: NoticeInput) -> str:
     )
 
 
+def body_cte(body: str) -> str:
+    """``"8bit"`` when a line is longer than 78 chars or non-ASCII, else
+    ``"7bit"``. Always explicit so set_content never picks quoted-printable or
+    base64 (and never consults NOTICE_POLICY.max_line_length, which is None);
+    the body stays character-for-character in the raw .eml."""
+    too_long = any(len(line) > SEVEN_BIT_MAX_LINE for line in body.splitlines())
+    return "8bit" if too_long or not body.isascii() else "7bit"
+
+
 def render_notice(n: NoticeInput, now: datetime, to: str | None = None) -> EmailMessage:
     """Full message: To (default n.dup_from), Subject, Date (RFC 2822 of now),
-    References (n.dup_message_id), body from render_body."""
-    msg = EmailMessage(policy=policy.default)
+    References (n.dup_message_id), body from render_body (7bit or 8bit, never
+    QP/base64; headers unfolded, see NOTICE_POLICY)."""
+    msg = EmailMessage(policy=NOTICE_POLICY)
     msg["To"] = to if to is not None else n.dup_from
     msg["Subject"] = notice_subject(n)
     msg["Date"] = format_datetime(_to_utc(now))
     msg["References"] = n.dup_message_id
-    msg.set_content(render_body(n), charset="utf-8")
+    body = render_body(n)
+    msg.set_content(body, charset="utf-8", cte=body_cte(body))
     return msg
 
 
