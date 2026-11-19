@@ -75,3 +75,17 @@ Tool: Claude Code (Opus 5.5). Entries are recorded as they happen.
 - **Failure 4: the inbox read came back empty.** The tool swallowed Gmail API errors. After changing the tool to report them, the real error was `Gmail API 403: Gmail API has not been used in project … or it is disabled`.
   - Fix (user): enabled the Gmail API.
 - **Verified:** `read_gmail_inbox` returned 3 real messages.
+
+## 2026-11-18/19: Wave 2 integration run + live sends (lead)
+- **Full run:** `python main.py --fresh` (3 workers). Finished in 846.5 s with exit 0.
+  - 63,403 files; 61,556 parsed; 1,847 failed (1,845 `missing_to`, 2 `missing_from`); 0 exact Message-ID duplicates.
+  - Dedup: 13,962 groups, 32,248 flagged, 6,192 empty-body emails excluded, 160 s.
+- **Spot checks:**
+  - 5 random DB rows compared with their source files. My first check script reported 1 MISMATCH (`kaminski-v/resumes/237`). Cause: the script split headers on `\n\n` and kept the last value for each name, so a `Subject:` line inside the forwarded body overwrote the real header. The DB row was correct. This was a bug in the check script, not the pipeline.
+  - 5 random dup groups: every one was the same message filed in `_sent_mail`/`all_documents`/`discussion_threads`/`sent` with different Message-IDs, scoring 100.
+- **Python MCP client:** mcp-agent built it against mcp 2.3.0. The 1.x `streamablehttp_client` no longer exists; the client uses `streamable_http_client` with `httpx2`. 13 mock tests pass.
+  - No way to get a token outside Claude Code, so live sends used the plan 8.3 path (`--send-live --via-claude-code` + `--record-send`).
+- **Live send 1:** the first `send_gmail_email` call returned `{"error":"insufficient_scope", ...}` with a Google consent URL for `gmail.send`. The user approved it, and the retry returned `{"status":"sent"}`.
+- **Live sends 2-3:** user approved ("yes send 2 more"). Both returned `sent`.
+- `output/send_log.csv` has 3 `sent` rows, all to the user's own address, with the Enron senders listed only as `intended_recipient`. The DB has `notification_sent=1` for all three.
+- **Prompt used** (Claude Code as the MCP client): read `output/send_queue.jsonl`, call `send_gmail_email` for each item with `to`/`subject`/`body`/`references`, then run `python main.py --record-send <message_id> --status sent`.
