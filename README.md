@@ -117,7 +117,7 @@ Then run `/mcp` inside Claude Code, choose `descope-gmail` and authenticate in t
 
 | # | Symptom | Fix |
 |---|---|---|
-| 1 | Every sign-in rejected on reconnect. `@descope/node-sdk` `validateSession` threw `unexpected "iss" claim value`, because agentic tokens have an `iss` ending in the MCP server ID, not the project ID. | Server now verifies the JWT with WebCrypto against the project JWKS, with an issuer allow-list that includes the agentic issuer. |
+| 1 | Every sign-in rejected on reconnect. `@descope/node-sdk` `validateSession` threw `unexpected "iss" claim value`, because agentic tokens have an `iss` ending in the MCP server ID, not the project ID. | Server now verifies the JWT(JSON Web Token) with WebCrypto against the project JWKS(JSON Web Key Set, a standard JSON object that contains the public keys used to verify JWTs (JSON Web Tokens) issued by Descope), with an issuer allow-list that includes the agentic issuer. |
 | 2 | `E113301 "Fetching outbound app tokens is not allowed according to access control rules"` | Changed the access rules on the `gmail` Connection in the Descope console. |
 | 3 | Google `Error 400: redirect_uri_mismatch` | Added `https://api.descope.com/v1/outbound/oauth/callback` to the Google OAuth client's redirect URIs. |
 | 4 | Inbox read returned an empty list. The tool was swallowing Gmail API errors; the real error was `Gmail API 403: Gmail API has not been used in project … or it is disabled`. | Enabled the Gmail API in Google Cloud; the tool now returns `Error: Gmail API <status>: <message>`. |
