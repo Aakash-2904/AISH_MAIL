@@ -28,7 +28,7 @@ This file describes how AI tools were used to build this pipeline. It is based o
 
 | # | Prompt (verbatim) | Why it was structured this way |
 |---|---|---|
-| 1 | "can u read the plan.md first completely and discuss the plan and all the things that u will require prior to u running" | I wanted problems found before any code existed. This surfaced that no Descope MCP server was registered in Claude Code, that the folder sat inside a git repo rooted at my home directory, and that only ~2 GB of 7.9 GB RAM was free (so workers were capped at 3). |
+| 1 | "can u read the plan.md first completely and discuss the plan and all the things that u will require prior to u running" | I wanted problems found before any code existed. This surfaced that no Descope MCP server was registered in Claude Code, and that only ~2 GB of 7.9 GB RAM was free (so workers were capped at 3). |
 | 2 | "use another agent to download the dataset meanwhile" | The 443 MB download is slow but independent, so it ran in a background agent while MCP setup continued. |
 | 3 | "use multiple agents to get the subtasks" | The plan already defined subagents with file ownership and contracts, so one short prompt was enough to start Wave 1 (five agents in parallel). |
 | 4 | "/mcp … again ?" followed by several "check again" rounds | Short prompts after each re-authentication attempt, asking the agent to re-check the server after a fix, until the sign-in worked and `read_gmail_inbox` returned real messages. |
