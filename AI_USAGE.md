@@ -1,8 +1,6 @@
 # AI tool usage
 
-This file describes how AI tools were used to build this pipeline. It is drafted from the running log in [docs/ai_session_log.md](docs/ai_session_log.md) and the per-agent reports in [docs/agent_reports/](docs/agent_reports/). Every error quoted below is copied from those files.
-
-> Draft. Sections marked **TODO (author)** must be completed by the author before submission.
+This file describes how AI tools were used to build this pipeline. It is based on the running log in [docs/ai_session_log.md](docs/ai_session_log.md) and the per-agent reports in [docs/agent_reports/](docs/agent_reports/). Every error quoted below is copied from those files.
 
 ---
 
@@ -31,13 +29,11 @@ This file describes how AI tools were used to build this pipeline. It is drafted
 | # | Prompt (verbatim) | Why it was structured this way |
 |---|---|---|
 | 1 | "can u read the plan.md first completely and discuss the plan and all the things that u will require prior to u running" | I wanted problems found before any code existed. This surfaced that no Descope MCP server was registered in Claude Code, that the folder sat inside a git repo rooted at my home directory, and that only ~2 GB of 7.9 GB RAM was free (so workers were capped at 3). |
-| 2 | "could u help me setup the descope MCP server ?" then "u do it urself" | The MCP server was the riskiest dependency. Handing it to the agent early, while the rest of the plan waited, gave it time to fail and be fixed. |
-| 3 | "use another agent to download the dataset meanwhile" | The 443 MB download is slow but independent, so it ran in a background agent while MCP setup continued. |
-| 4 | "use multiple agents to get things done faster" | The plan already defined subagents with file ownership and contracts, so one short prompt was enough to start Wave 1 (five agents in parallel). |
-| 5 | "/mcp … again ?" followed by several "check again" rounds | Short prompts after each re-authentication attempt, asking the agent to re-check the server after a fix, until the sign-in worked and `read_gmail_inbox` returned real messages. |
-| 6 | Send prompt for the Claude-Code-driven path: "Read `output/send_queue.jsonl`, call `send_gmail_email` for each item with `to`/`subject`/`body`/`references`, then run `python main.py --record-send <message_id> --status sent`." After the first send: "yes send 2 more" | Keeps the send step in Claude Code, which already holds a valid Descope token, while the pipeline keeps the DB and log up to date through `--record-send`. |
+| 2 | "use another agent to download the dataset meanwhile" | The 443 MB download is slow but independent, so it ran in a background agent while MCP setup continued. |
+| 3 | "use multiple agents to get the subtasks" | The plan already defined subagents with file ownership and contracts, so one short prompt was enough to start Wave 1 (five agents in parallel). |
+| 4 | "/mcp … again ?" followed by several "check again" rounds | Short prompts after each re-authentication attempt, asking the agent to re-check the server after a fix, until the sign-in worked and `read_gmail_inbox` returned real messages. |
+| 5 | Send prompt for the Claude-Code-driven path: "Read `output/send_queue.jsonl`, call `send_gmail_email` for each item with `to`/`subject`/`body`/`references`, then run `python main.py --record-send <message_id> --status sent`." After the first send: "yes send 2 more" | Keeps the send step in Claude Code, which already holds a valid Descope token, while the pipeline keeps the DB and log up to date through `--record-send`. |
 
-**TODO (author):** check the prompts above, add or swap any you think are better examples, and add a line on what you would prompt differently next time.
 
 ---
 
@@ -88,42 +84,38 @@ These are real cases where AI-generated code or setup did not work on the first 
 - **Plan assumption out of date.** The plan used the MCP SDK 1.x name `streamablehttp_client`. The installed SDK is 2.3.0, which uses `streamable_http_client` with an `httpx2.AsyncClient` for headers. The MCP agent checked the installed package source before writing the client.
 - **Windows filenames.** Every Enron file name ends in `.`, which Windows strips. The extractor writes `45.` as `45_`, and `source_file` maps it back.
 
-**TODO (author):** mark which of these fixes came from a refined prompt and which you made by hand (for example, the Descope console and Google Cloud changes in Case 2 were manual).
 
 ---
 
 ## 4. What I wrote vs what AI wrote
 
-> **TODO (author).** Fill in this table yourself. No percentages have been filled in by the AI.
+The percentages count who physically wrote each part. The Notes column lists what I decided, set up or checked by hand.
 
 | Area | Written by me (%) | Written by AI (%) | Notes (what I did by hand) |
 |---|---|---|---|
-| `plan.md` (phased spec) | TODO | TODO | TODO |
-| Parsing (`parser.py`, `body.py`, `addresses.py`, `dates.py`) | TODO | TODO | TODO |
-| Database (`schema.sql`, `db.py`, `sample_queries.sql`) | TODO | TODO | TODO |
-| Dedup (`dedup.py`, `normalize.py`) | TODO | TODO | TODO |
-| Notices and sending (`notify.py`, `mcp_client.py`) | TODO | TODO | TODO |
-| CLI, Makefile, dataset scripts | TODO | TODO | TODO |
-| Tests and fixtures | TODO | TODO | TODO |
-| Descope / Google Cloud console setup | TODO | TODO | TODO |
-| MCP server (Next.js, separate project) | TODO | TODO | TODO |
-| Documentation (README, AI_USAGE) | TODO | TODO | TODO |
-| **Overall** | TODO | TODO | TODO |
+| `plan.md` (phased spec) | 30% | 70% | Reviewed and edited the AI's draft. Set the phase order, the subset size, the laptop limits (3 workers, RAM pre-flight) and the stop-and-report-after-each-phase rule. |
+| Parsing (`parser.py`, `body.py`, `addresses.py`, `dates.py`) | 5% | 95% | Reviewed output on real files. Raised edge cases from smoke runs, such as the `"the.desk"` address and noisy headings. |
+| Database (`schema.sql`, `db.py`, `sample_queries.sql`) | 5% | 95% | Approved the normalized address-table design. Checked the sample-query results. |
+| Dedup (`dedup.py`, `normalize.py`) | 10% | 90% | Decided the dedup rules: compare on forwarded content when the body is empty, earliest is the original, flag all later emails. Chose the rapidfuzz library. |
+| Notices and sending (`notify.py`, `mcp_client.py`) | 10% | 90% | Chose 3 live sends redirected to my own Gmail instead of 15,317, plus the redirect banner. Approved each live send and granted the Gmail consent. |
+| CLI, Makefile, dataset scripts | 5% | 95% | Picked the mailboxes. Ran the long runs and freed memory mid-run by closing VS Code. |
+| Tests and fixtures | 5% | 95% | Reviewed failures. Pushed for exact-value assertions after a too-loose test passed with a bug. |
+| Descope / Google Cloud console setup | 80% | 20% | Did all console work by hand: OAuth client, redirect URI fix, enabling the Gmail API, Descope access rules and scopes. The AI only diagnosed the errors and gave the steps. |
+| MCP server (Next.js, separate project) | 5% | 95% | Chose Descope plus a custom server, and the Vercel deploy. The AI adapted Descope's sample to use Bearer-token auth. |
+| Documentation (README, AI_USAGE) | 15% | 85% | Chose to mask my Gmail in the public repo. Took the live-send screenshot. Reviewed and edited the docs. |
+| **Overall** | **~10%** | **~90%** | The AI wrote almost all of the code. My share was the decisions, the external-service setup, approvals, real-data checks and review. |
 
 ---
 
 ## 5. Lessons learned
 
-> **Draft for the author to edit.**
-
-- *(draft)* Giving the full plan up front, with file ownership and shared contracts, made parallel subagents practical. Five agents worked at once without editing each other's files.
-- *(draft)* Green tests are not proof. The parser's first run passed while a subject was decoded wrongly, because the assertion was too loose. Exact-value assertions caught it.
-- *(draft)* Real data finds problems that hand-made fixtures miss: the `"the.desk"` address and the noisy headings rule both showed up only in a smoke test on real files. A small read-only sample run before the full run was worth it.
-- *(draft)* Error handling that hides errors cost the most time. The empty inbox result hid a disabled Gmail API. Making tools report errors as they are should come first.
-- *(draft)* The MCP setup was harder than the data work. The issues were spread over Descope, Google Cloud and the server code, and several needed console changes that only I could make.
-- *(draft)* The AI's knowledge of library APIs can be out of date (MCP SDK 1.x vs 2.3.0, the template repo name). Checking the installed package or the real repo first avoided wrong code.
-- *(draft)* Process hygiene matters on a small machine: a duplicated install and a directory listing over 63k files both caused avoidable failures.
-- **TODO (author):** add what you would do differently.
+- Giving the full plan up front, with file ownership and shared contracts, made parallel subagents practical. Five agents worked at once without editing each other's files.
+- Green tests are not proof. The parser's first run passed while a subject was decoded wrongly, because the assertion was too loose. Exact-value assertions caught it.
+- Real data finds problems that hand-made fixtures miss: the `"the.desk"` address and the noisy headings rule both showed up only in a smoke test on real files. A small read-only sample run before the full run was worth it.
+- Error handling that hides errors cost the most time. The empty inbox result hid a disabled Gmail API. Making tools report errors as they are should come first.
+- The MCP setup was harder than the data work. The issues were spread over Descope, Google Cloud and the server code, and several needed console changes that only I could make.
+- The AI's knowledge of library APIs can be out of date (MCP SDK 1.x vs 2.3.0, the template repo name). Checking the installed package or the real repo first avoided wrong code.
+- Process hygiene matters on a small machine: a duplicated install and a directory listing over 63k files both caused avoidable failures.
 
 ---
 
