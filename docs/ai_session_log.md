@@ -89,3 +89,24 @@ Tool: Claude Code (Opus 5.5). Entries are recorded as they happen.
 - **Live sends 2-3:** user approved ("yes send 2 more"). Both returned `sent`.
 - `output/send_log.csv` has 3 `sent` rows, all to the user's own address, with the Enron senders listed only as `intended_recipient`. The DB has `notification_sent=1` for all three.
 - **Prompt used** (Claude Code as the MCP client): read `output/send_queue.jsonl`, call `send_gmail_email` for each item with `to`/`subject`/`body`/`references`, then run `python main.py --record-send <message_id> --status sent`.
+
+## 2026-11-19: Wave 3/4 spec review, fixes, docs (parallel agents + lead)
+- **spec-reviewer** compared the code with the assignment field by field (`docs/agent_reports/spec-review.md`).
+  - **FAIL-1:** 1,455 of 32,248 `.eml` files broke the template. `set_content` without `cte` made long or non-ASCII lines quoted-printable, which soft-wraps them (`Subject: ... February 22, 2=` / `001`).
+  - **AT RISK:** `--fresh` wiped `notification_sent`, so `make run` then `make run-live` could re-send; empty-body pure forwards were never compared; the CSV had an extra `is_primary_target` column; and smaller doc gaps.
+- **fix agents (parallel, separate files):**
+  - **notify/dedup:**
+    - Notices now use `policy.default.clone(max_line_length=None, utf8=True)` and an explicit `cte`.
+    - First attempt failed with `TypeError: '<=' not supported between instances of 'int' and 'NoneType'` (6 tests): with `max_line_length=None` and no `cte`, the stdlib comparison breaks. Fixed by always passing `cte`.
+    - The CSV now has exactly 7 columns.
+    - Empty-body rows now fall back to comparing on `forwarded_content`.
+  - **cli:** send state is restored from `send_log.csv` after every dedup and before queueing. A plain re-run on a populated DB now exits 2.
+  - **lead:** pinned `httpx2` (the real import) instead of `httpx`; gitignored `output/send_queue.jsonl`; the MCP client now requires `status == "sent"`.
+- **Re-run:** `python main.py --skip-extract` gave 15,317 groups, 36,844 flagged (6,154 compared on forwarded content, only 38 excluded), 36,844 `.eml` files, 0 quoted-printable/base64.
+  - The restore step reported `restored 0` because the DB flags had survived the re-flag. A direct DB check confirmed all 3 sent rows still had `notification_sent=1`.
+- **Lead tooling failures while filling `sample_queries.sql`:**
+  - Splitting on `;` also split comments that contain `;`, giving `sqlite3.OperationalError: near "cc": syntax error`.
+  - A `sed`/heredoc edit of the helper script turned `\n` into a real newline, giving `SyntaxError: unterminated string literal`. Rewrote the script with the Write tool.
+- **Docs:** docs-agent applied the review's doc fixes and added `docs/mcp_server/` (server setup, placeholders only). The lead filled every result placeholder from `extraction_stats.json`.
+- **Screenshot:** the user saved `docs/screenshots/live_send.png`, showing the 3 notices in Gmail.
+- **Tests:** 214 passed.
