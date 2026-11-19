@@ -32,9 +32,7 @@ This file describes how AI tools were used to build this pipeline. It is based o
 | 2 | "use another agent to download the dataset meanwhile" | The 443 MB download is slow but independent, so it ran in a background agent while MCP setup continued. |
 | 3 | "use multiple agents to get the subtasks done" | The plan already defined subagents with file ownership and contracts, so one short prompt was enough to start Wave 1 (five agents in parallel). |
 | 4 | "/mcp … again ?" followed by several "check again" rounds | Short prompts after each re-authentication attempt, asking the agent to re-check the server after a fix, until the sign-in worked and `read_gmail_inbox` returned real messages. |
-| 5 | "could u help me setup the descope MCP server ?" | An open request first, so the AI
- could research Descope's guide and sample repo and propose
- the setup. |
+| 5 | "could u help me setup the descope MCP server ?" | An open request first, so the AI  could research Descope's guide and sample repo and propose the setup. |
 
 
 ---
