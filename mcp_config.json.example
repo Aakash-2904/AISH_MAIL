@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "descope-gmail": {
+      "type": "http",
+      "url": "https://<your-mcp-host>/api/mcp",
+      "headers": { "Authorization": "Bearer ${DESCOPE_MCP_ACCESS_TOKEN}" }
+    }
+  }
+}
