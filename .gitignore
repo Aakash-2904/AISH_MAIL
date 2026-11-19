@@ -13,3 +13,5 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .claude/
+# live-send queue (contains the override address)
+output/send_queue.jsonl

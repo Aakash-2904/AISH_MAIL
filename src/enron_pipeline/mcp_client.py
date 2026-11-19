@@ -241,7 +241,10 @@ class McpGmailClient:
                     msg = (data.get("message") or data.get("error")) if data else None
                     return SendResult(status="error", error=str(msg or text or "MCP tool returned isError"))
 
-                gmail_id = data.get("gmail_message_id") if data else None
+                if not data or data.get("status") != "sent":
+                    return SendResult(status="error",
+                                      error=f"unexpected send result (no status=sent): {text[:200]}")
+                gmail_id = data.get("gmail_message_id")
                 detail = str(gmail_id) if gmail_id else (text[:200] or None)
                 if pending_approval:
                     log.info("approval granted for %s", subject)
