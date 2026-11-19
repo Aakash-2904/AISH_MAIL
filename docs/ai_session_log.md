@@ -110,3 +110,10 @@ Tool: Claude Code (Opus 5.5). Entries are recorded as they happen.
 - **Docs:** docs-agent applied the review's doc fixes and added `docs/mcp_server/` (server setup, placeholders only). The lead filled every result placeholder from `extraction_stats.json`.
 - **Screenshot:** the user saved `docs/screenshots/live_send.png`, showing the 3 notices in Gmail.
 - **Tests:** 214 passed.
+
+## 2026-11-19: 1-worker vs 3-worker timing (plan 4.4b)
+- **Run:** `python main.py --fresh --workers 1` in a fresh clone (scratch folder, same maildir). It finished with exit 0 in 1,259.6 s.
+- **Timings:** parse+load took 915.7 s with 1 worker vs 464.6 s with 3. Dedup took 166.1 s with 1 worker vs 173.4 s with 3, so dedup gains nothing from the extra processes.
+- **Determinism:** the stats were equal apart from runtimes, `duplicates_report.csv` was byte-identical, and `error_log.txt` was identical once timestamps were ignored.
+- **Memory:** the run was held at first because free RAM was 1.67 GB, below the 2.5 GB pre-flight minimum. It started at 2.73 GB.
+  - Mid-run, free RAM fell to 1.08 GB and parsing slowed from about 60 to 25 files/s. The user closed VS Code, which brought it back to 2.6 GB and about 55 files/s.

@@ -366,6 +366,25 @@ Mandatory fields are 100% for parsed emails by construction.
 | Dedup runtime | 173 s |
 | Dry-run `.eml` files written | 36,844 (one per flagged duplicate) |
 
+### 1 worker vs 3 workers
+
+Both runs used the same 63,403 files on the same 8 GB laptop. The 1-worker run was a fresh clone running `python main.py --fresh --workers 1`.
+
+| Stage | `--workers 1` | `--workers 3` | Speed-up |
+|---|---|---|---|
+| Parse + load | 916 s | 465 s | 1.97× |
+| Dedup | 166 s | 173 s | none |
+| Whole run | 1,260 s | 846 s* | 1.49× |
+
+\* The whole-run time is from the first full 3-worker run; the dedup figure is from the later `--skip-extract` re-run that produced the final results.
+
+The two runs produced identical results:
+- `extraction_stats.json` matches apart from the runtimes.
+- `duplicates_report.csv` is byte-for-byte identical.
+- `error_log.txt` has the same entries once the timestamps are ignored.
+
+So the process pool changes speed, not output. Parsing scales because it is CPU-bound and each worker handles files on its own. Dedup does not scale here: its time goes mostly into loading the candidate blocks from SQLite in one process and passing batches to the workers, and that cost outweighs the parallel `rapidfuzz` comparisons.
+
 ### Live sends
 
 3 notices sent through the Descope Gmail MCP server on 2026-11-19 (via `--send-live --via-claude-code` + `--record-send`), all to the author's own address (`NOTIFY_OVERRIDE_TO`); 3 `sent` rows in `output/send_log.csv` and `notification_sent = 1` on the three flagged rows.
