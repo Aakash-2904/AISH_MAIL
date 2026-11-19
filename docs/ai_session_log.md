@@ -40,3 +40,38 @@ Tool: Claude Code (Opus 5.5). Entries are recorded as they happen.
 - **Note:** the installed `mcp` SDK is **2.3.0**. The plan assumed the 1.x `streamablehttp_client` API, so this needs checking in Wave 2.
 - **Commit:** `76ef179 chore: scaffold project, data contracts, schema and module stubs`
 - **Wave 1 launched:** parser-agent, db-agent, dedup-agent, notify-agent, cli-agent, all in parallel. mcp-scout was deferred until the MCP server is deployed.
+
+## 2026-11-18: Wave 1 results (5 parallel subagents)
+- **Agents:** parser-agent, db-agent, dedup-agent, notify-agent, cli-agent, each limited to its own files (plan 1A.2). Reports are in `docs/agent_reports/`.
+- **Tests per agent:** parser 71, db+stats 18, dedup 11, notify 30, cli 48. The full suite is 178 passed.
+- **Real failures (copied from the reports):**
+  - **parser-agent: the first green run hid a wrong value.** An 8-bit subject decoded to `'Café \x93quotes\x94'`: latin-1 turned the cp1252 smart quotes into C1 control characters.
+    - Fix: header decoding now tries declared charset → utf-8 → cp1252 → latin-1. The assertion was tightened to the exact value.
+  - **parser-agent: test file corrupted by a heredoc edit.** Running a Python `str.replace` through a heredoc wrote a NUL byte into the file. pytest error: `ValueError: source code string cannot contain null bytes`.
+    - Fix: rewrote the lines with explicit escapes.
+  - **parser-agent: scratch probe shadowed a stdlib module.** The probe was named `inspect.py`. Error: `ImportError: cannot import name 'parse_file' from partially initialized module 'enron_pipeline.parser'`.
+    - Fix: renamed it to `probe_sample.py`.
+  - **parser-agent: valid email rejected as `missing_to`.** In the real data, `To: <"the.desk":@enron.com>` was split by `getaddresses` into two broken parts.
+    - Fix: a pre-clean regex plus a regression test. The 2,000-file sample went from 52 to 51 failures.
+  - **parser-agent: headings heuristic too noisy.** On real data it matched 13.5% of emails (`FYI`, `[IMAGE]`, two-letter table cells, salutations).
+    - Fix: tightened the rules and added a regression test. Matches dropped to 6.1%.
+  - **dedup-agent: the workers-equivalence test was not really testing anything.** All the blocks fit in one batch.
+    - Fix: the batch size is now read at call time, and the test monkeypatches it so more than 2 batches are made.
+  - **cli-agent: tooling problems.**
+    - `ls -R` over the 63k-file maildir timed out after 120 s.
+    - `grep -P` failed in Git Bash with `-P supports only unibyte and UTF-8 locales`. Used `cat -A` instead.
+    - Tab-indented assignments inside the Makefile's `ifeq` blocks were changed to spaces.
+- **Commits:** 812027c, 6af76e9, df8a36c, 71832e1, c361e7d, bc8bff3.
+
+## 2026-11-18: Descope MCP server fixed and verified (lead)
+- **Prompt (user):** "/mcp … again ?" (re-auth kept failing). This was followed by several "check again" rounds.
+- **Failure 1: every sign-in rejected.** Claude Code reported `descope-gmail rejected them on reconnect`.
+  - Root cause: the token's `iss` is `…/v1/apps/agentic/<project>/<mcp_server>`. `@descope/node-sdk` `validateSession` requires the last path segment of the issuer to equal the project ID, so it throws `unexpected "iss" claim value`.
+  - Fix: verify the JWT with WebCrypto against the project JWKS, and accept the project issuer and the agentic issuer. Redeployed to Vercel.
+- **Failure 2: Descope blocked the Gmail token fetch.** `E113301 "Fetching outbound app tokens is not allowed according to access control rules"`. Found by adding logging of Descope's error replies.
+  - Fix (user, in the Descope console): changed the access rules on the gmail connection, then re-authenticated.
+- **Failure 3: Google consent failed.** Google returned `Error 400: redirect_uri_mismatch`.
+  - Fix (user): added `https://api.descope.com/v1/outbound/oauth/callback` to the Google OAuth web client.
+- **Failure 4: the inbox read came back empty.** The tool swallowed Gmail API errors. After changing the tool to report them, the real error was `Gmail API 403: Gmail API has not been used in project … or it is disabled`.
+  - Fix (user): enabled the Gmail API.
+- **Verified:** `read_gmail_inbox` returned 3 real messages.
