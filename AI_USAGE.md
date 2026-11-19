@@ -57,20 +57,14 @@ These are real cases where AI-generated code or setup did not work on the first 
   - `E113301 "Fetching outbound app tokens is not allowed according to access control rules"`. Fixed by me in the Descope console (access rules on the `gmail` connection).
   - Google `Error 400: redirect_uri_mismatch`. Fixed by me by adding `https://api.descope.com/v1/outbound/oauth/callback` to the Google OAuth client.
 
-### Case 3: A passing test hid a wrong value (8-bit subject decoding)
 
-- **What happened.** The parser agent's first run had all 69 tests passing. But the assertion for a subject with raw 8-bit bytes was loose (`== ... or startswith("Caf")`). Inspecting the value showed `'Café \x93quotes\x94'`.
-- **Cause.** The header was decoded as latin-1, which turns cp1252 smart quotes into C1 control characters.
-- **Fix.** Header decoding now tries declared charset → UTF-8 → cp1252 → latin-1, and the test asserts the exact value `"Café “quotes”"`.
-- **Follow-on failure.** While patching that test through a bash heredoc running Python `str.replace`, escape sequences were written as real characters, including a NUL byte. pytest failed collection with `ValueError: source code string cannot contain null bytes`. Fixed by rewriting the two lines with explicit escapes.
-
-### Case 4: A valid email rejected as `missing_to` (the "the.desk" address)
+### Case 3: A valid email rejected as `missing_to` (the "the.desk" address)
 
 - **What happened.** A read-only smoke test on 2,000 real emails reported 52 `missing_to` failures. 51 really had no `To:` header. The 52nd had `To: <"the.desk":@enron.com>`.
 - **Cause.** The stdlib `getaddresses` split it into `'"the.desk"'` and `'@enron.com'`, and neither is a usable address.
 - **Fix.** A pre-clean regex rewrites `"local":@domain` to `local@domain`, with a regression test. Failures went from 52 to 51.
 
-### Case 5: Headings heuristic too noisy on real data
+### Case 4: Headings heuristic too noisy on real data
 
 - **What happened.** The first headings rule passed the unit tests but matched 13.5% of the real sample. The top "headings" were `FYI` (43), `[IMAGE]` (11), `FYI.`, two-letter table cells like `AL`/`DP`/`OR`, salutations like `Daren:`, column-aligned table rows, and `To unsubscribe ..., go to:`.
 - **Fix.** The rules were tightened: stop words, a minimum of 3 letters for one-word caps lines, exclusion of `[IMAGE]`/URLs/table rows, and no colon heading on the first line of the body. A regression test was built from these exact lines. Matches dropped to 6.1%, mostly real section titles such as `SUBSCRIPTION SERVICES` and `COMMITTEE STRUCTURE`.
