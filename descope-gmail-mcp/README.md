@@ -2,7 +2,7 @@
 
 A remote MCP server that lets an agent such as Claude Code read and send Gmail for the signed-in user. Descope stores the Gmail OAuth tokens, so the agent never sees them. The server runs as a Next.js app on Vercel and is built on [`mcp-handler`](https://github.com/vercel/mcp-handler).
 
-It was adapted from Descope's `examples/nextjs-vercel-mcp-server` sample, for the Enron dedup pipeline ([AISH_MAIL](https://github.com/Aakash-2904/AISH_MAIL)). That pipeline uses it to send duplicate notices.
+It was adapted from Descope's `examples/nextjs-vercel-mcp-server` sample, for the Enron dedup pipeline in the parent folder of this repo ([README](../README.md)). That pipeline uses it to send duplicate notices.
 
 ## Architecture
 

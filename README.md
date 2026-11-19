@@ -97,7 +97,7 @@ The Gmail MCP server has three parts. Full details, with IDs redacted, are in [d
 
 1. **Descope Connection** (id `gmail`). A Google OAuth outbound app inside Descope. It holds the user's Google tokens with the scopes `gmail.readonly` and `gmail.send`. The agent never sees these tokens.
 2. **Descope MCP Server** (Agentic Identity Hub). Issues MCP access tokens through OAuth 2.1 (authorization code + PKCE, dynamic client registration) and maps the agent-facing scopes `google-read` / `google-send` to the Gmail scopes.
-3. **The MCP server itself.** A Next.js app based on Descope's `descope/ai` sample (`examples/nextjs-vercel-mcp-server`), deployed on Vercel at `https://descope-gmail-mcp.vercel.app/api/mcp`. Its source is a separate project (`../descope-gmail-mcp`); its redacted configuration is in [docs/mcp_server/](docs/mcp_server/README.md). It exposes two tools:
+3. **The MCP server itself.** A Next.js app based on Descope's `descope/ai` sample (`examples/nextjs-vercel-mcp-server`), deployed on Vercel at `https://descope-gmail-mcp.vercel.app/api/mcp`. Its full source is in [descope-gmail-mcp/](descope-gmail-mcp/README.md) in this repo; its redacted configuration is in [docs/mcp_server/](docs/mcp_server/README.md). It exposes two tools:
    - `send_gmail_email(to, subject, body, references?)`. `references` sets both `References` and `In-Reply-To`. This is the `send_email` tool the assignment refers to; the pipeline finds it through `MCP_SEND_TOOL` (default `send_gmail_email`).
    - `read_gmail_inbox(max_results?)`.
 

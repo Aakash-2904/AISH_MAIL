@@ -101,7 +101,7 @@ The percentages count who physically wrote each part. The Notes column lists wha
 | CLI, Makefile, dataset scripts | 5% | 95% | Picked the mailboxes. Ran the long runs and freed memory mid-run by closing VS Code. |
 | Tests and fixtures | 5% | 95% | Reviewed failures. Pushed for exact-value assertions after a too-loose test passed with a bug. |
 | Descope / Google Cloud console setup | 80% | 20% | Did all console work by hand: OAuth client, redirect URI fix, enabling the Gmail API, Descope access rules and scopes. The AI only diagnosed the errors and gave the steps. |
-| MCP server (Next.js, separate project) | 5% | 95% | Chose Descope plus a custom server, and the Vercel deploy. The AI adapted Descope's sample to use Bearer-token auth. |
+| MCP server (Next.js, `descope-gmail-mcp/`) | 5% | 95% | Chose Descope plus a custom server, and the Vercel deploy. The AI adapted Descope's sample to use Bearer-token auth. |
 | Documentation (README, AI_USAGE) | 15% | 85% | Chose to mask my Gmail in the public repo. Took the live-send screenshot. Reviewed and edited the docs. |
 | **Overall** | **~10%** | **~90%** | The AI wrote almost all of the code. My share was the decisions, the external-service setup, approvals, real-data checks and review. |
 

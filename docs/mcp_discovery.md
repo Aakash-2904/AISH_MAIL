@@ -11,7 +11,7 @@ Redactions: `<PROJECT_ID>` = Descope project ID, `<MCP_SERVER_ID>` = Agentic Ide
 | Transport | `http` (streamable HTTP; server also allows SSE, `disableSse: false`) |
 | URL | `https://descope-gmail-mcp.vercel.app/api/mcp` |
 | Auth | OAuth, handled by Claude Code (`/mcp` → authenticate) |
-| Implementation | Next.js on Vercel, `mcp-handler` (`createMcpHandler` + `withMcpAuth`, `required: true`), Descope node SDK for outbound tokens. Source: `../descope-gmail-mcp/app/api/[transport]/route.ts` |
+| Implementation | Next.js on Vercel, `mcp-handler` (`createMcpHandler` + `withMcpAuth`, `required: true`), Descope node SDK for outbound tokens. Source: `descope-gmail-mcp/app/api/[transport]/route.ts` (in this repo) |
 | Protected-resource metadata | `GET /.well-known/oauth-protected-resource` → `{"resource":"https://descope-gmail-mcp.vercel.app","authorization_servers":["https://api.descope.com/v1/apps/agentic/<PROJECT_ID>/<MCP_SERVER_ID>"]}` |
 | Gmail connection | Descope outbound app / Connection id `gmail` (env `GMAIL_CONNECTION_ID`), Google scopes `gmail.readonly` (read) and `gmail.send` (send), requested per call via `fetchTokenByScopes` |
 

@@ -6,7 +6,7 @@ The Gmail MCP server is a **separate Next.js app**, not Python code in this repo
 
 | Item | Value |
 |---|---|
-| Source | `../descope-gmail-mcp` (sibling folder of this repo), based on Descope's `descope/ai` sample `examples/nextjs-vercel-mcp-server` |
+| Source | [`descope-gmail-mcp/`](../../descope-gmail-mcp/README.md) (in this repo), based on Descope's `descope/ai` sample `examples/nextjs-vercel-mcp-server` |
 | Deployment | Vercel, endpoint `https://descope-gmail-mcp.vercel.app/api/mcp` |
 | Protected-resource metadata | `GET https://descope-gmail-mcp.vercel.app/.well-known/oauth-protected-resource` |
 | Tools | `send_gmail_email(to, subject, body, references?)` and `read_gmail_inbox(max_results?)` |
