@@ -1,0 +1,59 @@
+{
+  "total_files_found": 63403,
+  "parsed_ok": 61556,
+  "failed": 1847,
+  "failure_reasons": {
+    "missing_to": 1845,
+    "missing_from": 2
+  },
+  "failures_by_stage": {
+    "validate": 1847
+  },
+  "inserted": 61556,
+  "exact_duplicates_skipped": 0,
+  "field_completeness": {
+    "message_id": 100.0,
+    "date_utc": 100.0,
+    "from_address": 100.0,
+    "to_addresses": 100.0,
+    "subject": 97.47,
+    "body": 89.25,
+    "cc_addresses": 33.49,
+    "bcc_addresses": 33.49,
+    "x_from": 100.0,
+    "x_to": 100.0,
+    "x_cc": 33.64,
+    "x_bcc": 0.06,
+    "x_folder": 100.0,
+    "x_origin": 100.0,
+    "content_type": 100.0,
+    "has_attachment": 12.59,
+    "forwarded_content": 39.18,
+    "quoted_content": 1.8,
+    "headings": 7.02
+  },
+  "per_mailbox": {
+    "beck-s": 11555,
+    "farmer-d": 12862,
+    "kaminski-v": 27795,
+    "lay-k": 5600,
+    "skilling-j": 3744
+  },
+  "empty_body_with_forward": 6575,
+  "date_tz_assumed": 0,
+  "runtimes": {
+    "extract_seconds": 464.555,
+    "extract_workers_3_seconds": 464.555
+  },
+  "dedup": {
+    "groups_found": 15317,
+    "emails_flagged": 36844,
+    "avg_group_size": 3.41,
+    "max_group_size": 154,
+    "excluded_empty_body": 38,
+    "blocks_compared": 13198,
+    "runtime_seconds": 173.38,
+    "compared_on_forwarded": 6154
+  },
+  "workers": 3
+}
