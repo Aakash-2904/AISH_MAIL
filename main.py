@@ -4,6 +4,11 @@ Default run (dry-run, no email is sent)::
 
     python main.py [--fresh] [--mailboxes a,b] [--workers N] [--limit N]
 
+On a DB that already has emails, pass ``--fresh`` (rebuild) or ``--skip-extract``
+(reuse); a plain re-run is refused (exit 2) so the stats are never skewed.
+Send state is restored from output/send_log.csv after every dedup and before
+every live send, so ``--fresh`` never causes a notice to be sent twice.
+
 Stages: dataset check -> discover -> parallel parse -> SQLite load -> stats +
 error log -> dedup + duplicates_report.csv -> dry-run .eml files -> summary.
 
@@ -16,6 +21,7 @@ Live sending (always redirected to NOTIFY_OVERRIDE_TO, capped by --max-send)::
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import logging
 import sqlite3
@@ -36,6 +42,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from enron_pipeline import config  # noqa: E402
 
 log = logging.getLogger("enron_pipeline.main")
+
+EXIT_USAGE = 2
 
 SEND_STATUSES = ("sent", "pending_approval", "approval_timeout", "error", "dry_run")
 
@@ -307,11 +315,91 @@ def email_count(conn: sqlite3.Connection) -> int:
         return 0
 
 
+# --------------------------------------------------------------------------- send state
+
+
+def read_sent_log(log_path: Path) -> dict[str, str]:
+    """``{message_id: timestamp}`` of the first ``status=sent`` row per id.
+
+    A missing log is normal (nothing sent yet). An unreadable or malformed log,
+    or malformed rows, produce a warning and are skipped; this never raises.
+    """
+    sent: dict[str, str] = {}
+    try:
+        if not log_path.is_file():
+            return sent
+        with log_path.open("r", newline="", encoding="utf-8") as fh:
+            reader = csv.DictReader(fh)
+            fields = set(reader.fieldnames or ())
+            if not {"status", "message_id"} <= fields:
+                print(f"warning: {log_path} has no status/message_id header; send state not restored",
+                      file=sys.stderr)
+                return sent
+            bad = 0
+            for row in reader:
+                status = (row.get("status") or "").strip()
+                mid = (row.get("message_id") or "").strip()
+                if None in row or not status or not mid:
+                    bad += 1
+                    continue
+                if status == "sent":
+                    sent.setdefault(mid, (row.get("timestamp") or "").strip())
+            if bad:
+                print(f"warning: skipped {bad} malformed row(s) in {log_path}", file=sys.stderr)
+    except (OSError, csv.Error, UnicodeDecodeError, ValueError) as exc:
+        print(f"warning: could not read {log_path} ({type(exc).__name__}: {exc}); "
+              "send state not restored", file=sys.stderr)
+        return {}
+    return sent
+
+
+def restore_send_state(conn: sqlite3.Connection, log_path: Path,
+                       sent: dict[str, str] | None = None) -> int:
+    """Re-apply notification_sent/notification_date from ``sent`` log rows.
+
+    Only flagged duplicates that are not already marked are updated. Returns the
+    number restored; DB errors are warned about, never raised.
+    """
+    from enron_pipeline import db
+
+    sent = read_sent_log(log_path) if sent is None else sent
+    if not sent:
+        return 0
+    restored = 0
+    try:
+        rows = conn.execute(
+            "SELECT message_id FROM emails WHERE is_duplicate = 1 AND notification_sent = 0"
+        ).fetchall()
+        for (mid,) in rows:
+            if mid in sent:
+                when = sent[mid] or datetime.now(timezone.utc).isoformat()
+                db.mark_notified(conn, mid, when)
+                restored += 1
+    except sqlite3.Error as exc:
+        print(f"warning: could not restore send state ({type(exc).__name__}: {exc})", file=sys.stderr)
+        return restored
+    print(f"send state: restored {restored} notification flag(s) from {log_path} "
+          f"({len(sent)} sent row(s) in log)")
+    return restored
+
+
 def run_pipeline(args: argparse.Namespace) -> int:
     """Default (dry-run) pipeline."""
     from enron_pipeline.stats import StatsCollector
 
     started = time.perf_counter()
+    if not args.skip_extract and not args.fresh and Path(args.db).is_file():
+        conn = open_db(args.db, fresh=False)
+        try:
+            populated = email_count(conn)
+        finally:
+            conn.close()
+        if populated:
+            print(f"error: {args.db} already has {populated} emails. Re-extracting would count "
+                  "every row as an exact duplicate and overwrite extraction_stats.json.\n"
+                  "  pass --fresh to rebuild the DB (send state is restored from the send log), or\n"
+                  "  pass --skip-extract to reuse it and only re-run dedup.", file=sys.stderr)
+            return EXIT_USAGE
     if not args.skip_extract:
         with stage("dataset"):
             ensure_dataset(args.maildir, args.mailbox_list)
@@ -319,14 +407,13 @@ def run_pipeline(args: argparse.Namespace) -> int:
     conn = open_db(args.db, args.fresh)
     try:
         if not args.skip_extract:
-            if email_count(conn) and not args.fresh:
-                print("note: DB already has emails; re-inserted rows count as exact duplicates "
-                      "(use --fresh for clean stats)")
             run_extract(conn, args, collector)
         elif not email_count(conn):
             raise StageError("extract", f"--skip-extract given but {args.db} has no emails")
         if not args.skip_dedup:
             run_dedup(conn, args, collector)
+            with stage("send-state"):
+                restore_send_state(conn, config.SEND_LOG)
             if args.skip_extract:
                 merge_dedup_into_stats(collector.dedup or {})
             else:
@@ -355,13 +442,21 @@ def require_override(settings: Any) -> str:
     return target
 
 
-def queue_items(conn: sqlite3.Connection, override_to: str, max_send: int) -> list[dict[str, Any]]:
-    """Queue entries for the --via-claude-code path (same targets as send_live)."""
+def queue_items(conn: sqlite3.Connection, override_to: str, max_send: int,
+                exclude: Iterable[str] = ()) -> list[dict[str, Any]]:
+    """Queue entries for the --via-claude-code path (same targets as send_live).
+
+    ``exclude`` holds message_ids already logged as ``sent``; they are never queued
+    even if their DB flag was lost.
+    """
     from enron_pipeline import db, notify
 
     if max_send <= 0:
         return []
-    targets = db.fetch_notice_inputs(conn, primary_only=True, unsent_only=True, limit=max_send)
+    skip = set(exclude)
+    targets = db.fetch_notice_inputs(conn, primary_only=True, unsent_only=True,
+                                     limit=max_send + len(skip))
+    targets = [n for n in targets if n.dup_message_id not in skip]
     return [
         {
             "message_id": n.dup_message_id,
@@ -397,9 +492,12 @@ def run_send_live(args: argparse.Namespace) -> int:
     conn = open_db(args.db, fresh=False)
     try:
         _require_populated(conn, args.db)
+        with stage("send-state"):
+            sent_log = read_sent_log(config.SEND_LOG)
+            restore_send_state(conn, config.SEND_LOG, sent_log)
         if args.via_claude_code:
             with stage("send-queue"):
-                items = queue_items(conn, override, args.max_send)
+                items = queue_items(conn, override, args.max_send, exclude=sent_log)
                 write_send_queue(config.SEND_QUEUE, items)
             print(f"wrote {len(items)} item(s) to {config.SEND_QUEUE}. For each, call the MCP send tool, "
                   "then: python main.py --record-send <message_id> --status <status> [--error ...]")

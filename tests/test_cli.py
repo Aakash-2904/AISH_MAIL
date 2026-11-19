@@ -61,6 +61,13 @@ def _email(i: int, body: str = "hello there") -> ParsedEmail:
     )
 
 
+@pytest.fixture(autouse=True)
+def _isolate_paths(monkeypatch, tmp_path):
+    """Never read the real data/enron.db or output/send_log.csv from a test."""
+    monkeypatch.setattr(config, "DB_PATH", tmp_path / "default.db")
+    monkeypatch.setattr(config, "SEND_LOG", tmp_path / "send_log.csv")
+
+
 @pytest.fixture
 def conn_with_emails():
     conn = sqlite3.connect(":memory:")
@@ -485,3 +492,122 @@ def test_iter_parsed_pool_matches_serial():
     serial = list(cli.iter_parsed(paths, fixtures, workers=1))
     pooled = list(cli.iter_parsed(paths, fixtures, workers=2))
     assert pooled == serial
+
+
+# --------------------------------------------------------------------------- send-state restore (AR-1)
+
+
+def _pipeline_env(monkeypatch, tmp_path):
+    """Fake discover/parse into tmp_path; returns (db path, base argv)."""
+    from enron_pipeline import discover, parser
+
+    for name, value in {"ERROR_LOG": tmp_path / "error_log.txt", "STATS_PATH": tmp_path / "stats.json",
+                        "DUP_REPORT": tmp_path / "dups.csv", "REPLIES_DIR": tmp_path / "replies",
+                        "SEND_LOG": tmp_path / "send_log.csv", "SEND_QUEUE": tmp_path / "queue.jsonl"}.items():
+        monkeypatch.setattr(config, name, value)
+    monkeypatch.setattr(cli, "ensure_dataset", lambda *a, **k: None)
+    monkeypatch.setattr(discover, "iter_email_files",
+                        lambda maildir, mailboxes=None: iter(Path(f"m/lay-k/inbox/{i}") for i in range(5)))
+    monkeypatch.setattr(parser, "parse_file", _fake_parse)
+    dbp = tmp_path / "t.db"
+    return dbp, ["--db", str(dbp), "--workers", "1", "--maildir", str(tmp_path / "m")]
+
+
+def _write_log(path: Path, rows: list[dict[str, str]]) -> None:
+    for row in rows:
+        notify.append_send_log(path, row)
+
+
+def _notified(dbp: Path) -> dict[str, tuple[int, str | None]]:
+    conn = sqlite3.connect(dbp)
+    try:
+        return {r[0]: (r[1], r[2]) for r in conn.execute(
+            "SELECT message_id, notification_sent, notification_date FROM emails WHERE is_duplicate = 1")}
+    finally:
+        conn.close()
+
+
+def test_fresh_run_restores_sent_flags_from_log(monkeypatch, tmp_path, capsys):
+    dbp, argv = _pipeline_env(monkeypatch, tmp_path)
+    assert cli.main(argv + ["--fresh"]) == 0
+    dups = sorted(_notified(dbp))
+    assert len(dups) == 3
+    _write_log(config.SEND_LOG, [
+        {"timestamp": "2026-11-01T10:00:00+00:00", "status": "sent", "message_id": dups[0]},
+        {"timestamp": "2026-11-02T10:00:00+00:00", "status": "sent", "message_id": dups[0]},  # first wins
+        {"timestamp": "2026-11-01T11:00:00+00:00", "status": "error", "message_id": dups[1]},
+        {"timestamp": "2026-11-01T12:00:00+00:00", "status": "sent", "message_id": "<not-in-db@x>"},
+    ])
+    capsys.readouterr()
+    assert cli.main(argv + ["--fresh"]) == 0  # drops the DB, then restores
+    state = _notified(dbp)
+    assert state[dups[0]] == (1, "2026-11-01T10:00:00+00:00")
+    assert state[dups[1]] == (0, None) and state[dups[2]] == (0, None)
+    assert "restored 1 notification flag(s)" in capsys.readouterr().out
+    # --skip-extract re-flags too; already-marked rows are not counted again.
+    assert cli.main(argv + ["--skip-extract"]) == 0
+    assert _notified(dbp)[dups[0]] == (1, "2026-11-01T10:00:00+00:00")
+    assert "restored 0 notification flag(s)" in capsys.readouterr().out
+
+
+def test_queue_excludes_ids_logged_as_sent(monkeypatch, tmp_path):
+    dbp, argv = _pipeline_env(monkeypatch, tmp_path)
+    assert cli.main(argv + ["--fresh"]) == 0
+    conn = sqlite3.connect(dbp)
+    primaries = [n.dup_message_id for n in db.fetch_notice_inputs(conn, primary_only=True, unsent_only=True)]
+    assert primaries
+    # Direct: an excluded id is skipped even though its DB flag is still 0.
+    items = cli.queue_items(conn, "me@gmail.com", 10, exclude={primaries[0]})
+    assert primaries[0] not in [i["message_id"] for i in items]
+    assert len(items) == len(primaries) - 1
+    conn.close()
+    # End to end: a `sent` log row means the id is never queued again.
+    _write_log(config.SEND_LOG, [{"timestamp": "2026-11-01T10:00:00+00:00", "status": "sent",
+                                  "message_id": primaries[0]}])
+    monkeypatch.setattr(config, "load_settings", lambda *a, **k: _settings("me@gmail.com"))
+    assert cli.main(["--db", str(dbp), "--send-live", "--via-claude-code", "--max-send", "10"]) == 0
+    queued = [json.loads(line)["message_id"]
+              for line in config.SEND_QUEUE.read_text(encoding="utf-8").splitlines()]
+    assert primaries[0] not in queued and len(queued) == len(primaries) - 1
+    assert _notified(dbp)[primaries[0]][0] == 1
+
+
+@pytest.mark.parametrize("content", [
+    b"",                                                  # empty file
+    b"\xff\xfe\x00garbage\x80\x81",                       # not UTF-8
+    b"just,some,columns\n1,2,3\n",                        # wrong header
+    b"timestamp,status,message_id\n,sent\n,,\nx,sent,<a@b>,extra,cols\n",  # bad rows
+])
+def test_malformed_send_log_is_tolerated(monkeypatch, tmp_path, capsys, content):
+    dbp, argv = _pipeline_env(monkeypatch, tmp_path)
+    config.SEND_LOG.write_bytes(content)
+    assert cli.main(argv + ["--fresh"]) == 0
+    assert all(sent == 0 for sent, _ in _notified(dbp).values())
+    assert "Traceback" not in capsys.readouterr().err
+
+
+def test_missing_send_log_and_bad_db_never_crash(tmp_path):
+    assert cli.read_sent_log(tmp_path / "nope.csv") == {}
+    conn = sqlite3.connect(":memory:")
+    conn.execute("CREATE TABLE emails (id INTEGER PRIMARY KEY)")  # no flag columns
+    assert cli.restore_send_state(conn, tmp_path / "nope.csv", {"<a@b>": "t"}) == 0
+
+
+def test_populated_db_without_fresh_or_skip_extract_exits_2(monkeypatch, tmp_path, capsys):
+    dbp, argv = _pipeline_env(monkeypatch, tmp_path)
+    assert cli.main(argv + ["--fresh"]) == 0
+    before = config.STATS_PATH.read_text(encoding="utf-8")
+    monkeypatch.setattr(cli, "ensure_dataset", lambda *a, **k: pytest.fail("must refuse before dataset"))
+    capsys.readouterr()
+    assert cli.main(argv) == 2
+    err = capsys.readouterr().err
+    assert "--fresh" in err and "--skip-extract" in err
+    assert config.STATS_PATH.read_text(encoding="utf-8") == before
+
+
+def test_makefile_run_live_never_fresh():
+    text = (ROOT / "Makefile").read_text(encoding="utf-8")
+    recipe = text.split("run-live:", 1)[1].split("\n\n", 1)[0]
+    assert "--send-live" in recipe and "--fresh" not in recipe
+    run_recipe = text.split("\nrun:", 1)[1].split("\n\n", 1)[0]
+    assert "--fresh" in run_recipe
