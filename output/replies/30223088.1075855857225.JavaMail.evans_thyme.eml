@@ -1,0 +1,27 @@
+To: sally.beck@enron.com
+Subject: [Duplicate Notice] Re: Oh No
+Date: Thu, 19 Nov 2026 04:33:25 +0000
+References: <30223088.1075855857225.JavaMail.evans@thyme>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This is an automated notification from the Email Deduplication System.
+
+Your email has been identified as a potential duplicate:
+
+  Your Email (Flagged):
+    Message-ID:  <30223088.1075855857225.JavaMail.evans@thyme>
+    Date Sent:   Wed, 08 Nov 2000 18:47:00 +0000
+    Subject:     Oh No
+
+  Original Email on Record:
+    Message-ID:  <24697007.1075855914815.JavaMail.evans@thyme>
+    Date Sent:   Wed, 08 Nov 2000 18:47:00 +0000
+
+  Similarity Score: 100.0%
+
+If this was NOT a duplicate and you intended to send this email,
+please reply with CONFIRM to restore it to active status.
+
+No action is required if this is indeed a duplicate.

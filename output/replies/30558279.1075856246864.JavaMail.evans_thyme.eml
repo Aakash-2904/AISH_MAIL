@@ -1,0 +1,27 @@
+To: felix.buitron@enron.com
+Subject: [Duplicate Notice] Re: The delivery of the equipment you ordered is scheduled.
+Date: Thu, 19 Nov 2026 04:33:25 +0000
+References: <30558279.1075856246864.JavaMail.evans@thyme>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This is an automated notification from the Email Deduplication System.
+
+Your email has been identified as a potential duplicate:
+
+  Your Email (Flagged):
+    Message-ID:  <30558279.1075856246864.JavaMail.evans@thyme>
+    Date Sent:   Fri, 15 Dec 2000 16:21:00 +0000
+    Subject:     The delivery of the equipment you ordered is scheduled.
+
+  Original Email on Record:
+    Message-ID:  <7418251.1075856256683.JavaMail.evans@thyme>
+    Date Sent:   Mon, 27 Nov 2000 08:00:00 +0000
+
+  Similarity Score: 90.4%
+
+If this was NOT a duplicate and you intended to send this email,
+please reply with CONFIRM to restore it to active status.
+
+No action is required if this is indeed a duplicate.

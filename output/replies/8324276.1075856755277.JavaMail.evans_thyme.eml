@@ -1,0 +1,27 @@
+To: ect.admin@enron.com
+Subject: [Duplicate Notice] Re: @ect.enron.com email notification!
+Date: Thu, 19 Nov 2026 04:33:25 +0000
+References: <8324276.1075856755277.JavaMail.evans@thyme>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This is an automated notification from the Email Deduplication System.
+
+Your email has been identified as a potential duplicate:
+
+  Your Email (Flagged):
+    Message-ID:  <8324276.1075856755277.JavaMail.evans@thyme>
+    Date Sent:   Wed, 29 Mar 2000 01:04:00 +0000
+    Subject:     @ect.enron.com email notification!
+
+  Original Email on Record:
+    Message-ID:  <21469205.1075854021070.JavaMail.evans@thyme>
+    Date Sent:   Mon, 20 Mar 2000 11:18:00 +0000
+
+  Similarity Score: 95.6%
+
+If this was NOT a duplicate and you intended to send this email,
+please reply with CONFIRM to restore it to active status.
+
+No action is required if this is indeed a duplicate.
