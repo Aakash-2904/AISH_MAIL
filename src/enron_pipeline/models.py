@@ -81,6 +81,7 @@ class BlockMember:
     message_id: str
     date_utc: str
     body_norm: str  # normalize.normalize_body(body); never empty here
+    attachments: frozenset[str] = frozenset()  # body.attachment_names() of the compared text
 
 
 @dataclass(frozen=True, slots=True)

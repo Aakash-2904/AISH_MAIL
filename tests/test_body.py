@@ -147,3 +147,11 @@ def test_html_fallback() -> None:
 def test_crlf_normalised() -> None:
     msg = msg_from(b"Subject: x\r\n\r\nline1\r\nline2\r\n")
     assert extract_text(msg) == "line1\nline2\n"
+
+
+def test_attachment_names() -> None:
+    from enron_pipeline.body import attachment_names
+
+    text = "see <<Budget Q3.xls>> and << File: notes.DOC >>\n - wg091100.pdf\nno file here.pdf mention"
+    assert attachment_names(text) == frozenset({"budget q3.xls", "notes.doc", "wg091100.pdf"})
+    assert attachment_names("") == frozenset() and attachment_names(None) == frozenset()

@@ -239,3 +239,41 @@ def test_workers_identical_with_forwards(conn: sqlite3.Connection, monkeypatch: 
     two = find_duplicates(conn, 90.0, workers=2)
     assert one.flags and one.flags == two.flags
     assert one.compared_on_forwarded == two.compared_on_forwarded == 16
+
+
+# --------------------------------------------------------------------------- attachment-name gate
+NEWSLETTER = (
+    "Btu <subs@btu.net> on {date} 04:55:28 PM\nTo: Btu Weekly\nSubject: Btu Weekly\n\n"
+    "Attached is the latest issue of Btu Weekly.\n\ne-mail: info@Btu.net\nphone: 732-758-8222\n\n"
+    " - {file}\n"
+)
+
+
+def test_same_template_different_attachment_not_duplicate(conn: sqlite3.Connection) -> None:
+    """Weekly issues: near-identical forward text, different PDF -> not flagged."""
+    add(conn, "v@enron.com", "Btu Weekly", "", d(1), forwarded=NEWSLETTER.format(date="09/08/2000", file="wg091100.pdf"))
+    add(conn, "v@enron.com", "Btu Weekly", "", d(2), forwarded=NEWSLETTER.format(date="04/20/2001", file="wg042301.pdf"))
+    assert flagged(conn) == {}
+
+
+def test_same_attachment_still_duplicate(conn: sqlite3.Connection) -> None:
+    """A real copy carries the same filename and is still flagged."""
+    orig = add(conn, "v@enron.com", "Btu Weekly", "", d(1), forwarded=NEWSLETTER.format(date="09/08/2000", file="wg091100.pdf"))
+    dup = add(conn, "v@enron.com", "Btu Weekly", "", d(2),
+              forwarded=NEWSLETTER.format(date="09/08/2000", file="WG091100.PDF"))
+    assert flagged(conn)[dup][0] == orig
+
+
+def test_attachment_on_one_side_only_still_compared(conn: sqlite3.Connection) -> None:
+    """The gate needs filenames on BOTH sides; otherwise plain fuzzy matching applies."""
+    orig = add(conn, "a@enron.com", "Gas", BASE, d(1))
+    dup = add(conn, "a@enron.com", "Gas", BASE + "\n - q2.xls", d(2))
+    assert dup in flagged(conn) and flagged(conn)[dup][0] == orig
+
+
+def test_gate_skips_conflicting_anchor_but_joins_matching_one() -> None:
+    a = BlockMember(1, "<1>", d(1), BASE, frozenset({"a.pdf"}))
+    b = BlockMember(2, "<2>", d(2), BASE, frozenset({"b.pdf"}))
+    c = BlockMember(3, "<3>", d(3), BASE, frozenset({"b.pdf"}))
+    flags = cluster_block([a, b, c])
+    assert [(f.duplicate_message_id, f.original_message_id) for f in flags] == [("<3>", "<2>")]

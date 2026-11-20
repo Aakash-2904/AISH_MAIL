@@ -276,9 +276,10 @@ A duplicate (per the assignment) has the same `from_address`, the same subject a
 2. **Empty bodies fall back to the forward.** An email whose normalised `body` is empty (typically a plain forward with no comment) is compared on its normalised `forwarded_content` instead, so a forward sent twice is still detected. These rows are counted as `compared_on_forwarded`. Each row is compared on its own text: a row that has a body never switches to its forward, so a body-only row and a forward-only row match only if body vs forward is at least 90% similar. A row is excluded only when **both** `body` and `forwarded_content` are empty, because otherwise every such email with the same sender and subject would be a "100% match". Those are counted as `excluded_empty_body`.
 3. **Block in SQL** on `(from_address, normalized_subject)`. Only blocks with 2 or more members are compared, so the work is far smaller than all pairs.
 4. **Anchor clustering inside each block.** Members are sorted by `(date_utc, id)`. Each email is compared only with the *original* (earliest member) of each existing cluster using `rapidfuzz.fuzz.ratio`, and joins the first cluster scoring ≥ 90; otherwise it starts a new cluster. So `similarity_score` is always measured against the original, and there is no chaining (A~B and B~C does not pull in a C that is < 90 against A).
-5. **Prune.** A pair is skipped when the length ratio makes 90 impossible (`2*min(len)/(len_a+len_b)*100 < 90`), and `score_cutoff=90` lets rapidfuzz stop early.
-6. **Flag.** In each cluster of 2 or more: the earliest is the original. Every other member gets `is_duplicate = 1`, `duplicate_of = <original message_id>` and its score. The latest member is the **primary target** for notification (`is_primary_target = 1`). All flagged emails appear in `duplicates_report.csv` and get a dry-run `.eml`.
-7. **Parallel and deterministic.** Blocks are packed into batches of about 2,000 members, biggest first, and run in a process pool. Results are sorted, so any `--workers` value gives the same output; a test checks this.
+5. **Attachment-name gate.** Before scoring, a pair is skipped when both emails reference attachment files (`<<name.ext>>`, `<< File: name.ext >>` or a ` - name.ext` line) and the sets of filenames differ (case-insensitive). This keeps apart templated emails that only carry a different file, such as weekly newsletter issues (`wg091100.pdf` vs `wg042301.pdf`), which otherwise score above 90 on the shared template text. Real copies keep the same filenames, and an email with no filename reference is compared as usual. Checked against the report produced before this rule, it removes 303 of 36,844 pairs, none of them at score 100.
+6. **Prune.** A pair is skipped when the length ratio makes 90 impossible (`2*min(len)/(len_a+len_b)*100 < 90`), and `score_cutoff=90` lets rapidfuzz stop early.
+7. **Flag.** In each cluster of 2 or more: the earliest is the original. Every other member gets `is_duplicate = 1`, `duplicate_of = <original message_id>` and its score. The latest member is the **primary target** for notification (`is_primary_target = 1`). All flagged emails appear in `duplicates_report.csv` and get a dry-run `.eml`.
+8. **Parallel and deterministic.** Blocks are packed into batches of about 2,000 members, biggest first, and run in a process pool. Results are sorted, so any `--workers` value gives the same output; a test checks this.
 
 `duplicates_report.csv` has exactly the 7 required columns, in this order: `duplicate_message_id, original_message_id, subject, from_address, duplicate_date, original_date, similarity_score`. `is_primary_target` is not in the CSV; it stays in the `emails` table (see `sample_queries.sql`).
 
@@ -311,6 +312,7 @@ Each notice follows the assignment template character for character; a golden-fi
 - **Unknown time zones.** Abbreviations outside the list above (for example `CET`) are treated as "no zone" and assumed Pacific.
 - **Emails without a `To:` header are rejected**, as the assignment's mandatory-field rule requires, even though some are real items (calendar entries, drafts).
 - **Placeholder 1980-01-01 dates.** Some Enron messages carry a bogus `Date:` of 1 January 1980 (a client clock or import default), which is parsed and stored as is. Because the earliest member of a group is the original, such a copy becomes the "original" even if it was really filed later. 26 rows in `duplicates_report.csv` have an `original_date` or `duplicate_date` in 1980. The pipeline does not try to guess the real date.
+- **Attachment contents are not compared.** The gate above uses only filenames found in the text. Two emails with the same template and the same filename but different file contents are still flagged, and attachments named only in MIME headers are not seen (most Enron attachments were removed from the dataset anyway).
 - **Signatures and disclaimers are not stripped** before comparison, so long shared boilerplate can raise similarity a little.
 - **Memory.** Dedup holds the normalised bodies of all candidate emails at once. That is fine for five mailboxes on 8 GB, but not tested on the full 500k-file corpus.
 
@@ -356,15 +358,21 @@ Mandatory fields are 100% for parsed emails by construction.
 
 | Metric | Value |
 |---|---:|
-| Groups found | 15,317 |
-| Emails flagged | 36,844 |
-| Average group size | 3.41 |
-| Largest group | 154 |
+| Groups found | 15,370 |
+| Emails flagged | 36,770 |
+| Average group size | 3.39 |
+| Largest group | 40 |
 | Empty-body emails excluded (no body and no forward) | 38 |
 | Empty-body emails compared on forwarded content | 6,154 |
 | Blocks compared | 13,198 |
-| Dedup runtime | 173 s |
-| Dry-run `.eml` files written | 36,844 (one per flagged duplicate) |
+| Dedup runtime | 300 s |
+| Dry-run `.eml` files written | 36,770 (one per flagged duplicate) |
+
+**Effect of the attachment-name gate** (dedup step 5), from a `--skip-extract` re-run compared with the previous report (15,317 groups, 36,844 flagged, largest group 154):
+- 303 pairs that named different files were dropped, none of them at score 100. Example: two `Btu Weekly` newsletter issues seven months apart (`wg091100.pdf` vs `wg042301.pdf`) used to score 94.7.
+- 229 pairs were added (177 at score 100). These are emails that had been attached to a wrong original with a different file and now join the copy that carries the same file, e.g. the April `Btu Weekly` is now matched to its own `_sent_mail` copy at 100.
+- Net 74 fewer flagged emails. The largest group fell from 154 (all `Btu Weekly` issues) to 40, and no pair in the new report names different files.
+- Dedup took 300 s instead of 173 s on this run. The laptop had about 1.5 GB of free memory during the run, so this time is not comparable with the worker comparison below.
 
 ### 1 worker vs 3 workers
 
@@ -376,7 +384,7 @@ Both runs used the same 63,403 files on the same 8 GB laptop. The 1-worker run w
 | Dedup | 166 s | 173 s | none |
 | Whole run | 1,260 s | 846 s* | 1.49× |
 
-\* The whole-run time is from the first full 3-worker run; the dedup figure is from the later `--skip-extract` re-run that produced the final results.
+\* The whole-run time is from the first full 3-worker run; the dedup figure is from a later `--skip-extract` re-run. Both runs in this comparison predate the attachment-name gate.
 
 The two runs produced identical results:
 - `extraction_stats.json` matches apart from the runtimes.

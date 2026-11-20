@@ -117,3 +117,13 @@ Tool: Claude Code (Opus 5.5). Entries are recorded as they happen.
 - **Determinism:** the stats were equal apart from runtimes, `duplicates_report.csv` was byte-identical, and `error_log.txt` was identical once timestamps were ignored.
 - **Memory:** the run was held at first because free RAM was 1.67 GB, below the 2.5 GB pre-flight minimum. It started at 2.73 GB.
   - Mid-run, free RAM fell to 1.08 GB and parsing slowed from about 60 to 25 files/s. The user closed VS Code, which brought it back to 2.6 GB and about 55 files/s.
+
+## 2026-11-20: Attachment-name gate in dedup
+- **Problem found while reviewing examples:** two `Btu Weekly` newsletter issues from kaminski, seven months apart, were flagged at 94.7. Both bodies were empty, so the forwarded text was compared, and the only differences were the forward dates and the attached PDF (`wg091100.pdf` vs `wg042301.pdf`). `fuzz.ratio` is character-based, so a different filename barely moves the score. `has_attachment` was detected at parse time but dedup never used it.
+- **Fix:** `body.attachment_names()` extracts casefolded filenames from `<<name.ext>>`, `<< File: name.ext >>` and ` - name.ext` lines. Each `BlockMember` now carries them, and `cluster_block` skips an anchor when both emails name files and the sets differ. 5 new tests (newsletter case, same file still flagged, file on one side only, anchor skip, extractor).
+- **Pre-check on the old report:** 303 of 36,844 pairs would be dropped, none at score 100.
+- **Re-run:** `python main.py --skip-extract --workers 3`, exit 0. Results: 15,370 groups, 36,770 flagged, largest group 40 (was 154, all `Btu Weekly`), 36,770 `.eml` files. Dedup took 300 s and the whole run 547 s. Pre-flight free RAM was 3.31 GB; it was 1.53 GB mid-run.
+  - Report diff: 303 pairs removed and 229 added (177 at score 100). The added pairs are emails that now join the copy carrying the same file instead of a different issue's anchor. No pair in the new report names different files.
+  - Send state: `restored 0` because the DB flags survived; the DB still has `notification_sent = 1` on 3 rows.
+- **Lead tooling failure:** a check command included a bare `sqlite3`, which waited on stdin and stalled until it was stopped. Nothing was modified.
+- **Tests:** 219 passed.

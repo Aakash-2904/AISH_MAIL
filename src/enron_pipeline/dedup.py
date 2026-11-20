@@ -14,6 +14,7 @@ from pathlib import Path
 
 from rapidfuzz import fuzz
 
+from .body import attachment_names
 from .models import BlockMember, DedupResult, DuplicateFlag
 from .normalize import normalize_body
 
@@ -97,7 +98,8 @@ def load_blocks(conn: sqlite3.Connection) -> tuple[list[list[BlockMember]], Bloc
                 stats.excluded_empty_body += 1
                 continue
             stats.compared_on_forwarded += from_forward
-            members.append(BlockMember(row_id, message_id, date_utc, text))
+            files = attachment_names(forwarded if from_forward else body)
+            members.append(BlockMember(row_id, message_id, date_utc, text, files))
         if len(members) >= 2:
             blocks.append(members)
     blocks.sort(key=lambda b: (-len(b), b[0].date_utc, b[0].id))
@@ -117,12 +119,22 @@ def _match_score(a: str, b: str, threshold: float) -> float:
     return fuzz.ratio(a, b, score_cutoff=threshold)
 
 
+def _attachments_conflict(a: BlockMember, b: BlockMember) -> bool:
+    """True when both emails name attachments and the names differ: same
+    template text carrying a different file (e.g. newsletter issues) is not
+    a duplicate. Real copies keep the same filenames."""
+    return bool(a.attachments and b.attachments and a.attachments != b.attachments)
+
+
 def cluster_block(block: Sequence[BlockMember], threshold: float = 90.0) -> list[DuplicateFlag]:
-    """Anchor clustering of one block (plan 6.2). Pure and picklable."""
+    """Anchor clustering of one block (plan 6.2). Pure and picklable.
+    A member never joins an anchor whose attachment filenames differ."""
     # Each cluster: list of (member, score vs. anchor); index 0 is the anchor.
     clusters: list[list[tuple[BlockMember, float]]] = []
     for member in block:
         for cluster in clusters:
+            if _attachments_conflict(cluster[0][0], member):
+                continue
             score = _match_score(cluster[0][0].body_norm, member.body_norm, threshold)
             if score >= threshold:
                 cluster.append((member, score))

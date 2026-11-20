@@ -246,6 +246,21 @@ def _body_mentions_attachment(text: str) -> bool:
     return False
 
 
+_NAME_ANGLE = re.compile(r"<<\s*(?:File:\s*)?([^<>\n]{1,200}?\." + _EXT + r")\s*>>", re.I)
+_NAME_DASH = re.compile(r"^\s*-\s+([^\s].{0,150}?\." + _EXT + r")\s*$", re.I | re.M)
+
+
+def attachment_names(text: str | None) -> frozenset[str]:
+    """Casefolded attachment filenames referenced in raw (un-normalised) text:
+    ``<<name.ext>>``, ``<< File: name.ext >>`` and `` - name.ext`` lines.
+    Used by dedup to keep apart templated emails that differ only in the
+    file they carry (e.g. weekly newsletter issues)."""
+    if not text:
+        return frozenset()
+    found = (m.group(1) for rx in (_NAME_ANGLE, _NAME_DASH) for m in rx.finditer(text))
+    return frozenset(" ".join(n.split()).casefold() for n in found)
+
+
 def detect_attachment(msg: Message, text: str) -> bool:
     """True if any MIME part is an attachment / has a filename, or the body
     references one (``<<budget.xls>>``, ``<< File: ... >>``, attached x.doc...)."""
