@@ -46,13 +46,13 @@
     "extract_workers_3_seconds": 464.555
   },
   "dedup": {
-    "groups_found": 15317,
-    "emails_flagged": 36844,
-    "avg_group_size": 3.41,
-    "max_group_size": 154,
+    "groups_found": 15370,
+    "emails_flagged": 36770,
+    "avg_group_size": 3.39,
+    "max_group_size": 40,
     "excluded_empty_body": 38,
     "blocks_compared": 13198,
-    "runtime_seconds": 173.38,
+    "runtime_seconds": 299.918,
     "compared_on_forwarded": 6154
   },
   "workers": 3

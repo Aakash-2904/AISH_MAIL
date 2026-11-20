@@ -1975,9 +1975,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <9934684.1075855911177.JavaMail.evans@thyme>,<1993579.1075855926771.JavaMail.evans@thyme>,Re: Congrats,sally.beck@enron.com,2000-01-24T08:00:00+00:00,2000-01-24T08:00:00+00:00,100.0
 <23790225.1075854115728.JavaMail.evans@thyme>,<17130864.1075854032617.JavaMail.evans@thyme>,hpl noms,ami.chokshi@enron.com,2000-01-24T09:27:00+00:00,2000-01-24T09:27:00+00:00,100.0
 <29020271.1075854050061.JavaMail.evans@thyme>,<17130864.1075854032617.JavaMail.evans@thyme>,hpl noms,ami.chokshi@enron.com,2000-01-24T09:27:00+00:00,2000-01-24T09:27:00+00:00,100.0
-<20264998.1075854031591.JavaMail.evans@thyme>,<17130864.1075854032617.JavaMail.evans@thyme>,hpl NOMS,ami.chokshi@enron.com,2000-01-28T16:05:00+00:00,2000-01-24T09:27:00+00:00,92.4
-<27278337.1075854115594.JavaMail.evans@thyme>,<17130864.1075854032617.JavaMail.evans@thyme>,hpl NOMS,ami.chokshi@enron.com,2000-01-28T16:05:00+00:00,2000-01-24T09:27:00+00:00,92.4
-<28073213.1075854051007.JavaMail.evans@thyme>,<17130864.1075854032617.JavaMail.evans@thyme>,hpl NOMS,ami.chokshi@enron.com,2000-01-28T16:05:00+00:00,2000-01-24T09:27:00+00:00,92.4
 <30031581.1075854050084.JavaMail.evans@thyme>,<1358609.1075854032567.JavaMail.evans@thyme>,Over $50 -- You made it happen!,office.chairman@enron.com,2000-01-24T09:37:00+00:00,2000-01-24T09:37:00+00:00,100.0
 <4039230.1075854114146.JavaMail.evans@thyme>,<1358609.1075854032567.JavaMail.evans@thyme>,Over $50 -- You made it happen!,office.chairman@enron.com,2000-01-24T09:37:00+00:00,2000-01-24T09:37:00+00:00,100.0
 <15024624.1075854050133.JavaMail.evans@thyme>,<1358609.1075854032567.JavaMail.evans@thyme>,Over $50 -- You made it happen!,office.chairman@enron.com,2000-01-24T10:06:00+00:00,2000-01-24T09:37:00+00:00,95.7
@@ -2197,6 +2194,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <25498406.1075854050983.JavaMail.evans@thyme>,<16342784.1075854031613.JavaMail.evans@thyme>,Follow-up,kenneth.seaman@enron.com,2000-01-28T14:45:00+00:00,2000-01-28T14:45:00+00:00,100.0
 <11017527.1075856800083.JavaMail.evans@thyme>,<19789348.1075856776538.JavaMail.evans@thyme>,Project with Maria Garcia,zimin.lu@enron.com,2000-01-28T15:15:00+00:00,2000-01-28T15:15:00+00:00,100.0
 <20982172.1075857033523.JavaMail.evans@thyme>,<19789348.1075856776538.JavaMail.evans@thyme>,Project with Maria Garcia,zimin.lu@enron.com,2000-01-28T15:15:00+00:00,2000-01-28T15:15:00+00:00,100.0
+<27278337.1075854115594.JavaMail.evans@thyme>,<20264998.1075854031591.JavaMail.evans@thyme>,hpl NOMS,ami.chokshi@enron.com,2000-01-28T16:05:00+00:00,2000-01-28T16:05:00+00:00,100.0
+<28073213.1075854051007.JavaMail.evans@thyme>,<20264998.1075854031591.JavaMail.evans@thyme>,hpl NOMS,ami.chokshi@enron.com,2000-01-28T16:05:00+00:00,2000-01-28T16:05:00+00:00,100.0
 <20223306.1075854031568.JavaMail.evans@thyme>,<14087929.1075854172779.JavaMail.evans@thyme>,Re: 98-6240,daren.farmer@enron.com,2000-01-28T16:14:00+00:00,2000-01-28T16:14:00+00:00,100.0
 <20884459.1075854050918.JavaMail.evans@thyme>,<14087929.1075854172779.JavaMail.evans@thyme>,Re: 98-6240,daren.farmer@enron.com,2000-01-28T16:14:00+00:00,2000-01-28T16:14:00+00:00,100.0
 <24088338.1075854160254.JavaMail.evans@thyme>,<14087929.1075854172779.JavaMail.evans@thyme>,Re: 98-6240,daren.farmer@enron.com,2000-01-28T16:14:00+00:00,2000-01-28T16:14:00+00:00,100.0
@@ -2270,11 +2269,10 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <13573157.1075856800548.JavaMail.evans@thyme>,<10631129.1075857002481.JavaMail.evans@thyme>,Energy derivatives,vince.kaminski@enron.com,2000-01-31T07:53:00+00:00,2000-01-31T07:53:00+00:00,100.0
 <22022441.1075856776048.JavaMail.evans@thyme>,<10631129.1075857002481.JavaMail.evans@thyme>,Energy derivatives,vince.kaminski@enron.com,2000-01-31T07:53:00+00:00,2000-01-31T07:53:00+00:00,100.0
 <33049864.1075856945612.JavaMail.evans@thyme>,<10631129.1075857002481.JavaMail.evans@thyme>,Energy derivatives,vince.kaminski@enron.com,2000-01-31T07:53:00+00:00,2000-01-31T07:53:00+00:00,100.0
-<10782827.1075856945589.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,94.4
-<10913259.1075857002459.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,94.4
-<14541497.1075856776024.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,94.4
+<10782827.1075856945589.JavaMail.evans@thyme>,<10913259.1075857002459.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
+<14541497.1075856776024.JavaMail.evans@thyme>,<10913259.1075857002459.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
+<21028159.1075856800570.JavaMail.evans@thyme>,<10913259.1075857002459.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
 <14774414.1075856945567.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
-<21028159.1075856800570.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,94.4
 <25001945.1075856800593.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
 <5193646.1075856775999.JavaMail.evans@thyme>,<9465846.1075857002436.JavaMail.evans@thyme>,(no subject),vince.kaminski@enron.com,2000-01-31T07:54:00+00:00,2000-01-31T07:54:00+00:00,100.0
 <21474757.1075856945544.JavaMail.evans@thyme>,<28404139.1075857002413.JavaMail.evans@thyme>,Re: Saturday,vince.kaminski@enron.com,2000-01-31T08:08:00+00:00,2000-01-31T08:08:00+00:00,100.0
@@ -2932,9 +2930,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <25214578.1075854054422.JavaMail.evans@thyme>,<21933522.1075854027974.JavaMail.evans@thyme>,Project Torque - Excluded Facility Review,katherine.crosswhite@enron.com,2000-02-10T10:32:00+00:00,2000-02-10T10:32:00+00:00,100.0
 <1377918.1075854115311.JavaMail.evans@thyme>,<22179932.1075854027952.JavaMail.evans@thyme>,COPANO CHANGES,ami.chokshi@enron.com,2000-02-10T10:38:00+00:00,2000-02-10T10:38:00+00:00,100.0
 <22493541.1075854054444.JavaMail.evans@thyme>,<22179932.1075854027952.JavaMail.evans@thyme>,COPANO CHANGES,ami.chokshi@enron.com,2000-02-10T10:38:00+00:00,2000-02-10T10:38:00+00:00,100.0
-<16052634.1075854114456.JavaMail.evans@thyme>,<22179932.1075854027952.JavaMail.evans@thyme>,Copano changes,ami.chokshi@enron.com,2000-10-06T10:37:00+00:00,2000-02-10T10:38:00+00:00,95.4
-<25841095.1075853979324.JavaMail.evans@thyme>,<22179932.1075854027952.JavaMail.evans@thyme>,Copano changes,ami.chokshi@enron.com,2000-10-06T10:37:00+00:00,2000-02-10T10:38:00+00:00,95.4
-<32066684.1075854100055.JavaMail.evans@thyme>,<22179932.1075854027952.JavaMail.evans@thyme>,Copano changes,ami.chokshi@enron.com,2000-10-06T10:37:00+00:00,2000-02-10T10:38:00+00:00,95.4
 <24719941.1075854054466.JavaMail.evans@thyme>,<27819934.1075854027929.JavaMail.evans@thyme>,SITARA DEMO - NEW RISK ASSIGNMENT,brenda.herod@enron.com,2000-02-10T11:25:00+00:00,2000-02-10T11:25:00+00:00,100.0
 <10908332.1075855808566.JavaMail.evans@thyme>,<24067227.1075855926057.JavaMail.evans@thyme>,T. Hall's Exp Rpt for Your Apprvl,sally.beck@enron.com,2000-02-10T12:19:00+00:00,2000-02-10T12:19:00+00:00,100.0
 <8271385.1075855910463.JavaMail.evans@thyme>,<24067227.1075855926057.JavaMail.evans@thyme>,T. Hall's Exp Rpt for Your Apprvl,sally.beck@enron.com,2000-02-10T12:19:00+00:00,2000-02-10T12:19:00+00:00,100.0
@@ -3527,9 +3522,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <30697744.1075854124637.JavaMail.evans@thyme>,<24318891.1075854026124.JavaMail.evans@thyme>,Revised March 2000 Avails,ami.chokshi@enron.com,2000-02-22T09:37:00+00:00,2000-02-22T09:37:00+00:00,100.0
 <12816024.1075854056211.JavaMail.evans@thyme>,<6605722.1075854026101.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-02-22T10:22:00+00:00,2000-02-22T10:22:00+00:00,100.0
 <27059711.1075854115268.JavaMail.evans@thyme>,<6605722.1075854026101.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-02-22T10:22:00+00:00,2000-02-22T10:22:00+00:00,100.0
-<13090779.1075854115071.JavaMail.evans@thyme>,<6605722.1075854026101.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-03-22T15:42:00+00:00,2000-02-22T10:22:00+00:00,90.6
-<24480708.1075854019786.JavaMail.evans@thyme>,<6605722.1075854026101.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-03-22T15:42:00+00:00,2000-02-22T10:22:00+00:00,90.6
-<31905586.1075854062359.JavaMail.evans@thyme>,<6605722.1075854026101.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-03-22T15:42:00+00:00,2000-02-22T10:22:00+00:00,90.6
 <14458579.1075857023655.JavaMail.evans@thyme>,<23189917.1075856768375.JavaMail.evans@thyme>,H-IB Visa Application,margaret.daffin@enron.com,2000-02-22T10:32:00+00:00,2000-02-22T10:32:00+00:00,100.0
 <6637282.1075856806153.JavaMail.evans@thyme>,<23189917.1075856768375.JavaMail.evans@thyme>,H-IB Visa Application,margaret.daffin@enron.com,2000-02-22T10:32:00+00:00,2000-02-22T10:32:00+00:00,100.0
 <13016985.1075854056233.JavaMail.evans@thyme>,<6091579.1075854026079.JavaMail.evans@thyme>,HL&P Month to Date Flow,kimberly.vaughn@enron.com,2000-02-22T10:43:00+00:00,2000-02-22T10:43:00+00:00,100.0
@@ -5129,6 +5121,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <3972031.1075854127563.JavaMail.evans@thyme>,<30737878.1075854019841.JavaMail.evans@thyme>,Re: Meter 8740 Dec 99,aimee.lannou@enron.com,2000-03-22T15:04:00+00:00,2000-03-22T15:04:00+00:00,100.0
 <2752926.1075854041668.JavaMail.evans@thyme>,<2818827.1075854019817.JavaMail.evans@thyme>,April Availabilities,ami.chokshi@enron.com,2000-03-22T15:39:00+00:00,2000-03-22T15:39:00+00:00,100.0
 <27646821.1075854062336.JavaMail.evans@thyme>,<2818827.1075854019817.JavaMail.evans@thyme>,April Availabilities,ami.chokshi@enron.com,2000-03-22T15:39:00+00:00,2000-03-22T15:39:00+00:00,100.0
+<13090779.1075854115071.JavaMail.evans@thyme>,<24480708.1075854019786.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-03-22T15:42:00+00:00,2000-03-22T15:42:00+00:00,100.0
+<31905586.1075854062359.JavaMail.evans@thyme>,<24480708.1075854019786.JavaMail.evans@thyme>,23 rd noms,ami.chokshi@enron.com,2000-03-22T15:42:00+00:00,2000-03-22T15:42:00+00:00,100.0
 <20149390.1075857035956.JavaMail.evans@thyme>,<29923918.1075856757815.JavaMail.evans@thyme>,issue 4,rminto@risk.co.uk,2000-03-22T16:58:00+00:00,2000-03-22T16:58:00+00:00,100.0
 <4610459.1075856812949.JavaMail.evans@thyme>,<29923918.1075856757815.JavaMail.evans@thyme>,issue 4,rminto@risk.co.uk,2000-03-22T16:58:00+00:00,2000-03-22T16:58:00+00:00,100.0
 <13908561.1075855875516.JavaMail.evans@thyme>,<754750.1075855803574.JavaMail.evans@thyme>,Helsinki report,robert.quick@enron.com,2000-03-22T18:36:00+00:00,2000-03-22T18:36:00+00:00,100.0
@@ -6305,9 +6299,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <16025055.1075854188370.JavaMail.evans@thyme>,<19658274.1075854015092.JavaMail.evans@thyme>,Meters,tom.acton@enron.com,2000-04-12T12:56:00+00:00,2000-04-12T12:56:00+00:00,100.0
 <33310568.1075854114983.JavaMail.evans@thyme>,<3556857.1075854015069.JavaMail.evans@thyme>,COPANOS CHANGES,ami.chokshi@enron.com,2000-04-12T14:01:00+00:00,2000-04-12T14:01:00+00:00,100.0
 <5338156.1075854066542.JavaMail.evans@thyme>,<3556857.1075854015069.JavaMail.evans@thyme>,COPANOS CHANGES,ami.chokshi@enron.com,2000-04-12T14:01:00+00:00,2000-04-12T14:01:00+00:00,100.0
-<20506510.1075854074654.JavaMail.evans@thyme>,<3556857.1075854015069.JavaMail.evans@thyme>,copanos changes,ami.chokshi@enron.com,2000-06-06T14:07:00+00:00,2000-04-12T14:01:00+00:00,93.4
-<28379885.1075854006452.JavaMail.evans@thyme>,<3556857.1075854015069.JavaMail.evans@thyme>,copanos changes,ami.chokshi@enron.com,2000-06-06T14:07:00+00:00,2000-04-12T14:01:00+00:00,93.4
-<29355681.1075854114756.JavaMail.evans@thyme>,<3556857.1075854015069.JavaMail.evans@thyme>,copanos changes,ami.chokshi@enron.com,2000-06-06T14:07:00+00:00,2000-04-12T14:01:00+00:00,93.4
 <14260224.1075854129591.JavaMail.evans@thyme>,<23482524.1075854015047.JavaMail.evans@thyme>,February and March 2000 Meter 5688,jackie.young@enron.com,2000-04-12T14:38:00+00:00,2000-04-12T14:38:00+00:00,100.0
 <27402489.1075854066564.JavaMail.evans@thyme>,<23482524.1075854015047.JavaMail.evans@thyme>,February and March 2000 Meter 5688,jackie.young@enron.com,2000-04-12T14:38:00+00:00,2000-04-12T14:38:00+00:00,100.0
 <19069919.1075854066586.JavaMail.evans@thyme>,<30309921.1075854169600.JavaMail.evans@thyme>,Re: February and March 2000 Meter 5688,daren.farmer@enron.com,2000-04-12T15:44:00+00:00,2000-04-12T15:44:00+00:00,100.0
@@ -9114,6 +9105,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <33354601.1075856323762.JavaMail.evans@thyme>,<26748355.1075856564305.JavaMail.evans@thyme>,Ammonia Prices,vince.kaminski@enron.com,2000-06-06T13:58:00+00:00,2000-06-06T13:58:00+00:00,100.0
 <9267761.1075856498007.JavaMail.evans@thyme>,<26748355.1075856564305.JavaMail.evans@thyme>,Ammonia Prices,vince.kaminski@enron.com,2000-06-06T13:58:00+00:00,2000-06-06T13:58:00+00:00,100.0
 <4680291.1075854187766.JavaMail.evans@thyme>,<4481789.1075854006475.JavaMail.evans@thyme>,"Gasper Rice Resources, Ltd.",robert.cotten@enron.com,2000-06-06T14:03:00+00:00,2000-06-06T14:03:00+00:00,100.0
+<20506510.1075854074654.JavaMail.evans@thyme>,<28379885.1075854006452.JavaMail.evans@thyme>,copanos changes,ami.chokshi@enron.com,2000-06-06T14:07:00+00:00,2000-06-06T14:07:00+00:00,100.0
+<29355681.1075854114756.JavaMail.evans@thyme>,<28379885.1075854006452.JavaMail.evans@thyme>,copanos changes,ami.chokshi@enron.com,2000-06-06T14:07:00+00:00,2000-06-06T14:07:00+00:00,100.0
 <10304373.1075855906634.JavaMail.evans@thyme>,<2160051.1075855922203.JavaMail.evans@thyme>,Re: visit,sally.beck@enron.com,2000-06-06T14:11:00+00:00,2000-06-06T14:11:00+00:00,100.0
 <1883614.1075855795228.JavaMail.evans@thyme>,<2160051.1075855922203.JavaMail.evans@thyme>,Re: visit,sally.beck@enron.com,2000-06-06T14:11:00+00:00,2000-06-06T14:11:00+00:00,100.0
 <1533891.1075855906612.JavaMail.evans@thyme>,<12194480.1075855922181.JavaMail.evans@thyme>,Re: 16 June meeting,sally.beck@enron.com,2000-06-06T14:21:00+00:00,2000-06-06T14:21:00+00:00,100.0
@@ -15394,156 +15387,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <29239502.1075856484204.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-08T16:57:00+00:00,2000-09-08T16:57:00+00:00,100.0
 <30486185.1075856289541.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-08T16:57:00+00:00,2000-09-08T16:57:00+00:00,100.0
 <901504.1075856349040.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-08T16:57:00+00:00,2000-09-08T16:57:00+00:00,100.0
-<12707334.1075856288180.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-08T16:57:00+00:00,96.2
-<3385013.1075856549768.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-08T16:57:00+00:00,96.2
-<4096772.1075856483451.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-08T16:57:00+00:00,96.2
-<7735365.1075856350176.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-08T16:57:00+00:00,96.2
-<14853714.1075856478377.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<19683147.1075856544687.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<20796480.1075856358681.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<29149541.1075856276485.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<11286638.1075856368933.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<16062283.1075856538852.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<17590937.1075856472548.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<21926367.1075856262014.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<17048672.1075856371415.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<19384613.1075856471314.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<5907757.1075856259390.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<8345334.1075856537606.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<12049106.1075856536183.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<25824784.1075856373727.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<26653527.1075856256275.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<29866241.1075856469876.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<10583251.1075856373749.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<12886711.1075856256252.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<21282935.1075856536161.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<702532.1075856469855.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<16213808.1075856252614.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<20147.1075856468087.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<28417224.1075856375936.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<7591007.1075856534381.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<13603384.1075856252084.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<28232621.1075856534151.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<32205054.1075856467849.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<7947659.1075856376305.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<15389630.1075856250558.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<17199030.1075856533548.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<25294456.1075856467240.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<31847840.1075856377291.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-08T16:57:00+00:00,95.9
-<12770282.1075856379798.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<29291620.1075856531874.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<32964266.1075856465566.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<6095001.1075856246841.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<11896626.1075856531852.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<15987854.1075856379820.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<21974953.1075856465545.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<2362169.1075856246819.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<17395321.1075856383486.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<2707898.1075856242438.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<5020160.1075856463850.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<7823133.1075856530153.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<15102163.1075856387012.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<26774704.1075856528122.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<7525996.1075856237428.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<7838456.1075856461782.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<11074302.1075856390450.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<17039879.1075856460126.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<4774327.1075856526465.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<7566422.1075856233141.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<24315368.1075856459902.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<25693164.1075856526242.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<7475975.1075856232752.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<9311921.1075856390605.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<15894545.1075856525013.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<19159435.1075856458675.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<23933377.1075856230064.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<32381672.1075856392385.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<11664637.1075856456555.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<13741656.1075856225751.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<14649595.1075856522897.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<221755.1075856395641.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<15858755.1075856520909.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<16145112.1075856398833.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<26202852.1075856454588.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<5546051.1075856221639.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<11970890.1075856400713.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<14167354.1075856519718.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<14820333.1075856219373.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<29000045.1075856453404.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<19756116.1075856519540.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<20673481.1075856453227.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<21048360.1075856400869.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<21984535.1075856219171.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<22077333.1075856217321.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<2422259.1075856518629.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<29051681.1075856402247.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<5378342.1075856452302.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<14332394.1075856402608.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<27315079.1075856518387.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<7366439.1075856216941.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<7655409.1075856452060.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<24999613.1075856403492.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<29760389.1075856215876.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<5811745.1075856451417.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<7256176.1075856517740.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<22918306.1075856516435.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<30220389.1075856450117.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<454253.1075856213429.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<6566779.1075856405540.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<13567322.1075856449962.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<16256700.1075856405950.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<19442045.1075856516302.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<20366502.1075856212932.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<23630488.1075856449983.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<24569351.1075856405928.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<25020795.1075856212910.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<9548208.1075856516281.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<18596968.1075856514948.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<20107356.1075856448623.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<7942650.1075856210193.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<9472039.1075856408209.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<10672162.1075856514927.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<14348057.1075856408231.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<20763612.1075856210172.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<9105034.1075856448601.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<22692629.1075856207632.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<2697096.1075856447952.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<30425538.1075856514284.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<33494833.1075856410750.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2000-09-08T16:57:00+00:00,94.1
-<16590078.1075856512302.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<22805133.1075856413594.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<23571114.1075856204220.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<272168.1075856446009.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-08T16:57:00+00:00,95.0
-<12136242.1075856414864.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<17903968.1075856511767.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<19708637.1075856445467.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<25319317.1075856202746.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2000-09-08T16:57:00+00:00,95.6
-<16712030.1075856418800.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<22516787.1075856197918.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<25288517.1075856442643.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<31065648.1075856508973.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<1846229.1075856442621.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<2077653.1075856197897.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<28505893.1075856418822.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<4781363.1075856508952.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2000-09-08T16:57:00+00:00,95.3
-<14858799.1075856194203.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<15381130.1075856440829.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<27240975.1075856507171.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<31325361.1075856421810.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<7626680.1075858467961.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T18:52:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<11101561.1075856190102.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<11623157.1075856425367.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<24359914.1075856502752.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<33171485.1075856439384.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<19642310.1075856185739.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<19700597.1075856428881.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<24599760.1075856500833.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<7606753.1075856437450.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-08T16:57:00+00:00,94.4
-<1269846.1075856435257.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<17025544.1075856434642.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<18739334.1075856498651.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<3336331.1075856179106.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
-<15689141.1075858473221.JavaMail.evans@thyme>,<32037315.1075856550520.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T22:27:00+00:00,2000-09-08T16:57:00+00:00,94.7
 <32824695.1075856066999.JavaMail.evans@thyme>,<4472417.1075855781115.JavaMail.evans@thyme>,Re: Executed Performance Reviews,hector.mcloughlin@enron.com,2000-09-08T17:14:00+00:00,2000-09-08T17:14:00+00:00,100.0
 <4518531.1075855846872.JavaMail.evans@thyme>,<4472417.1075855781115.JavaMail.evans@thyme>,Re: Executed Performance Reviews,hector.mcloughlin@enron.com,2000-09-08T17:14:00+00:00,2000-09-08T17:14:00+00:00,100.0
 <9181121.1075855891060.JavaMail.evans@thyme>,<4472417.1075855781115.JavaMail.evans@thyme>,Re: Executed Performance Reviews,hector.mcloughlin@enron.com,2000-09-08T17:14:00+00:00,2000-09-08T17:14:00+00:00,100.0
@@ -16050,116 +15893,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <29747651.1075856350154.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
 <31760540.1075856288202.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
 <757561.1075856483472.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
-<1406425.1075856478398.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<1513260.1075856544709.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<21628615.1075856276507.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<30483123.1075856358660.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<1789495.1075856368911.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<22761030.1075856262106.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<27092602.1075856538896.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<7576351.1075856472593.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<14165499.1075856256297.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<21179138.1075856469898.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<30513369.1075856373705.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<8333556.1075856536205.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<11002919.1075856534359.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<24407636.1075856252592.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<28044215.1075856468064.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<28056748.1075856375959.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<18153691.1075856467828.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<29676019.1075856376327.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<5137690.1075856252061.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<7017225.1075856534128.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<2217570.1075856467218.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<22720582.1075856250536.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<23287683.1075856533526.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<6356268.1075856377313.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<19809559.1075856465455.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-09-15T16:50:00+00:00,97.0
-<21641166.1075856531761.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-09-15T16:50:00+00:00,97.0
-<29741483.1075856246705.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-09-15T16:50:00+00:00,97.0
-<32104889.1075856379934.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-09-15T16:50:00+00:00,97.0
-<22037177.1075856463829.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<24237134.1075856242416.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<28739446.1075856530130.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<3403883.1075856383508.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<22231433.1075856386988.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<22764299.1075856237450.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<3975390.1075856528145.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<6232647.1075856461804.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2000-09-15T16:50:00+00:00,96.4
-<1092024.1075856459946.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<18153995.1075856232797.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<22915873.1075856390583.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<3412514.1075856526286.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<12645481.1075856392363.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2000-09-15T16:50:00+00:00,96.7
-<12797392.1075856525034.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2000-09-15T16:50:00+00:00,96.7
-<24303651.1075856458697.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2000-09-15T16:50:00+00:00,96.7
-<31297344.1075856230086.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2000-09-15T16:50:00+00:00,96.7
-<12989519.1075856225796.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<19709148.1075856395596.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<24477489.1075856456599.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<28872612.1075856522941.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<17241832.1075856520687.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<20976789.1075856399085.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<23284999.1075856221415.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<7561482.1075856454365.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<12863308.1075856518607.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,96.2
-<14285406.1075856518585.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<18610601.1075856217278.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<21069064.1075856402269.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,96.2
-<25149673.1075856452280.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,96.2
-<27520459.1075856217300.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,96.2
-<29019980.1075856452259.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<7854461.1075856402291.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<1444544.1075856217256.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<16444536.1075856452237.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<28645997.1075856518564.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<6795327.1075856402313.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<10305902.1075856451460.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<32959161.1075856517783.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<405244.1075856403448.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<5055417.1075856215919.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<1272549.1075856449940.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<26185076.1075856405972.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<30874680.1075856212889.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<32774385.1075856516259.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2000-09-15T16:50:00+00:00,94.8
-<17252009.1075856514906.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<25652849.1075856408253.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<29029702.1075856210150.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<32367082.1075856448580.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<12954997.1075856410728.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<15345870.1075856207654.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<26040761.1075856514305.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<31622160.1075856447976.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<10691036.1075856445986.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<20895893.1075856512280.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<27161073.1075856413616.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<9001425.1075856204199.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<15876881.1075856511746.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<16182780.1075856202725.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<29995086.1075856414886.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<5215915.1075856445445.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<20905172.1075856508931.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<26578939.1075856197876.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<32757955.1075856442599.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<8378221.1075856418845.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2000-09-15T16:50:00+00:00,95.3
-<10910498.1075856421787.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<19760106.1075856194224.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<22397618.1075856507192.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<7316831.1075856440851.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<557464.1075858467939.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T18:51:00+00:00,2000-09-15T16:50:00+00:00,95.9
-<20848440.1075856502730.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<30056632.1075856425389.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<30939735.1075856190080.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<5847596.1075856439363.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2000-09-15T16:50:00+00:00,95.6
-<19811499.1075856185761.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<24022183.1075856500854.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<32140117.1075856428859.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<4324941.1075856437472.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<1768935.1075856435236.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<27897591.1075856498629.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<29685668.1075856434666.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<30945262.1075856179085.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2000-09-15T16:50:00+00:00,95.0
-<16667304.1075858473243.JavaMail.evans@thyme>,<17164145.1075856549789.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T22:28:00+00:00,2000-09-15T16:50:00+00:00,95.0
+<12707334.1075856288180.JavaMail.evans@thyme>,<3385013.1075856549768.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
+<4096772.1075856483451.JavaMail.evans@thyme>,<3385013.1075856549768.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
+<7735365.1075856350176.JavaMail.evans@thyme>,<3385013.1075856549768.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-09-15T16:50:00+00:00,2000-09-15T16:50:00+00:00,100.0
 <10214623.1075856288158.JavaMail.evans@thyme>,<24480741.1075856549746.JavaMail.evans@thyme>,,vince.kaminski@enron.com,2000-09-15T16:52:00+00:00,2000-09-15T16:52:00+00:00,100.0
 <18417925.1075856350197.JavaMail.evans@thyme>,<24480741.1075856549746.JavaMail.evans@thyme>,,vince.kaminski@enron.com,2000-09-15T16:52:00+00:00,2000-09-15T16:52:00+00:00,100.0
 <26890506.1075856483429.JavaMail.evans@thyme>,<24480741.1075856549746.JavaMail.evans@thyme>,,vince.kaminski@enron.com,2000-09-15T16:52:00+00:00,2000-09-15T16:52:00+00:00,100.0
@@ -17806,6 +17542,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <24139165.1075856623691.JavaMail.evans@thyme>,<10268577.1075856281817.JavaMail.evans@thyme>,Resume of Mark Giancola,richard.dimichele@enron.com,2000-10-06T09:57:00+00:00,2000-10-06T09:57:00+00:00,100.0
 <16018389.1075855890165.JavaMail.evans@thyme>,<23577488.1075855775712.JavaMail.evans@thyme>,stuff,cwhite@viviance.com,2000-10-06T10:02:00+00:00,2000-10-06T10:02:00+00:00,100.0
 <19026255.1075855851844.JavaMail.evans@thyme>,<23577488.1075855775712.JavaMail.evans@thyme>,stuff,cwhite@viviance.com,2000-10-06T10:02:00+00:00,2000-10-06T10:02:00+00:00,100.0
+<16052634.1075854114456.JavaMail.evans@thyme>,<25841095.1075853979324.JavaMail.evans@thyme>,Copano changes,ami.chokshi@enron.com,2000-10-06T10:37:00+00:00,2000-10-06T10:37:00+00:00,100.0
+<32066684.1075854100055.JavaMail.evans@thyme>,<25841095.1075853979324.JavaMail.evans@thyme>,Copano changes,ami.chokshi@enron.com,2000-10-06T10:37:00+00:00,2000-10-06T10:37:00+00:00,100.0
 <22166848.1075840240548.JavaMail.evans@thyme>,<16078681.1075840213424.JavaMail.evans@thyme>,Financial Analysts' Reports for 10.06.00,elizabeth.davis@compaq.com,2000-10-06T10:39:00+00:00,2000-10-06T10:39:00+00:00,100.0
 <3900654.1075840263892.JavaMail.evans@thyme>,<16078681.1075840213424.JavaMail.evans@thyme>,Financial Analysts' Reports for 10.06.00,elizabeth.davis@compaq.com,2000-10-06T10:39:00+00:00,2000-10-06T10:39:00+00:00,100.0
 <16088786.1075854099890.JavaMail.evans@thyme>,<8008277.1075854164444.JavaMail.evans@thyme>,Re: Duke Cashout Entries 7/00 and 8/00,daren.farmer@enron.com,2000-10-06T10:48:00+00:00,2000-10-06T10:48:00+00:00,100.0
@@ -18708,6 +18446,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <10770696.1075856358637.JavaMail.evans@thyme>,<32660534.1075856544731.JavaMail.evans@thyme>,2001 budget,vince.kaminski@enron.com,2000-10-13T17:10:00+00:00,2000-10-13T17:10:00+00:00,100.0
 <15474574.1075856478420.JavaMail.evans@thyme>,<32660534.1075856544731.JavaMail.evans@thyme>,2001 budget,vince.kaminski@enron.com,2000-10-13T17:10:00+00:00,2000-10-13T17:10:00+00:00,100.0
 <16972719.1075856276530.JavaMail.evans@thyme>,<32660534.1075856544731.JavaMail.evans@thyme>,2001 budget,vince.kaminski@enron.com,2000-10-13T17:10:00+00:00,2000-10-13T17:10:00+00:00,100.0
+<1406425.1075856478398.JavaMail.evans@thyme>,<1513260.1075856544709.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-10-13T17:12:00+00:00,100.0
+<21628615.1075856276507.JavaMail.evans@thyme>,<1513260.1075856544709.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-10-13T17:12:00+00:00,100.0
+<30483123.1075856358660.JavaMail.evans@thyme>,<1513260.1075856544709.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-10-13T17:12:00+00:00,2000-10-13T17:12:00+00:00,100.0
+<14853714.1075856478377.JavaMail.evans@thyme>,<19683147.1075856544687.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
+<20796480.1075856358681.JavaMail.evans@thyme>,<19683147.1075856544687.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
+<29149541.1075856276485.JavaMail.evans@thyme>,<19683147.1075856544687.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
 <13814530.1075856276440.JavaMail.evans@thyme>,<20597996.1075856544643.JavaMail.evans@thyme>,Tech corner possibility --,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
 <23477911.1075856358703.JavaMail.evans@thyme>,<20597996.1075856544643.JavaMail.evans@thyme>,Tech corner possibility --,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
 <26676908.1075856478333.JavaMail.evans@thyme>,<20597996.1075856544643.JavaMail.evans@thyme>,Tech corner possibility --,vince.kaminski@enron.com,2000-10-13T17:13:00+00:00,2000-10-13T17:13:00+00:00,100.0
@@ -21194,9 +20938,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <2822846.1075856368208.JavaMail.evans@thyme>,<46342.1075856263157.JavaMail.evans@thyme>,Technical Writer Position,molly.magee@enron.com,2000-11-09T13:19:00+00:00,2000-11-09T13:19:00+00:00,100.0
 <19715894.1075840089363.JavaMail.evans@thyme>,<22997475.1075840075916.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:27:00+00:00,2000-11-09T13:27:00+00:00,100.0
 <21250841.1075840099601.JavaMail.evans@thyme>,<22997475.1075840075916.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:27:00+00:00,2000-11-09T13:27:00+00:00,100.0
-<15014874.1075840089424.JavaMail.evans@thyme>,<22997475.1075840075916.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:36:00+00:00,2000-11-09T13:27:00+00:00,99.5
-<25653724.1075840099539.JavaMail.evans@thyme>,<22997475.1075840075916.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:36:00+00:00,2000-11-09T13:27:00+00:00,99.5
-<5073690.1075840075978.JavaMail.evans@thyme>,<22997475.1075840075916.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:36:00+00:00,2000-11-09T13:27:00+00:00,99.5
+<15014874.1075840089424.JavaMail.evans@thyme>,<5073690.1075840075978.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:36:00+00:00,2000-11-09T13:36:00+00:00,100.0
+<25653724.1075840099539.JavaMail.evans@thyme>,<5073690.1075840075978.JavaMail.evans@thyme>,Defying Convential Wisdom - Advisory Board Offer,speterson@seade.com,2000-11-09T13:36:00+00:00,2000-11-09T13:36:00+00:00,100.0
 <28143320.1075854104669.JavaMail.evans@thyme>,<9324888.1075853972430.JavaMail.evans@thyme>,Re: Another HESCO Issue,charlene.richmond@enron.com,2000-11-09T13:37:00+00:00,2000-11-09T13:37:00+00:00,100.0
 <3644928.1075854140604.JavaMail.evans@thyme>,<9324888.1075853972430.JavaMail.evans@thyme>,Re: Another HESCO Issue,charlene.richmond@enron.com,2000-11-09T13:37:00+00:00,2000-11-09T13:37:00+00:00,100.0
 <13967169.1075856473184.JavaMail.evans@thyme>,<8755311.1075856539484.JavaMail.evans@thyme>,Re: EGM Staff Meeting,vince.kaminski@enron.com,2000-11-09T13:39:00+00:00,2000-11-09T13:39:00+00:00,100.0
@@ -21431,12 +21174,18 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <19785069.1075855878181.JavaMail.evans@thyme>,<24883717.1075855768081.JavaMail.evans@thyme>,Jornada Directions,daniel.muschar@enron.com,2000-11-10T15:55:00+00:00,2000-11-10T15:55:00+00:00,100.0
 <8059213.1075855858425.JavaMail.evans@thyme>,<24883717.1075855768081.JavaMail.evans@thyme>,Jornada Directions,daniel.muschar@enron.com,2000-11-10T15:55:00+00:00,2000-11-10T15:55:00+00:00,100.0
 <30292473.1075856641946.JavaMail.evans@thyme>,<24111577.1075856262131.JavaMail.evans@thyme>,"Re: looking for ""Fat Tails"" in time-series for NGI-SOCAL",tanya.tamarchenko@enron.com,2000-11-10T16:17:00+00:00,2000-11-10T16:17:00+00:00,100.0
+<1789495.1075856368911.JavaMail.evans@thyme>,<27092602.1075856538896.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-11-10T16:31:00+00:00,100.0
+<22761030.1075856262106.JavaMail.evans@thyme>,<27092602.1075856538896.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-11-10T16:31:00+00:00,100.0
+<7576351.1075856472593.JavaMail.evans@thyme>,<27092602.1075856538896.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-10T16:31:00+00:00,2000-11-10T16:31:00+00:00,100.0
 <4409542.1075857056237.JavaMail.evans@thyme>,<1368187.1075856662928.JavaMail.evans@thyme>,"Re: looking for ""Fat Tails"" in time-series for NGI-SOCAL",naveen.andrews@enron.com,2000-11-10T16:35:00+00:00,2000-11-10T16:35:00+00:00,100.0
 <25674026.1075840089503.JavaMail.evans@thyme>,<11697208.1075840076050.JavaMail.evans@thyme>,[smu-betas] reunion pictures,fredinvt@juno.com,2000-11-10T16:55:00+00:00,2000-11-10T16:55:00+00:00,100.0
 <25764163.1075856578557.JavaMail.evans@thyme>,<25136732.1075856262084.JavaMail.evans@thyme>,Re: offer,stinson.gibner@enron.com,2000-11-10T17:22:00+00:00,2000-11-10T17:22:00+00:00,100.0
 <15909197.1075856591349.JavaMail.evans@thyme>,<13395833.1075856538875.JavaMail.evans@thyme>,Re: Forward oil prices,vince.kaminski@enron.com,2000-11-10T17:25:00+00:00,2000-11-10T17:25:00+00:00,100.0
 <21689671.1075856262038.JavaMail.evans@thyme>,<13395833.1075856538875.JavaMail.evans@thyme>,Re: Forward oil prices,vince.kaminski@enron.com,2000-11-10T17:25:00+00:00,2000-11-10T17:25:00+00:00,100.0
 <2789499.1075856472571.JavaMail.evans@thyme>,<13395833.1075856538875.JavaMail.evans@thyme>,Re: Forward oil prices,vince.kaminski@enron.com,2000-11-10T17:25:00+00:00,2000-11-10T17:25:00+00:00,100.0
+<11286638.1075856368933.JavaMail.evans@thyme>,<16062283.1075856538852.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
+<17590937.1075856472548.JavaMail.evans@thyme>,<16062283.1075856538852.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
+<21926367.1075856262014.JavaMail.evans@thyme>,<16062283.1075856538852.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
 <11326635.1075856368955.JavaMail.evans@thyme>,<22798484.1075856538830.JavaMail.evans@thyme>,"Re: looking for ""Fat Tails"" in time-series for NGI-SOCAL",vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
 <13746902.1075856261990.JavaMail.evans@thyme>,<22798484.1075856538830.JavaMail.evans@thyme>,"Re: looking for ""Fat Tails"" in time-series for NGI-SOCAL",vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
 <6565393.1075856472526.JavaMail.evans@thyme>,<22798484.1075856538830.JavaMail.evans@thyme>,"Re: looking for ""Fat Tails"" in time-series for NGI-SOCAL",vince.kaminski@enron.com,2000-11-10T17:26:00+00:00,2000-11-10T17:26:00+00:00,100.0
@@ -22226,6 +21975,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <4112384.1075856259412.JavaMail.evans@thyme>,<2513085.1075856537628.JavaMail.evans@thyme>,Updated version,vince.kaminski@enron.com,2000-11-20T08:42:00+00:00,2000-11-20T08:42:00+00:00,100.0
 <27987450.1075856882979.JavaMail.evans@thyme>,<249757.1075856659309.JavaMail.evans@thyme>,FW: ENERGY WEATHER UPDATE,kevin.moore@enron.com,2000-11-20T08:50:00+00:00,2000-11-20T08:50:00+00:00,100.0
 <526386.1075857055521.JavaMail.evans@thyme>,<249757.1075856659309.JavaMail.evans@thyme>,FW: ENERGY WEATHER UPDATE,kevin.moore@enron.com,2000-11-20T08:50:00+00:00,2000-11-20T08:50:00+00:00,100.0
+<17048672.1075856371415.JavaMail.evans@thyme>,<8345334.1075856537606.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-11-20T09:08:00+00:00,100.0
+<19384613.1075856471314.JavaMail.evans@thyme>,<8345334.1075856537606.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-11-20T09:08:00+00:00,100.0
+<5907757.1075856259390.JavaMail.evans@thyme>,<8345334.1075856537606.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-20T09:08:00+00:00,2000-11-20T09:08:00+00:00,100.0
 <22833466.1075840273987.JavaMail.evans@thyme>,<4711738.1075840224338.JavaMail.evans@thyme>,"EXECUTIVE COMMITTEE MEETING - MONDAY, NOVEMBER 27",katherine.brown@enron.com,2000-11-20T09:09:00+00:00,2000-11-20T09:09:00+00:00,100.0
 <9552656.1075840250173.JavaMail.evans@thyme>,<4711738.1075840224338.JavaMail.evans@thyme>,"EXECUTIVE COMMITTEE MEETING - MONDAY, NOVEMBER 27",katherine.brown@enron.com,2000-11-20T09:09:00+00:00,2000-11-20T09:09:00+00:00,100.0
 <15645510.1075855892082.JavaMail.evans@thyme>,<5256490.1075855765783.JavaMail.evans@thyme>,Ranking Associates & Analysts for the PRC YE2000,hector.mcloughlin@enron.com,2000-11-20T09:16:00+00:00,2000-11-20T09:16:00+00:00,100.0
@@ -22754,6 +22506,16 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <6580012.1075856375914.JavaMail.evans@thyme>,<5881841.1075856536226.JavaMail.evans@thyme>,40th Birthday Party,vince.kaminski@enron.com,2000-12-01T17:00:00+00:00,2000-11-27T11:31:00+00:00,99.3
 <8106345.1075856534403.JavaMail.evans@thyme>,<5881841.1075856536226.JavaMail.evans@thyme>,40th Birthday Party,vince.kaminski@enron.com,2000-12-01T17:00:00+00:00,2000-11-27T11:31:00+00:00,99.3
 <9933112.1075856252638.JavaMail.evans@thyme>,<5881841.1075856536226.JavaMail.evans@thyme>,40th Birthday Party,vince.kaminski@enron.com,2000-12-01T17:00:00+00:00,2000-11-27T11:31:00+00:00,99.3
+<14165499.1075856256297.JavaMail.evans@thyme>,<8333556.1075856536205.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-11-27T11:33:00+00:00,100.0
+<21179138.1075856469898.JavaMail.evans@thyme>,<8333556.1075856536205.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-11-27T11:33:00+00:00,100.0
+<30513369.1075856373705.JavaMail.evans@thyme>,<8333556.1075856536205.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-11-27T11:33:00+00:00,2000-11-27T11:33:00+00:00,100.0
+<25824784.1075856373727.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-11-27T11:34:00+00:00,100.0
+<26653527.1075856256275.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-11-27T11:34:00+00:00,100.0
+<29866241.1075856469876.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T11:34:00+00:00,2000-11-27T11:34:00+00:00,100.0
+<10583251.1075856373749.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-11-27T11:34:00+00:00,98.8
+<12886711.1075856256252.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-11-27T11:34:00+00:00,98.8
+<21282935.1075856536161.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-11-27T11:34:00+00:00,98.8
+<702532.1075856469855.JavaMail.evans@thyme>,<12049106.1075856536183.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-11-27T12:16:00+00:00,2000-11-27T11:34:00+00:00,98.8
 <14332139.1075855860835.JavaMail.evans@thyme>,<20207696.1075855913876.JavaMail.evans@thyme>,Access to DPR for Fernley Dyson,sally.beck@enron.com,2000-11-27T11:36:00+00:00,2000-11-27T11:36:00+00:00,100.0
 <27051561.1075855898103.JavaMail.evans@thyme>,<20207696.1075855913876.JavaMail.evans@thyme>,Access to DPR for Fernley Dyson,sally.beck@enron.com,2000-11-27T11:36:00+00:00,2000-11-27T11:36:00+00:00,100.0
 <6030832.1075855765060.JavaMail.evans@thyme>,<20207696.1075855913876.JavaMail.evans@thyme>,Access to DPR for Fernley Dyson,sally.beck@enron.com,2000-11-27T11:36:00+00:00,2000-11-27T11:36:00+00:00,100.0
@@ -23555,6 +23317,20 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <4056860.1075840252833.JavaMail.evans@thyme>,<5524226.1075840227318.JavaMail.evans@thyme>,Kalivac Project,v.chiarito@bernabe.it,2000-12-01T16:56:00+00:00,2000-12-01T16:56:00+00:00,100.0
 <14140832.1075849833834.JavaMail.evans@thyme>,<4573996.1075849811629.JavaMail.evans@thyme>,11/30 Mgmt Summ & Hot List,jeff.smith@enron.com,2000-12-01T17:00:00+00:00,2000-12-01T17:00:00+00:00,100.0
 <15743434.1075849851858.JavaMail.evans@thyme>,<4573996.1075849811629.JavaMail.evans@thyme>,11/30 Mgmt Summ & Hot List,jeff.smith@enron.com,2000-12-01T17:00:00+00:00,2000-12-01T17:00:00+00:00,100.0
+<16213808.1075856252614.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-12-01T17:24:00+00:00,100.0
+<20147.1075856468087.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-12-01T17:24:00+00:00,100.0
+<28417224.1075856375936.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-01T17:24:00+00:00,2000-12-01T17:24:00+00:00,100.0
+<13603384.1075856252084.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-12-01T17:24:00+00:00,98.8
+<28232621.1075856534151.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-12-01T17:24:00+00:00,98.8
+<32205054.1075856467849.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-12-01T17:24:00+00:00,98.8
+<7947659.1075856376305.JavaMail.evans@thyme>,<7591007.1075856534381.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-04T12:27:00+00:00,2000-12-01T17:24:00+00:00,98.8
+<24407636.1075856252592.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-12-01T17:25:00+00:00,100.0
+<28044215.1075856468064.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-12-01T17:25:00+00:00,100.0
+<28056748.1075856375959.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-01T17:25:00+00:00,2000-12-01T17:25:00+00:00,100.0
+<18153691.1075856467828.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-12-01T17:25:00+00:00,98.9
+<29676019.1075856376327.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-12-01T17:25:00+00:00,98.9
+<5137690.1075856252061.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-12-01T17:25:00+00:00,98.9
+<7017225.1075856534128.JavaMail.evans@thyme>,<11002919.1075856534359.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-04T12:28:00+00:00,2000-12-01T17:25:00+00:00,98.9
 <7826392.1075856584363.JavaMail.evans@thyme>,<23525690.1075856252570.JavaMail.evans@thyme>,Proj. X analytics diligence,stinson.gibner@enron.com,2000-12-01T17:35:00+00:00,2000-12-01T17:35:00+00:00,100.0
 <9336211.1075856375981.JavaMail.evans@thyme>,<23525690.1075856252570.JavaMail.evans@thyme>,Proj. X analytics diligence,stinson.gibner@enron.com,2000-12-01T17:35:00+00:00,2000-12-01T17:35:00+00:00,100.0
 <23108345.1075840276638.JavaMail.evans@thyme>,<28040074.1075840227558.JavaMail.evans@thyme>,"EnronOnline Executive Summary for November, 30 2000",leonardo.pacheco@enron.com,2000-12-01T17:50:00+00:00,2000-12-01T17:50:00+00:00,100.0
@@ -24257,6 +24033,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <13363428.1075849834608.JavaMail.evans@thyme>,<2875099.1075849812496.JavaMail.evans@thyme>,PRC stuff...,brad.richter@enron.com,2000-12-08T17:42:00+00:00,2000-12-08T17:42:00+00:00,100.0
 <17780755.1075849858009.JavaMail.evans@thyme>,<2875099.1075849812496.JavaMail.evans@thyme>,PRC stuff...,brad.richter@enron.com,2000-12-08T17:42:00+00:00,2000-12-08T17:42:00+00:00,100.0
 <29144602.1075855884000.JavaMail.evans@thyme>,<2875099.1075849812496.JavaMail.evans@thyme>,PRC stuff...,brad.richter@enron.com,2000-12-08T17:42:00+00:00,2000-12-08T17:42:00+00:00,100.0
+<15389630.1075856250558.JavaMail.evans@thyme>,<17199030.1075856533548.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
+<25294456.1075856467240.JavaMail.evans@thyme>,<17199030.1075856533548.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
+<31847840.1075856377291.JavaMail.evans@thyme>,<17199030.1075856533548.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
+<2217570.1075856467218.JavaMail.evans@thyme>,<23287683.1075856533526.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
+<22720582.1075856250536.JavaMail.evans@thyme>,<23287683.1075856533526.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
+<6356268.1075856377313.JavaMail.evans@thyme>,<23287683.1075856533526.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-08T19:09:00+00:00,2000-12-08T19:09:00+00:00,100.0
 <28852134.1075856250514.JavaMail.evans@thyme>,<26136987.1075856533504.JavaMail.evans@thyme>,Re: Clay Gran visit,vince.kaminski@enron.com,2000-12-08T19:11:00+00:00,2000-12-08T19:11:00+00:00,100.0
 <3817355.1075856467197.JavaMail.evans@thyme>,<26136987.1075856533504.JavaMail.evans@thyme>,Re: Clay Gran visit,vince.kaminski@enron.com,2000-12-08T19:11:00+00:00,2000-12-08T19:11:00+00:00,100.0
 <26051874.1075856377335.JavaMail.evans@thyme>,<25099116.1075856533460.JavaMail.evans@thyme>,Slightly revised verstion,vince.kaminski@enron.com,2000-12-08T19:13:00+00:00,2000-12-08T19:13:00+00:00,100.0
@@ -25133,9 +24915,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <16982104.1075854280020.JavaMail.evans@thyme>,<8555501.1075854210594.JavaMail.evans@thyme>,Re: HPL discrepancy,victor.lamadrid@enron.com,2000-12-14T10:37:00+00:00,2000-12-14T10:37:00+00:00,100.0
 <100785.1075854348071.JavaMail.evans@thyme>,<23299147.1075854210568.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-14T10:40:00+00:00,2000-12-14T10:40:00+00:00,100.0
 <4227670.1075854280043.JavaMail.evans@thyme>,<23299147.1075854210568.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-14T10:40:00+00:00,2000-12-14T10:40:00+00:00,100.0
-<11956451.1075854280227.JavaMail.evans@thyme>,<23299147.1075854210568.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-15T11:26:00+00:00,2000-12-14T10:40:00+00:00,95.8
-<22235323.1075854348027.JavaMail.evans@thyme>,<23299147.1075854210568.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-15T11:26:00+00:00,2000-12-14T10:40:00+00:00,95.8
-<30538551.1075854210289.JavaMail.evans@thyme>,<23299147.1075854210568.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-15T11:26:00+00:00,2000-12-14T10:40:00+00:00,95.8
 <1402795.1075854279947.JavaMail.evans@thyme>,<15546228.1075854338167.JavaMail.evans@thyme>,Re: cannon assignment,daren.farmer@enron.com,2000-12-14T10:51:00+00:00,2000-12-14T10:51:00+00:00,100.0
 <29015745.1075854328167.JavaMail.evans@thyme>,<15546228.1075854338167.JavaMail.evans@thyme>,Re: cannon assignment,daren.farmer@enron.com,2000-12-14T10:51:00+00:00,2000-12-14T10:51:00+00:00,100.0
 <620287.1075854210545.JavaMail.evans@thyme>,<15546228.1075854338167.JavaMail.evans@thyme>,Re: cannon assignment,daren.farmer@enron.com,2000-12-14T10:51:00+00:00,2000-12-14T10:51:00+00:00,100.0
@@ -25250,6 +25029,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <6183734.1075854280205.JavaMail.evans@thyme>,<12843164.1075854210312.JavaMail.evans@thyme>,"Enron / HPL Actuals for December 14, 2000",davila1@txu.com,2000-12-15T10:21:00+00:00,2000-12-15T10:21:00+00:00,100.0
 <21599677.1075856577291.JavaMail.evans@thyme>,<31406146.1075856247045.JavaMail.evans@thyme>,Re: Grant Masson,david.oxley@enron.com,2000-12-15T10:33:00+00:00,2000-12-15T10:33:00+00:00,100.0
 <30844585.1075856379617.JavaMail.evans@thyme>,<31406146.1075856247045.JavaMail.evans@thyme>,Re: Grant Masson,david.oxley@enron.com,2000-12-15T10:33:00+00:00,2000-12-15T10:33:00+00:00,100.0
+<11956451.1075854280227.JavaMail.evans@thyme>,<30538551.1075854210289.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-15T11:26:00+00:00,2000-12-15T11:26:00+00:00,100.0
+<22235323.1075854348027.JavaMail.evans@thyme>,<30538551.1075854210289.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 15, 2000",davila1@txu.com,2000-12-15T11:26:00+00:00,2000-12-15T11:26:00+00:00,100.0
 <28135335.1075854280250.JavaMail.evans@thyme>,<6534220.1075854210266.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 16-18, 2000",davila1@txu.com,2000-12-15T11:33:00+00:00,2000-12-15T11:33:00+00:00,100.0
 <7340294.1075854348005.JavaMail.evans@thyme>,<6534220.1075854210266.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 16-18, 2000",davila1@txu.com,2000-12-15T11:33:00+00:00,2000-12-15T11:33:00+00:00,100.0
 <13602289.1075854347982.JavaMail.evans@thyme>,<24339180.1075854210244.JavaMail.evans@thyme>,"HPL NOM FOR DEC. 16-18, 2000",davila1@txu.com,2000-12-15T11:48:00+00:00,2000-12-15T11:48:00+00:00,100.0
@@ -25286,6 +25067,13 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <13202934.1075856465588.JavaMail.evans@thyme>,<27199878.1075856531895.JavaMail.evans@thyme>,WTI model,vince.kaminski@enron.com,2000-12-15T16:24:00+00:00,2000-12-15T16:24:00+00:00,100.0
 <17558431.1075856379754.JavaMail.evans@thyme>,<27199878.1075856531895.JavaMail.evans@thyme>,WTI model,vince.kaminski@enron.com,2000-12-15T16:24:00+00:00,2000-12-15T16:24:00+00:00,100.0
 <8865765.1075856246886.JavaMail.evans@thyme>,<27199878.1075856531895.JavaMail.evans@thyme>,WTI model,vince.kaminski@enron.com,2000-12-15T16:24:00+00:00,2000-12-15T16:24:00+00:00,100.0
+<12770282.1075856379798.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-12-15T16:39:00+00:00,100.0
+<32964266.1075856465566.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-12-15T16:39:00+00:00,100.0
+<6095001.1075856246841.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:39:00+00:00,2000-12-15T16:39:00+00:00,100.0
+<11896626.1075856531852.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-12-15T16:39:00+00:00,99.7
+<15987854.1075856379820.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-12-15T16:39:00+00:00,99.7
+<21974953.1075856465545.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-12-15T16:39:00+00:00,99.7
+<2362169.1075856246819.JavaMail.evans@thyme>,<29291620.1075856531874.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-15T16:48:00+00:00,2000-12-15T16:39:00+00:00,99.7
 <23331964.1075854280296.JavaMail.evans@thyme>,<5767450.1075854210196.JavaMail.evans@thyme>,Union Carbide - safety net gas,lee.papayoti@enron.com,2000-12-15T16:39:00+00:00,2000-12-15T16:39:00+00:00,100.0
 <7480402.1075854304859.JavaMail.evans@thyme>,<5767450.1075854210196.JavaMail.evans@thyme>,Union Carbide - safety net gas,lee.papayoti@enron.com,2000-12-15T16:39:00+00:00,2000-12-15T16:39:00+00:00,100.0
 <13973334.1075856246798.JavaMail.evans@thyme>,<13706376.1075856531830.JavaMail.evans@thyme>,Re: Address,vince.kaminski@enron.com,2000-12-15T16:50:00+00:00,2000-12-15T16:50:00+00:00,100.0
@@ -25306,6 +25094,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <25951928.1075849835330.JavaMail.evans@thyme>,<22138440.1075849813359.JavaMail.evans@thyme>,London Flash P&L,james.new@enron.com,2000-12-15T16:55:00+00:00,2000-12-15T16:55:00+00:00,100.0
 <23789428.1075856379888.JavaMail.evans@thyme>,<7308179.1075856246752.JavaMail.evans@thyme>,WTI trading simulation presentation - combinded,zimin.lu@enron.com,2000-12-15T16:59:00+00:00,2000-12-15T16:59:00+00:00,100.0
 <28196524.1075856590859.JavaMail.evans@thyme>,<7308179.1075856246752.JavaMail.evans@thyme>,WTI trading simulation presentation - combinded,zimin.lu@enron.com,2000-12-15T16:59:00+00:00,2000-12-15T16:59:00+00:00,100.0
+<19809559.1075856465455.JavaMail.evans@thyme>,<21641166.1075856531761.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
+<29741483.1075856246705.JavaMail.evans@thyme>,<21641166.1075856531761.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
+<32104889.1075856379934.JavaMail.evans@thyme>,<21641166.1075856531761.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
 <18273332.1075856246683.JavaMail.evans@thyme>,<7192521.1075856531739.JavaMail.evans@thyme>,WTI trading simulation presentation - combinded,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
 <31604952.1075856379956.JavaMail.evans@thyme>,<7192521.1075856531739.JavaMail.evans@thyme>,WTI trading simulation presentation - combinded,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
 <4762725.1075856465433.JavaMail.evans@thyme>,<7192521.1075856531739.JavaMail.evans@thyme>,WTI trading simulation presentation - combinded,vince.kaminski@enron.com,2000-12-15T17:03:00+00:00,2000-12-15T17:03:00+00:00,100.0
@@ -25852,6 +25643,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <13879965.1075856599321.JavaMail.evans@thyme>,<17132078.1075856530176.JavaMail.evans@thyme>,"Henwood's 2001 ERCOT Symposium: January 23, 2001",vince.kaminski@enron.com,2000-12-22T16:42:00+00:00,2000-12-22T16:42:00+00:00,100.0
 <17998928.1075856463873.JavaMail.evans@thyme>,<17132078.1075856530176.JavaMail.evans@thyme>,"Henwood's 2001 ERCOT Symposium: January 23, 2001",vince.kaminski@enron.com,2000-12-22T16:42:00+00:00,2000-12-22T16:42:00+00:00,100.0
 <248776.1075856383441.JavaMail.evans@thyme>,<17132078.1075856530176.JavaMail.evans@thyme>,"Henwood's 2001 ERCOT Symposium: January 23, 2001",vince.kaminski@enron.com,2000-12-22T16:42:00+00:00,2000-12-22T16:42:00+00:00,100.0
+<22037177.1075856463829.JavaMail.evans@thyme>,<28739446.1075856530130.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
+<24237134.1075856242416.JavaMail.evans@thyme>,<28739446.1075856530130.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
+<3403883.1075856383508.JavaMail.evans@thyme>,<28739446.1075856530130.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
+<17395321.1075856383486.JavaMail.evans@thyme>,<7823133.1075856530153.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
+<2707898.1075856242438.JavaMail.evans@thyme>,<7823133.1075856530153.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
+<5020160.1075856463850.JavaMail.evans@thyme>,<7823133.1075856530153.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2000-12-22T16:43:00+00:00,2000-12-22T16:43:00+00:00,100.0
 <18961782.1075856242395.JavaMail.evans@thyme>,<22954961.1075856530108.JavaMail.evans@thyme>,Re: Project list,vince.kaminski@enron.com,2000-12-22T16:44:00+00:00,2000-12-22T16:44:00+00:00,100.0
 <31128052.1075856463807.JavaMail.evans@thyme>,<22954961.1075856530108.JavaMail.evans@thyme>,Re: Project list,vince.kaminski@enron.com,2000-12-22T16:44:00+00:00,2000-12-22T16:44:00+00:00,100.0
 <32321034.1075856383530.JavaMail.evans@thyme>,<22954961.1075856530108.JavaMail.evans@thyme>,Re: Project list,vince.kaminski@enron.com,2000-12-22T16:44:00+00:00,2000-12-22T16:44:00+00:00,100.0
@@ -26502,6 +26299,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <8029343.1075856589376.JavaMail.evans@thyme>,<11946897.1075856237472.JavaMail.evans@thyme>,Re: Power Plant Model,jeff.gray@enron.com,2001-01-05T16:35:00+00:00,2001-01-05T16:35:00+00:00,100.0
 <20324397.1075856589354.JavaMail.evans@thyme>,<23646286.1075856237360.JavaMail.evans@thyme>,Authorization,sandeep.kohli@enron.com,2001-01-05T17:07:00+00:00,2001-01-05T17:07:00+00:00,100.0
 <5722127.1075856387081.JavaMail.evans@thyme>,<23646286.1075856237360.JavaMail.evans@thyme>,Authorization,sandeep.kohli@enron.com,2001-01-05T17:07:00+00:00,2001-01-05T17:07:00+00:00,100.0
+<22231433.1075856386988.JavaMail.evans@thyme>,<3975390.1075856528145.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2001-01-05T17:15:00+00:00,100.0
+<22764299.1075856237450.JavaMail.evans@thyme>,<3975390.1075856528145.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2001-01-05T17:15:00+00:00,100.0
+<6232647.1075856461804.JavaMail.evans@thyme>,<3975390.1075856528145.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-05T17:15:00+00:00,2001-01-05T17:15:00+00:00,100.0
+<15102163.1075856387012.JavaMail.evans@thyme>,<26774704.1075856528122.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2001-01-05T17:18:00+00:00,100.0
+<7525996.1075856237428.JavaMail.evans@thyme>,<26774704.1075856528122.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2001-01-05T17:18:00+00:00,100.0
+<7838456.1075856461782.JavaMail.evans@thyme>,<26774704.1075856528122.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-05T17:18:00+00:00,2001-01-05T17:18:00+00:00,100.0
 <16334475.1075856387035.JavaMail.evans@thyme>,<5723435.1075856528100.JavaMail.evans@thyme>,"Research Group Party on January 6, 2001",vince.kaminski@enron.com,2001-01-05T17:21:00+00:00,2001-01-05T17:21:00+00:00,100.0
 <30971484.1075856461761.JavaMail.evans@thyme>,<5723435.1075856528100.JavaMail.evans@thyme>,"Research Group Party on January 6, 2001",vince.kaminski@enron.com,2001-01-05T17:21:00+00:00,2001-01-05T17:21:00+00:00,100.0
 <31608335.1075856237406.JavaMail.evans@thyme>,<5723435.1075856528100.JavaMail.evans@thyme>,"Research Group Party on January 6, 2001",vince.kaminski@enron.com,2001-01-05T17:21:00+00:00,2001-01-05T17:21:00+00:00,100.0
@@ -27293,6 +27096,13 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <5843909.1075856620369.JavaMail.evans@thyme>,<31117280.1075856233165.JavaMail.evans@thyme>,Re: Qian (Frank) Feng Interview with the Research Group,shirley.crenshaw@enron.com,2001-01-16T09:51:00+00:00,2001-01-16T09:51:00+00:00,100.0
 <17299795.1075856078693.JavaMail.evans@thyme>,<1383675.1075856098452.JavaMail.evans@thyme>,Re: EnTouch Deadline,sally.beck@enron.com,2001-01-16T09:58:00+00:00,2001-01-16T09:58:00+00:00,100.0
 <28445164.1075855952304.JavaMail.evans@thyme>,<1383675.1075856098452.JavaMail.evans@thyme>,Re: EnTouch Deadline,sally.beck@enron.com,2001-01-16T09:58:00+00:00,2001-01-16T09:58:00+00:00,100.0
+<11074302.1075856390450.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2001-01-16T10:00:00+00:00,100.0
+<17039879.1075856460126.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2001-01-16T10:00:00+00:00,100.0
+<7566422.1075856233141.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T10:00:00+00:00,2001-01-16T10:00:00+00:00,100.0
+<24315368.1075856459902.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T10:00:00+00:00,98.8
+<25693164.1075856526242.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T10:00:00+00:00,98.8
+<7475975.1075856232752.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T10:00:00+00:00,98.8
+<9311921.1075856390605.JavaMail.evans@thyme>,<4774327.1075856526465.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T10:00:00+00:00,98.8
 <33011679.1075849837565.JavaMail.evans@thyme>,<21412972.1075849815853.JavaMail.evans@thyme>,Promotion,brad.alford@enron.com,2001-01-16T10:32:00+00:00,2001-01-16T10:32:00+00:00,100.0
 <7723866.1075849832149.JavaMail.evans@thyme>,<21412972.1075849815853.JavaMail.evans@thyme>,Promotion,brad.alford@enron.com,2001-01-16T10:32:00+00:00,2001-01-16T10:32:00+00:00,100.0
 <1535622.1075856620347.JavaMail.evans@thyme>,<28615650.1075856233119.JavaMail.evans@thyme>,Re: Interview Schedule for Punit Rawal,molly.magee@enron.com,2001-01-16T10:41:00+00:00,2001-01-16T10:41:00+00:00,100.0
@@ -27382,6 +27192,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <32936958.1075856459967.JavaMail.evans@thyme>,<19979546.1075849816225.JavaMail.evans@thyme>,Congrats,vince.kaminski@enron.com,2001-01-16T13:25:00+00:00,2001-01-16T13:25:00+00:00,100.0
 <482319.1075849831776.JavaMail.evans@thyme>,<19979546.1075849816225.JavaMail.evans@thyme>,Congrats,vince.kaminski@enron.com,2001-01-16T13:25:00+00:00,2001-01-16T13:25:00+00:00,100.0
 <9599587.1075856526307.JavaMail.evans@thyme>,<19979546.1075849816225.JavaMail.evans@thyme>,Congrats,vince.kaminski@enron.com,2001-01-16T13:25:00+00:00,2001-01-16T13:25:00+00:00,100.0
+<1092024.1075856459946.JavaMail.evans@thyme>,<3412514.1075856526286.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2001-01-16T13:32:00+00:00,100.0
+<18153995.1075856232797.JavaMail.evans@thyme>,<3412514.1075856526286.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2001-01-16T13:32:00+00:00,100.0
+<22915873.1075856390583.JavaMail.evans@thyme>,<3412514.1075856526286.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-16T13:32:00+00:00,2001-01-16T13:32:00+00:00,100.0
 <20927929.1075856232775.JavaMail.evans@thyme>,<13031069.1075856526264.JavaMail.evans@thyme>,Re: Youyi,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T13:39:00+00:00,100.0
 <8964151.1075856459924.JavaMail.evans@thyme>,<13031069.1075856526264.JavaMail.evans@thyme>,Re: Youyi,vince.kaminski@enron.com,2001-01-16T13:39:00+00:00,2001-01-16T13:39:00+00:00,100.0
 <1393354.1075856569125.JavaMail.evans@thyme>,<6057691.1075856232730.JavaMail.evans@thyme>,Allocation schedule,becky.pham@enron.com,2001-01-16T13:47:00+00:00,2001-01-16T13:47:00+00:00,100.0
@@ -27748,6 +27561,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <11049138.1075856392341.JavaMail.evans@thyme>,<1869091.1075856525056.JavaMail.evans@thyme>,Treasury Dept memo,vince.kaminski@enron.com,2001-01-19T16:53:00+00:00,2001-01-19T16:53:00+00:00,100.0
 <13372840.1075856458718.JavaMail.evans@thyme>,<1869091.1075856525056.JavaMail.evans@thyme>,Treasury Dept memo,vince.kaminski@enron.com,2001-01-19T16:53:00+00:00,2001-01-19T16:53:00+00:00,100.0
 <15200314.1075856230108.JavaMail.evans@thyme>,<1869091.1075856525056.JavaMail.evans@thyme>,Treasury Dept memo,vince.kaminski@enron.com,2001-01-19T16:53:00+00:00,2001-01-19T16:53:00+00:00,100.0
+<12645481.1075856392363.JavaMail.evans@thyme>,<12797392.1075856525034.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2001-01-19T16:54:00+00:00,100.0
+<24303651.1075856458697.JavaMail.evans@thyme>,<12797392.1075856525034.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2001-01-19T16:54:00+00:00,100.0
+<31297344.1075856230086.JavaMail.evans@thyme>,<12797392.1075856525034.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-19T16:54:00+00:00,2001-01-19T16:54:00+00:00,100.0
+<19159435.1075856458675.JavaMail.evans@thyme>,<15894545.1075856525013.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2001-01-19T16:55:00+00:00,100.0
+<23933377.1075856230064.JavaMail.evans@thyme>,<15894545.1075856525013.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2001-01-19T16:55:00+00:00,100.0
+<32381672.1075856392385.JavaMail.evans@thyme>,<15894545.1075856525013.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-19T16:55:00+00:00,2001-01-19T16:55:00+00:00,100.0
 <14199933.1075856458654.JavaMail.evans@thyme>,<11626307.1075856524989.JavaMail.evans@thyme>,Non Linear Optimization - Friday 19 January Brown Bag,vince.kaminski@enron.com,2001-01-19T16:56:00+00:00,2001-01-19T16:56:00+00:00,100.0
 <19438403.1075856392407.JavaMail.evans@thyme>,<11626307.1075856524989.JavaMail.evans@thyme>,Non Linear Optimization - Friday 19 January Brown Bag,vince.kaminski@enron.com,2001-01-19T16:56:00+00:00,2001-01-19T16:56:00+00:00,100.0
 <23797180.1075856230042.JavaMail.evans@thyme>,<11626307.1075856524989.JavaMail.evans@thyme>,Non Linear Optimization - Friday 19 January Brown Bag,vince.kaminski@enron.com,2001-01-19T16:56:00+00:00,2001-01-19T16:56:00+00:00,100.0
@@ -28110,9 +27929,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <6761561.1075856633937.JavaMail.evans@thyme>,<2453284.1075856227677.JavaMail.evans@thyme>,Re: Mid-Project Review dates-Enron,christie.patrick@enron.com,2001-01-24T10:40:00+00:00,2001-01-24T10:40:00+00:00,100.0
 <13347283.1075854286880.JavaMail.evans@thyme>,<9023061.1075854203265.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-24T10:41:00+00:00,2001-01-24T10:41:00+00:00,100.0
 <9418887.1075854346840.JavaMail.evans@thyme>,<9023061.1075854203265.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-24T10:41:00+00:00,2001-01-24T10:41:00+00:00,100.0
-<20294397.1075854203014.JavaMail.evans@thyme>,<9023061.1075854203265.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-25T11:31:00+00:00,2001-01-24T10:41:00+00:00,95.8
-<20996408.1075854287111.JavaMail.evans@thyme>,<9023061.1075854203265.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-25T11:31:00+00:00,2001-01-24T10:41:00+00:00,95.8
-<26366499.1075854346774.JavaMail.evans@thyme>,<9023061.1075854203265.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-25T11:31:00+00:00,2001-01-24T10:41:00+00:00,95.8
 <10499763.1075856633915.JavaMail.evans@thyme>,<25923702.1075856523911.JavaMail.evans@thyme>,Re: videoconferences w/ Enron,vince.kaminski@enron.com,2001-01-24T10:52:00+00:00,2001-01-24T10:52:00+00:00,100.0
 <11509340.1075856227629.JavaMail.evans@thyme>,<25923702.1075856523911.JavaMail.evans@thyme>,Re: videoconferences w/ Enron,vince.kaminski@enron.com,2001-01-24T10:52:00+00:00,2001-01-24T10:52:00+00:00,100.0
 <19913469.1075856457576.JavaMail.evans@thyme>,<25923702.1075856523911.JavaMail.evans@thyme>,Re: videoconferences w/ Enron,vince.kaminski@enron.com,2001-01-24T10:52:00+00:00,2001-01-24T10:52:00+00:00,100.0
@@ -28218,6 +28034,8 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <14976967.1075854323690.JavaMail.evans@thyme>,<12651975.1075854203058.JavaMail.evans@thyme>,George W's new Limo,cstone1@txu.com,2001-01-25T10:55:00+00:00,2001-01-25T10:55:00+00:00,100.0
 <20721242.1075856608955.JavaMail.evans@thyme>,<25835862.1075856226925.JavaMail.evans@thyme>,Re: NOTICE OF END PROBATION,steven.leppard@enron.com,2001-01-25T10:59:00+00:00,2001-01-25T10:59:00+00:00,100.0
 <21934876.1075854346796.JavaMail.evans@thyme>,<7136085.1075854203036.JavaMail.evans@thyme>,"Enron / HPL Actuals for January 24, 2001",mjones7@txu.com,2001-01-25T11:27:00+00:00,2001-01-25T11:27:00+00:00,100.0
+<20996408.1075854287111.JavaMail.evans@thyme>,<20294397.1075854203014.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-25T11:31:00+00:00,2001-01-25T11:31:00+00:00,100.0
+<26366499.1075854346774.JavaMail.evans@thyme>,<20294397.1075854203014.JavaMail.evans@thyme>,"HPL Nom for January 25, 2001",mjones7@txu.com,2001-01-25T11:31:00+00:00,2001-01-25T11:31:00+00:00,100.0
 <25861875.1075854357158.JavaMail.evans@thyme>,<23643236.1075854202989.JavaMail.evans@thyme>,Potential List-Feb.2001,susan.smith@enron.com,2001-01-25T11:36:00+00:00,2001-01-25T11:36:00+00:00,100.0
 <28226184.1075854287134.JavaMail.evans@thyme>,<23643236.1075854202989.JavaMail.evans@thyme>,Potential List-Feb.2001,susan.smith@enron.com,2001-01-25T11:36:00+00:00,2001-01-25T11:36:00+00:00,100.0
 <31361622.1075849839332.JavaMail.evans@thyme>,<2763771.1075849817804.JavaMail.evans@thyme>,Clean up of VNG December book and resolution of management process,ed.mcmichael@enron.com,2001-01-25T11:38:00+00:00,2001-01-25T11:38:00+00:00,100.0
@@ -28383,9 +28201,15 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <23108752.1075849839830.JavaMail.evans@thyme>,<447937.1075849818396.JavaMail.evans@thyme>,Commercial Services Presentation - Analyst Orientation,brenda.herod@enron.com,2001-01-26T16:50:00+00:00,2001-01-26T16:50:00+00:00,100.0
 <25001556.1075856395551.JavaMail.evans@thyme>,<30943502.1075856225840.JavaMail.evans@thyme>,Re: CalPX prices,michael.schilmoeller@enron.com,2001-01-26T17:01:00+00:00,2001-01-26T17:01:00+00:00,100.0
 <31831419.1075856595015.JavaMail.evans@thyme>,<30943502.1075856225840.JavaMail.evans@thyme>,Re: CalPX prices,michael.schilmoeller@enron.com,2001-01-26T17:01:00+00:00,2001-01-26T17:01:00+00:00,100.0
+<12989519.1075856225796.JavaMail.evans@thyme>,<28872612.1075856522941.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
+<19709148.1075856395596.JavaMail.evans@thyme>,<28872612.1075856522941.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
+<24477489.1075856456599.JavaMail.evans@thyme>,<28872612.1075856522941.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
 <15823595.1075856456622.JavaMail.evans@thyme>,<31361300.1075856522964.JavaMail.evans@thyme>,Risk article,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
 <32559373.1075856395574.JavaMail.evans@thyme>,<31361300.1075856522964.JavaMail.evans@thyme>,Risk article,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
 <9716594.1075856225818.JavaMail.evans@thyme>,<31361300.1075856522964.JavaMail.evans@thyme>,Risk article,vince.kaminski@enron.com,2001-01-26T17:05:00+00:00,2001-01-26T17:05:00+00:00,100.0
+<11664637.1075856456555.JavaMail.evans@thyme>,<14649595.1075856522897.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
+<13741656.1075856225751.JavaMail.evans@thyme>,<14649595.1075856522897.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
+<221755.1075856395641.JavaMail.evans@thyme>,<14649595.1075856522897.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
 <22567395.1075856456578.JavaMail.evans@thyme>,<26881998.1075856522919.JavaMail.evans@thyme>,Re: Fwd: Re: ENRON-Resume Interview of James Valverde,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
 <2313905.1075856395619.JavaMail.evans@thyme>,<26881998.1075856522919.JavaMail.evans@thyme>,Re: Fwd: Re: ENRON-Resume Interview of James Valverde,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
 <861245.1075856225774.JavaMail.evans@thyme>,<26881998.1075856522919.JavaMail.evans@thyme>,Re: Fwd: Re: ENRON-Resume Interview of James Valverde,vince.kaminski@enron.com,2001-01-26T17:09:00+00:00,2001-01-26T17:09:00+00:00,100.0
@@ -29059,6 +28883,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <32874252.1075856076818.JavaMail.evans@thyme>,<2077880.1075856096597.JavaMail.evans@thyme>,James is coming...,sally.beck@enron.com,2001-02-02T16:29:00+00:00,2001-02-02T16:29:00+00:00,100.0
 <17763377.1075856599075.JavaMail.evans@thyme>,<24729178.1075856221305.JavaMail.evans@thyme>,Henwood Power Market Symposium- April 2001,hmason@hesinet.com,2001-02-02T16:30:00+00:00,2001-02-02T16:30:00+00:00,100.0
 <26308240.1075856399199.JavaMail.evans@thyme>,<24729178.1075856221305.JavaMail.evans@thyme>,Henwood Power Market Symposium- April 2001,hmason@hesinet.com,2001-02-02T16:30:00+00:00,2001-02-02T16:30:00+00:00,100.0
+<16145112.1075856398833.JavaMail.evans@thyme>,<15858755.1075856520909.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2001-02-02T16:41:00+00:00,100.0
+<26202852.1075856454588.JavaMail.evans@thyme>,<15858755.1075856520909.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2001-02-02T16:41:00+00:00,100.0
+<5546051.1075856221639.JavaMail.evans@thyme>,<15858755.1075856520909.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-02T16:41:00+00:00,2001-02-02T16:41:00+00:00,100.0
 <12003419.1075856398882.JavaMail.evans@thyme>,<7147647.1075856520862.JavaMail.evans@thyme>,Benchmarking,vince.kaminski@enron.com,2001-02-02T16:48:00+00:00,2001-02-02T16:48:00+00:00,100.0
 <2769954.1075856454541.JavaMail.evans@thyme>,<7147647.1075856520862.JavaMail.evans@thyme>,Benchmarking,vince.kaminski@enron.com,2001-02-02T16:48:00+00:00,2001-02-02T16:48:00+00:00,100.0
 <31338518.1075856221591.JavaMail.evans@thyme>,<7147647.1075856520862.JavaMail.evans@thyme>,Benchmarking,vince.kaminski@enron.com,2001-02-02T16:48:00+00:00,2001-02-02T16:48:00+00:00,100.0
@@ -29093,6 +28920,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <16249431.1075856035612.JavaMail.evans@thyme>,<1625851.1075856096507.JavaMail.evans@thyme>,Promotions Luncheon for Managers,sally.beck@enron.com,2001-02-02T17:27:00+00:00,2001-02-02T17:27:00+00:00,100.0
 <17975721.1075856076728.JavaMail.evans@thyme>,<1625851.1075856096507.JavaMail.evans@thyme>,Promotions Luncheon for Managers,sally.beck@enron.com,2001-02-02T17:27:00+00:00,2001-02-02T17:27:00+00:00,100.0
 <4066800.1075855946111.JavaMail.evans@thyme>,<1625851.1075856096507.JavaMail.evans@thyme>,Promotions Luncheon for Managers,sally.beck@enron.com,2001-02-02T17:27:00+00:00,2001-02-02T17:27:00+00:00,100.0
+<20976789.1075856399085.JavaMail.evans@thyme>,<17241832.1075856520687.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2001-02-02T17:35:00+00:00,100.0
+<23284999.1075856221415.JavaMail.evans@thyme>,<17241832.1075856520687.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2001-02-02T17:35:00+00:00,100.0
+<7561482.1075856454365.JavaMail.evans@thyme>,<17241832.1075856520687.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-02T17:35:00+00:00,2001-02-02T17:35:00+00:00,100.0
 <11740545.1075856221393.JavaMail.evans@thyme>,<25547673.1075856520665.JavaMail.evans@thyme>,another addition from Enron Tiger member,vince.kaminski@enron.com,2001-02-02T17:36:00+00:00,2001-02-02T17:36:00+00:00,100.0
 <17515356.1075856454344.JavaMail.evans@thyme>,<25547673.1075856520665.JavaMail.evans@thyme>,another addition from Enron Tiger member,vince.kaminski@enron.com,2001-02-02T17:36:00+00:00,2001-02-02T17:36:00+00:00,100.0
 <492407.1075856399107.JavaMail.evans@thyme>,<25547673.1075856520665.JavaMail.evans@thyme>,another addition from Enron Tiger member,vince.kaminski@enron.com,2001-02-02T17:36:00+00:00,2001-02-02T17:36:00+00:00,100.0
@@ -29537,6 +29367,17 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <10789161.1075856219395.JavaMail.evans@thyme>,<8470104.1075856519739.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-12T11:16:00+00:00,2001-02-12T11:16:00+00:00,100.0
 <24984359.1075856400690.JavaMail.evans@thyme>,<8470104.1075856519739.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-12T11:16:00+00:00,2001-02-12T11:16:00+00:00,100.0
 <25642771.1075856453425.JavaMail.evans@thyme>,<8470104.1075856519739.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-12T11:16:00+00:00,2001-02-12T11:16:00+00:00,100.0
+<11970890.1075856400713.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2001-02-12T11:17:00+00:00,100.0
+<14820333.1075856219373.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2001-02-12T11:17:00+00:00,100.0
+<29000045.1075856453404.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T11:17:00+00:00,2001-02-12T11:17:00+00:00,100.0
+<19756116.1075856519540.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2001-02-12T11:17:00+00:00,98.8
+<20673481.1075856453227.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2001-02-12T11:17:00+00:00,98.8
+<21048360.1075856400869.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2001-02-12T11:17:00+00:00,98.8
+<21984535.1075856219171.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-12T12:42:00+00:00,2001-02-12T11:17:00+00:00,98.8
+<22077333.1075856217321.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2001-02-12T11:17:00+00:00,96.2
+<2422259.1075856518629.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2001-02-12T11:17:00+00:00,96.2
+<29051681.1075856402247.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2001-02-12T11:17:00+00:00,96.2
+<5378342.1075856452302.JavaMail.evans@thyme>,<14167354.1075856519718.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-16T17:24:00+00:00,2001-02-12T11:17:00+00:00,96.2
 <10740661.1075856453382.JavaMail.evans@thyme>,<12786145.1075856519696.JavaMail.evans@thyme>,TradeSpark,vince.kaminski@enron.com,2001-02-12T11:19:00+00:00,2001-02-12T11:19:00+00:00,100.0
 <21452798.1075856219352.JavaMail.evans@thyme>,<12786145.1075856519696.JavaMail.evans@thyme>,TradeSpark,vince.kaminski@enron.com,2001-02-12T11:19:00+00:00,2001-02-12T11:19:00+00:00,100.0
 <2376152.1075856400735.JavaMail.evans@thyme>,<12786145.1075856519696.JavaMail.evans@thyme>,TradeSpark,vince.kaminski@enron.com,2001-02-12T11:19:00+00:00,2001-02-12T11:19:00+00:00,100.0
@@ -29843,6 +29684,17 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <32533516.1075849855549.JavaMail.evans@thyme>,<26679469.1075849822359.JavaMail.evans@thyme>,Assigned HR Reps.,hector.mcloughlin@enron.com,2001-02-16T16:08:00+00:00,2001-02-16T16:08:00+00:00,100.0
 <28290800.1075849843609.JavaMail.evans@thyme>,<13967178.1075849822388.JavaMail.evans@thyme>,University of Texas McCombs School of Business,richard.causey@enron.com,2001-02-16T16:10:00+00:00,2001-02-16T16:10:00+00:00,100.0
 <5331091.1075849830316.JavaMail.evans@thyme>,<13967178.1075849822388.JavaMail.evans@thyme>,University of Texas McCombs School of Business,richard.causey@enron.com,2001-02-16T16:10:00+00:00,2001-02-16T16:10:00+00:00,100.0
+<12863308.1075856518607.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,99.7
+<18610601.1075856217278.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,100.0
+<21069064.1075856402269.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,99.7
+<25149673.1075856452280.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,99.7
+<27520459.1075856217300.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,99.7
+<29019980.1075856452259.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,100.0
+<7854461.1075856402291.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,100.0
+<1444544.1075856217256.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2001-02-16T17:26:00+00:00,98.9
+<16444536.1075856452237.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2001-02-16T17:26:00+00:00,98.9
+<28645997.1075856518564.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2001-02-16T17:26:00+00:00,98.9
+<6795327.1075856402313.JavaMail.evans@thyme>,<14285406.1075856518585.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-16T17:27:00+00:00,2001-02-16T17:26:00+00:00,98.9
 <29852661.1075845518425.JavaMail.evans@thyme>,<31701911.1075845526181.JavaMail.evans@thyme>,Re: corporate directorship,sherri.sera@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,100.0
 <8231120.1075845486643.JavaMail.evans@thyme>,<31701911.1075845526181.JavaMail.evans@thyme>,Re: corporate directorship,sherri.sera@enron.com,2001-02-16T17:26:00+00:00,2001-02-16T17:26:00+00:00,100.0
 <27812436.1075845518448.JavaMail.evans@thyme>,<18093768.1075845526158.JavaMail.evans@thyme>,Corporate Executive Services,sherri.sera@enron.com,2001-02-16T17:31:00+00:00,2001-02-16T17:31:00+00:00,100.0
@@ -29901,6 +29753,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <16776288.1075856452082.JavaMail.evans@thyme>,<26350350.1075856518410.JavaMail.evans@thyme>,FW: EnronOnline Competitive Assessment by Wharton Project Team,vince.kaminski@enron.com,2001-02-19T17:50:00+00:00,2001-02-19T17:50:00+00:00,100.0
 <25448823.1075856216963.JavaMail.evans@thyme>,<26350350.1075856518410.JavaMail.evans@thyme>,FW: EnronOnline Competitive Assessment by Wharton Project Team,vince.kaminski@enron.com,2001-02-19T17:50:00+00:00,2001-02-19T17:50:00+00:00,100.0
 <25984724.1075856402586.JavaMail.evans@thyme>,<26350350.1075856518410.JavaMail.evans@thyme>,FW: EnronOnline Competitive Assessment by Wharton Project Team,vince.kaminski@enron.com,2001-02-19T17:50:00+00:00,2001-02-19T17:50:00+00:00,100.0
+<14332394.1075856402608.JavaMail.evans@thyme>,<27315079.1075856518387.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2001-02-19T18:05:00+00:00,100.0
+<7366439.1075856216941.JavaMail.evans@thyme>,<27315079.1075856518387.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2001-02-19T18:05:00+00:00,100.0
+<7655409.1075856452060.JavaMail.evans@thyme>,<27315079.1075856518387.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-19T18:05:00+00:00,2001-02-19T18:05:00+00:00,100.0
 <27994740.1075856216919.JavaMail.evans@thyme>,<10175563.1075856518366.JavaMail.evans@thyme>,AIESEC,vince.kaminski@enron.com,2001-02-19T18:27:00+00:00,2001-02-19T18:27:00+00:00,100.0
 <30847617.1075856402630.JavaMail.evans@thyme>,<10175563.1075856518366.JavaMail.evans@thyme>,AIESEC,vince.kaminski@enron.com,2001-02-19T18:27:00+00:00,2001-02-19T18:27:00+00:00,100.0
 <6918174.1075856452038.JavaMail.evans@thyme>,<10175563.1075856518366.JavaMail.evans@thyme>,AIESEC,vince.kaminski@enron.com,2001-02-19T18:27:00+00:00,2001-02-19T18:27:00+00:00,100.0
@@ -30233,9 +30088,15 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <6573835.1075856215941.JavaMail.evans@thyme>,<28057304.1075856517805.JavaMail.evans@thyme>,Review meeting,vince.kaminski@enron.com,2001-02-26T10:41:00+00:00,2001-02-26T10:41:00+00:00,100.0
 <11074407.1075854345759.JavaMail.evans@thyme>,<20609813.1075854197359.JavaMail.evans@thyme>,"HPL Nom for February 27, 2001",mjones7@txu.com,2001-02-26T10:44:00+00:00,2001-02-26T10:44:00+00:00,100.0
 <28201356.1075854292496.JavaMail.evans@thyme>,<20609813.1075854197359.JavaMail.evans@thyme>,"HPL Nom for February 27, 2001",mjones7@txu.com,2001-02-26T10:44:00+00:00,2001-02-26T10:44:00+00:00,100.0
+<10305902.1075856451460.JavaMail.evans@thyme>,<32959161.1075856517783.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2001-02-26T10:49:00+00:00,100.0
+<405244.1075856403448.JavaMail.evans@thyme>,<32959161.1075856517783.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2001-02-26T10:49:00+00:00,100.0
+<5055417.1075856215919.JavaMail.evans@thyme>,<32959161.1075856517783.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-02-26T10:49:00+00:00,2001-02-26T10:49:00+00:00,100.0
 <1062727.1075856451438.JavaMail.evans@thyme>,<17744463.1075856517762.JavaMail.evans@thyme>,rosters (Rice University),vince.kaminski@enron.com,2001-02-26T10:51:00+00:00,2001-02-26T10:51:00+00:00,100.0
 <20507894.1075856215897.JavaMail.evans@thyme>,<17744463.1075856517762.JavaMail.evans@thyme>,rosters (Rice University),vince.kaminski@enron.com,2001-02-26T10:51:00+00:00,2001-02-26T10:51:00+00:00,100.0
 <32952989.1075856403470.JavaMail.evans@thyme>,<17744463.1075856517762.JavaMail.evans@thyme>,rosters (Rice University),vince.kaminski@enron.com,2001-02-26T10:51:00+00:00,2001-02-26T10:51:00+00:00,100.0
+<24999613.1075856403492.JavaMail.evans@thyme>,<7256176.1075856517740.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2001-02-26T10:52:00+00:00,100.0
+<29760389.1075856215876.JavaMail.evans@thyme>,<7256176.1075856517740.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2001-02-26T10:52:00+00:00,100.0
+<5811745.1075856451417.JavaMail.evans@thyme>,<7256176.1075856517740.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-02-26T10:52:00+00:00,2001-02-26T10:52:00+00:00,100.0
 <11695012.1075856215854.JavaMail.evans@thyme>,<32370965.1075856517719.JavaMail.evans@thyme>,Re: MGMT 656: Energy Derivatives,vince.kaminski@enron.com,2001-02-26T10:56:00+00:00,2001-02-26T10:56:00+00:00,100.0
 <24470904.1075856451395.JavaMail.evans@thyme>,<32370965.1075856517719.JavaMail.evans@thyme>,Re: MGMT 656: Energy Derivatives,vince.kaminski@enron.com,2001-02-26T10:56:00+00:00,2001-02-26T10:56:00+00:00,100.0
 <1751009.1075856575423.JavaMail.evans@thyme>,<8572710.1075856517697.JavaMail.evans@thyme>,Re: Approval for Paulo Issler,vince.kaminski@enron.com,2001-02-26T11:00:00+00:00,2001-02-26T11:00:00+00:00,100.0
@@ -30583,6 +30444,17 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <17776736.1075856213451.JavaMail.evans@thyme>,<16651021.1075856516457.JavaMail.evans@thyme>,Re: Vlady Gorny,vince.kaminski@enron.com,2001-03-02T17:55:00+00:00,2001-03-02T17:55:00+00:00,100.0
 <655419.1075856450139.JavaMail.evans@thyme>,<16651021.1075856516457.JavaMail.evans@thyme>,Re: Vlady Gorny,vince.kaminski@enron.com,2001-03-02T17:55:00+00:00,2001-03-02T17:55:00+00:00,100.0
 <9904807.1075856405517.JavaMail.evans@thyme>,<16651021.1075856516457.JavaMail.evans@thyme>,Re: Vlady Gorny,vince.kaminski@enron.com,2001-03-02T17:55:00+00:00,2001-03-02T17:55:00+00:00,100.0
+<30220389.1075856450117.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2001-03-02T18:00:00+00:00,100.0
+<454253.1075856213429.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2001-03-02T18:00:00+00:00,100.0
+<6566779.1075856405540.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-02T18:00:00+00:00,2001-03-02T18:00:00+00:00,100.0
+<13567322.1075856449962.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<16256700.1075856405950.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<19442045.1075856516302.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<20366502.1075856212932.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<23630488.1075856449983.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<24569351.1075856405928.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<25020795.1075856212910.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
+<9548208.1075856516281.JavaMail.evans@thyme>,<22918306.1075856516435.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-05T12:05:00+00:00,2001-03-02T18:00:00+00:00,96.9
 <12574790.1075856583233.JavaMail.evans@thyme>,<10177958.1075856213385.JavaMail.evans@thyme>,Web Based Expense Report Implementation Deadline,enron.announcements@enron.com,2001-03-02T18:40:00+00:00,2001-03-02T18:40:00+00:00,100.0
 <7340724.1075856405563.JavaMail.evans@thyme>,<10177958.1075856213385.JavaMail.evans@thyme>,Web Based Expense Report Implementation Deadline,enron.announcements@enron.com,2001-03-02T18:40:00+00:00,2001-03-02T18:40:00+00:00,100.0
 <12324072.1075854293395.JavaMail.evans@thyme>,<11748686.1075854196439.JavaMail.evans@thyme>,EnronOptions Update!,enron.announcements@enron.com,2001-03-02T18:41:00+00:00,2001-03-02T18:41:00+00:00,100.0
@@ -30653,6 +30525,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <10156028.1075845503962.JavaMail.evans@thyme>,<5277274.1075845526039.JavaMail.evans@thyme>,MS150 Enron team sign up,sherri.sera@enron.com,2001-03-05T11:59:00+00:00,2001-03-05T11:59:00+00:00,100.0
 <1684763.1075845486998.JavaMail.evans@thyme>,<5277274.1075845526039.JavaMail.evans@thyme>,MS150 Enron team sign up,sherri.sera@enron.com,2001-03-05T11:59:00+00:00,2001-03-05T11:59:00+00:00,100.0
 <7466314.1075845518561.JavaMail.evans@thyme>,<5277274.1075845526039.JavaMail.evans@thyme>,MS150 Enron team sign up,sherri.sera@enron.com,2001-03-05T11:59:00+00:00,2001-03-05T11:59:00+00:00,100.0
+<1272549.1075856449940.JavaMail.evans@thyme>,<32774385.1075856516259.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2001-03-05T12:09:00+00:00,100.0
+<26185076.1075856405972.JavaMail.evans@thyme>,<32774385.1075856516259.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2001-03-05T12:09:00+00:00,100.0
+<30874680.1075856212889.JavaMail.evans@thyme>,<32774385.1075856516259.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-05T12:09:00+00:00,2001-03-05T12:09:00+00:00,100.0
 <26201846.1075856405996.JavaMail.evans@thyme>,<3885056.1075856516238.JavaMail.evans@thyme>,"Re: ""analytical"" var implementation in RisktRAC",vince.kaminski@enron.com,2001-03-05T12:19:00+00:00,2001-03-05T12:19:00+00:00,100.0
 <32422282.1075856212867.JavaMail.evans@thyme>,<3885056.1075856516238.JavaMail.evans@thyme>,"Re: ""analytical"" var implementation in RisktRAC",vince.kaminski@enron.com,2001-03-05T12:19:00+00:00,2001-03-05T12:19:00+00:00,100.0
 <32634141.1075856449919.JavaMail.evans@thyme>,<3885056.1075856516238.JavaMail.evans@thyme>,"Re: ""analytical"" var implementation in RisktRAC",vince.kaminski@enron.com,2001-03-05T12:19:00+00:00,2001-03-05T12:19:00+00:00,100.0
@@ -31093,6 +30968,16 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <12588116.1075856210215.JavaMail.evans@thyme>,<33275854.1075856514970.JavaMail.evans@thyme>,Paper,vince.kaminski@enron.com,2001-03-12T08:13:00+00:00,2001-03-12T08:13:00+00:00,100.0
 <17651716.1075856448646.JavaMail.evans@thyme>,<33275854.1075856514970.JavaMail.evans@thyme>,Paper,vince.kaminski@enron.com,2001-03-12T08:13:00+00:00,2001-03-12T08:13:00+00:00,100.0
 <22221116.1075856408187.JavaMail.evans@thyme>,<33275854.1075856514970.JavaMail.evans@thyme>,Paper,vince.kaminski@enron.com,2001-03-12T08:13:00+00:00,2001-03-12T08:13:00+00:00,100.0
+<20107356.1075856448623.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2001-03-12T08:14:00+00:00,100.0
+<7942650.1075856210193.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2001-03-12T08:14:00+00:00,100.0
+<9472039.1075856408209.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:14:00+00:00,2001-03-12T08:14:00+00:00,100.0
+<10672162.1075856514927.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:14:00+00:00,99.7
+<14348057.1075856408231.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:14:00+00:00,99.7
+<20763612.1075856210172.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:14:00+00:00,99.7
+<9105034.1075856448601.JavaMail.evans@thyme>,<18596968.1075856514948.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:14:00+00:00,99.7
+<25652849.1075856408253.JavaMail.evans@thyme>,<17252009.1075856514906.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:15:00+00:00,100.0
+<29029702.1075856210150.JavaMail.evans@thyme>,<17252009.1075856514906.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:15:00+00:00,100.0
+<32367082.1075856448580.JavaMail.evans@thyme>,<17252009.1075856514906.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-12T08:15:00+00:00,2001-03-12T08:15:00+00:00,100.0
 <13280276.1075854294478.JavaMail.evans@thyme>,<2187743.1075854195291.JavaMail.evans@thyme>,On-Call Notes,robert.cotten@enron.com,2001-03-12T08:43:00+00:00,2001-03-12T08:43:00+00:00,100.0
 <14145706.1075854320017.JavaMail.evans@thyme>,<2187743.1075854195291.JavaMail.evans@thyme>,On-Call Notes,robert.cotten@enron.com,2001-03-12T08:43:00+00:00,2001-03-12T08:43:00+00:00,100.0
 <22717928.1075840437724.JavaMail.evans@thyme>,<2187743.1075854195291.JavaMail.evans@thyme>,On-Call Notes,robert.cotten@enron.com,2001-03-12T19:43:00+00:00,2001-03-12T08:43:00+00:00,100.0
@@ -31517,6 +31402,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <7310668.1075856410681.JavaMail.evans@thyme>,<30115634.1075856207700.JavaMail.evans@thyme>,Fwd: Invitation to the 20th Annual Rutgers Conference,vkaminski@aol.com,2001-03-18T23:00:00+00:00,2001-03-18T23:00:00+00:00,100.0
 <27629722.1075856410705.JavaMail.evans@thyme>,<18678635.1075856207678.JavaMail.evans@thyme>,Fwd: FW: Understanding & Applying Financial Mathematics to Energy Derivatives,vkaminski@aol.com,2001-03-18T23:01:00+00:00,2001-03-18T23:01:00+00:00,100.0
 <6749465.1075856629170.JavaMail.evans@thyme>,<18678635.1075856207678.JavaMail.evans@thyme>,Fwd: FW: Understanding & Applying Financial Mathematics to Energy Derivatives,vkaminski@aol.com,2001-03-18T23:01:00+00:00,2001-03-18T23:01:00+00:00,100.0
+<12954997.1075856410728.JavaMail.evans@thyme>,<26040761.1075856514305.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2001-03-19T07:46:00+00:00,100.0
+<15345870.1075856207654.JavaMail.evans@thyme>,<26040761.1075856514305.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2001-03-19T07:46:00+00:00,100.0
+<31622160.1075856447976.JavaMail.evans@thyme>,<26040761.1075856514305.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-19T07:46:00+00:00,2001-03-19T07:46:00+00:00,100.0
+<22692629.1075856207632.JavaMail.evans@thyme>,<30425538.1075856514284.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2001-03-19T07:47:00+00:00,100.0
+<2697096.1075856447952.JavaMail.evans@thyme>,<30425538.1075856514284.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2001-03-19T07:47:00+00:00,100.0
+<33494833.1075856410750.JavaMail.evans@thyme>,<30425538.1075856514284.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-19T07:47:00+00:00,2001-03-19T07:47:00+00:00,100.0
 <1183252.1075856207602.JavaMail.evans@thyme>,<445023.1075856514255.JavaMail.evans@thyme>,RICE/ENRON FINANCE SEMINAR SERIES,vince.kaminski@enron.com,2001-03-19T07:48:00+00:00,2001-03-19T07:48:00+00:00,100.0
 <20831179.1075856447923.JavaMail.evans@thyme>,<445023.1075856514255.JavaMail.evans@thyme>,RICE/ENRON FINANCE SEMINAR SERIES,vince.kaminski@enron.com,2001-03-19T07:48:00+00:00,2001-03-19T07:48:00+00:00,100.0
 <4954667.1075856410773.JavaMail.evans@thyme>,<445023.1075856514255.JavaMail.evans@thyme>,RICE/ENRON FINANCE SEMINAR SERIES,vince.kaminski@enron.com,2001-03-19T07:48:00+00:00,2001-03-19T07:48:00+00:00,100.0
@@ -31784,10 +31675,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <24539493.1075854296415.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-21T10:07:00+00:00,2001-03-21T10:07:00+00:00,100.0
 <9992265.1075854345062.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-21T10:07:00+00:00,2001-03-21T10:07:00+00:00,100.0
 <24896978.1075845114424.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-21T21:07:00+00:00,2001-03-21T10:07:00+00:00,100.0
-<12101487.1075854345018.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T11:19:00+00:00,2001-03-21T10:07:00+00:00,95.8
-<21358488.1075854192883.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T11:19:00+00:00,2001-03-21T10:07:00+00:00,95.8
-<9861821.1075854296786.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T11:19:00+00:00,2001-03-21T10:07:00+00:00,95.8
-<5341677.1075845114377.JavaMail.evans@thyme>,<14991889.1075854193250.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T22:19:00+00:00,2001-03-21T10:07:00+00:00,95.8
 <17022853.1075849845967.JavaMail.evans@thyme>,<17702283.1075849824866.JavaMail.evans@thyme>,FW: Fundamental Operating Standards,beth.apollo@enron.com,2001-03-21T10:09:00+00:00,2001-03-21T10:09:00+00:00,100.0
 <3174835.1075849829324.JavaMail.evans@thyme>,<17702283.1075849824866.JavaMail.evans@thyme>,FW: Fundamental Operating Standards,beth.apollo@enron.com,2001-03-21T10:09:00+00:00,2001-03-21T10:09:00+00:00,100.0
 <2172066.1075854296369.JavaMail.evans@thyme>,<19669367.1075854193296.JavaMail.evans@thyme>,Rough list,mary.poorman@enron.com,2001-03-21T10:09:00+00:00,2001-03-21T10:09:00+00:00,100.0
@@ -31953,6 +31840,9 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <2731614.1075840288578.JavaMail.evans@thyme>,<25162319.1075840296545.JavaMail.evans@thyme>,"REMOVE FROM E-MAIL ADDRESSES - Re: New NBR Publication on ""Japan's Energy Angst""",rosalee.fleming@enron.com,2001-03-22T09:42:00+00:00,2001-03-22T09:42:00+00:00,100.0
 <2503386.1075856618600.JavaMail.evans@thyme>,<29152258.1075856205114.JavaMail.evans@thyme>,Re: Summer internship,jinbaek@ieor.berkeley.edu,2001-03-22T10:18:00+00:00,2001-03-22T10:18:00+00:00,100.0
 <28099932.1075856412780.JavaMail.evans@thyme>,<29152258.1075856205114.JavaMail.evans@thyme>,Re: Summer internship,jinbaek@ieor.berkeley.edu,2001-03-22T10:18:00+00:00,2001-03-22T10:18:00+00:00,100.0
+<12101487.1075854345018.JavaMail.evans@thyme>,<21358488.1075854192883.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T11:19:00+00:00,2001-03-22T11:19:00+00:00,100.0
+<9861821.1075854296786.JavaMail.evans@thyme>,<21358488.1075854192883.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T11:19:00+00:00,2001-03-22T11:19:00+00:00,100.0
+<5341677.1075845114377.JavaMail.evans@thyme>,<21358488.1075854192883.JavaMail.evans@thyme>,"HPL Nom for March 22, 2001",davila1@txu.com,2001-03-22T22:19:00+00:00,2001-03-22T11:19:00+00:00,100.0
 <16307199.1075856618575.JavaMail.evans@thyme>,<22186350.1075856205059.JavaMail.evans@thyme>,Referral,matthew.frank@enron.com,2001-03-22T12:26:00+00:00,2001-03-22T12:26:00+00:00,100.0
 <30485577.1075856412804.JavaMail.evans@thyme>,<22186350.1075856205059.JavaMail.evans@thyme>,Referral,matthew.frank@enron.com,2001-03-22T12:26:00+00:00,2001-03-22T12:26:00+00:00,100.0
 <7776694.1075840288605.JavaMail.evans@thyme>,<16589396.1075840296569.JavaMail.evans@thyme>,REMOVE FROM E-MAIL LIST!!! Re: Dornbusch on Income Inequality and Pricing AIDS Medications to a 	Human Scale,rosalee.fleming@enron.com,2001-03-22T12:29:00+00:00,2001-03-22T12:29:00+00:00,100.0
@@ -32123,6 +32013,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <10937431.1075856446031.JavaMail.evans@thyme>,<25668739.1075856512323.JavaMail.evans@thyme>,Re: Request,vince.kaminski@enron.com,2001-03-23T18:03:00+00:00,2001-03-23T18:03:00+00:00,100.0
 <16100020.1075856204242.JavaMail.evans@thyme>,<25668739.1075856512323.JavaMail.evans@thyme>,Re: Request,vince.kaminski@enron.com,2001-03-23T18:03:00+00:00,2001-03-23T18:03:00+00:00,100.0
 <19716371.1075856413527.JavaMail.evans@thyme>,<25668739.1075856512323.JavaMail.evans@thyme>,Re: Request,vince.kaminski@enron.com,2001-03-23T18:03:00+00:00,2001-03-23T18:03:00+00:00,100.0
+<22805133.1075856413594.JavaMail.evans@thyme>,<16590078.1075856512302.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
+<23571114.1075856204220.JavaMail.evans@thyme>,<16590078.1075856512302.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
+<272168.1075856446009.JavaMail.evans@thyme>,<16590078.1075856512302.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
+<10691036.1075856445986.JavaMail.evans@thyme>,<20895893.1075856512280.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
+<27161073.1075856413616.JavaMail.evans@thyme>,<20895893.1075856512280.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
+<9001425.1075856204199.JavaMail.evans@thyme>,<20895893.1075856512280.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-23T18:04:00+00:00,2001-03-23T18:04:00+00:00,100.0
 <25688585.1075856204151.JavaMail.evans@thyme>,<4257686.1075856512258.JavaMail.evans@thyme>,Re: Summer internship,vince.kaminski@enron.com,2001-03-23T18:05:00+00:00,2001-03-23T18:05:00+00:00,100.0
 <27898248.1075856632291.JavaMail.evans@thyme>,<4257686.1075856512258.JavaMail.evans@thyme>,Re: Summer internship,vince.kaminski@enron.com,2001-03-23T18:05:00+00:00,2001-03-23T18:05:00+00:00,100.0
 <29416415.1075856445964.JavaMail.evans@thyme>,<4257686.1075856512258.JavaMail.evans@thyme>,Re: Summer internship,vince.kaminski@enron.com,2001-03-23T18:05:00+00:00,2001-03-23T18:05:00+00:00,100.0
@@ -32624,6 +32520,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <1982013.1075856042665.JavaMail.evans@thyme>,<20455803.1075856093852.JavaMail.evans@thyme>,Telephone Outage Enron Houston,sally.beck@enron.com,2001-03-30T16:50:00+00:00,2001-03-30T16:50:00+00:00,100.0
 <21807943.1075855938029.JavaMail.evans@thyme>,<20455803.1075856093852.JavaMail.evans@thyme>,Telephone Outage Enron Houston,sally.beck@enron.com,2001-03-30T16:50:00+00:00,2001-03-30T16:50:00+00:00,100.0
 <29698733.1075845074000.JavaMail.evans@thyme>,<20455803.1075856093852.JavaMail.evans@thyme>,Telephone Outage Enron Houston,sally.beck@enron.com,2001-03-31T03:50:00+00:00,2001-03-30T16:50:00+00:00,100.0
+<12136242.1075856414864.JavaMail.evans@thyme>,<17903968.1075856511767.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2001-03-30T17:50:00+00:00,100.0
+<19708637.1075856445467.JavaMail.evans@thyme>,<17903968.1075856511767.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2001-03-30T17:50:00+00:00,100.0
+<25319317.1075856202746.JavaMail.evans@thyme>,<17903968.1075856511767.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-03-30T17:50:00+00:00,2001-03-30T17:50:00+00:00,100.0
+<16182780.1075856202725.JavaMail.evans@thyme>,<15876881.1075856511746.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2001-03-30T17:52:00+00:00,100.0
+<29995086.1075856414886.JavaMail.evans@thyme>,<15876881.1075856511746.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2001-03-30T17:52:00+00:00,100.0
+<5215915.1075856445445.JavaMail.evans@thyme>,<15876881.1075856511746.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-03-30T17:52:00+00:00,2001-03-30T17:52:00+00:00,100.0
 <14247018.1075856445424.JavaMail.evans@thyme>,<10114989.1075856511725.JavaMail.evans@thyme>,Contingent Call Options Trading Limit,vince.kaminski@enron.com,2001-03-30T17:54:00+00:00,2001-03-30T17:54:00+00:00,100.0
 <30975974.1075856202703.JavaMail.evans@thyme>,<10114989.1075856511725.JavaMail.evans@thyme>,Contingent Call Options Trading Limit,vince.kaminski@enron.com,2001-03-30T17:54:00+00:00,2001-03-30T17:54:00+00:00,100.0
 <5625056.1075856414908.JavaMail.evans@thyme>,<10114989.1075856511725.JavaMail.evans@thyme>,Contingent Call Options Trading Limit,vince.kaminski@enron.com,2001-03-30T17:54:00+00:00,2001-03-30T17:54:00+00:00,100.0
@@ -33509,6 +33411,16 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <12759916.1075856197940.JavaMail.evans@thyme>,<13395813.1075856508996.JavaMail.evans@thyme>,Weather Derivates - Project report,vince.kaminski@enron.com,2001-04-09T13:23:00+00:00,2001-04-09T13:23:00+00:00,100.0
 <23674694.1075856442665.JavaMail.evans@thyme>,<13395813.1075856508996.JavaMail.evans@thyme>,Weather Derivates - Project report,vince.kaminski@enron.com,2001-04-09T13:23:00+00:00,2001-04-09T13:23:00+00:00,100.0
 <27907452.1075856418778.JavaMail.evans@thyme>,<13395813.1075856508996.JavaMail.evans@thyme>,Weather Derivates - Project report,vince.kaminski@enron.com,2001-04-09T13:23:00+00:00,2001-04-09T13:23:00+00:00,100.0
+<16712030.1075856418800.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2001-04-09T13:28:00+00:00,100.0
+<22516787.1075856197918.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2001-04-09T13:28:00+00:00,100.0
+<25288517.1075856442643.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:28:00+00:00,2001-04-09T13:28:00+00:00,100.0
+<1846229.1075856442621.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2001-04-09T13:28:00+00:00,99.7
+<2077653.1075856197897.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2001-04-09T13:28:00+00:00,99.7
+<28505893.1075856418822.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2001-04-09T13:28:00+00:00,99.7
+<4781363.1075856508952.JavaMail.evans@thyme>,<31065648.1075856508973.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-09T13:32:00+00:00,2001-04-09T13:28:00+00:00,99.7
+<26578939.1075856197876.JavaMail.evans@thyme>,<20905172.1075856508931.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2001-04-09T13:33:00+00:00,100.0
+<32757955.1075856442599.JavaMail.evans@thyme>,<20905172.1075856508931.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2001-04-09T13:33:00+00:00,100.0
+<8378221.1075856418845.JavaMail.evans@thyme>,<20905172.1075856508931.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-09T13:33:00+00:00,2001-04-09T13:33:00+00:00,100.0
 <13499500.1075854355758.JavaMail.evans@thyme>,<23676224.1075854189499.JavaMail.evans@thyme>,Gathering Meters Adjustments,robert.cotten@enron.com,2001-04-09T13:56:00+00:00,2001-04-09T13:56:00+00:00,100.0
 <17741521.1075854299995.JavaMail.evans@thyme>,<23676224.1075854189499.JavaMail.evans@thyme>,Gathering Meters Adjustments,robert.cotten@enron.com,2001-04-09T13:56:00+00:00,2001-04-09T13:56:00+00:00,100.0
 <21703293.1075845111930.JavaMail.evans@thyme>,<23676224.1075854189499.JavaMail.evans@thyme>,Gathering Meters Adjustments,robert.cotten@enron.com,2001-04-09T23:56:00+00:00,2001-04-09T13:56:00+00:00,100.0
@@ -34027,6 +33939,14 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <19891081.1075856194247.JavaMail.evans@thyme>,<23147987.1075856507214.JavaMail.evans@thyme>,Fwd: It's Started,vince.kaminski@enron.com,2001-04-13T08:43:00+00:00,2001-04-13T08:43:00+00:00,100.0
 <30541401.1075856440873.JavaMail.evans@thyme>,<23147987.1075856507214.JavaMail.evans@thyme>,Fwd: It's Started,vince.kaminski@enron.com,2001-04-13T08:43:00+00:00,2001-04-13T08:43:00+00:00,100.0
 <15774030.1075858467879.JavaMail.evans@thyme>,<23147987.1075856507214.JavaMail.evans@thyme>,Fwd: It's Started,vince.kaminski@enron.com,2001-04-13T18:43:00+00:00,2001-04-13T08:43:00+00:00,100.0
+<10910498.1075856421787.JavaMail.evans@thyme>,<22397618.1075856507192.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2001-04-13T08:51:00+00:00,100.0
+<19760106.1075856194224.JavaMail.evans@thyme>,<22397618.1075856507192.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2001-04-13T08:51:00+00:00,100.0
+<7316831.1075856440851.JavaMail.evans@thyme>,<22397618.1075856507192.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T08:51:00+00:00,2001-04-13T08:51:00+00:00,100.0
+<557464.1075858467939.JavaMail.evans@thyme>,<22397618.1075856507192.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-13T18:51:00+00:00,2001-04-13T08:51:00+00:00,100.0
+<14858799.1075856194203.JavaMail.evans@thyme>,<27240975.1075856507171.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2001-04-13T08:52:00+00:00,100.0
+<15381130.1075856440829.JavaMail.evans@thyme>,<27240975.1075856507171.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2001-04-13T08:52:00+00:00,100.0
+<31325361.1075856421810.JavaMail.evans@thyme>,<27240975.1075856507171.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T08:52:00+00:00,2001-04-13T08:52:00+00:00,100.0
+<7626680.1075858467961.JavaMail.evans@thyme>,<27240975.1075856507171.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-13T18:52:00+00:00,2001-04-13T08:52:00+00:00,100.0
 <16315259.1075856421833.JavaMail.evans@thyme>,<21955908.1075856194165.JavaMail.evans@thyme>,option visualization,zimin.lu@enron.com,2001-04-13T09:51:00+00:00,2001-04-13T09:51:00+00:00,100.0
 <20219525.1075856582571.JavaMail.evans@thyme>,<21955908.1075856194165.JavaMail.evans@thyme>,option visualization,zimin.lu@enron.com,2001-04-13T09:51:00+00:00,2001-04-13T09:51:00+00:00,100.0
 <9870290.1075840777454.JavaMail.evans@thyme>,<21955908.1075856194165.JavaMail.evans@thyme>,option visualization,zimin.lu@enron.com,2001-04-13T19:51:00+00:00,2001-04-13T09:51:00+00:00,99.9
@@ -34697,6 +34617,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <118477.1075856617975.JavaMail.evans@thyme>,<21300984.1075856190124.JavaMail.evans@thyme>,RE: [No Subject],vasant.shanbhogue@enron.com,2001-04-23T16:28:00+00:00,2001-04-23T16:28:00+00:00,100.0
 <7463443.1075856425345.JavaMail.evans@thyme>,<21300984.1075856190124.JavaMail.evans@thyme>,RE: [No Subject],vasant.shanbhogue@enron.com,2001-04-23T16:28:00+00:00,2001-04-23T16:28:00+00:00,100.0
 <13157950.1075840786047.JavaMail.evans@thyme>,<21300984.1075856190124.JavaMail.evans@thyme>,RE: [No Subject],vasant.shanbhogue@enron.com,2001-04-24T02:28:00+00:00,2001-04-23T16:28:00+00:00,100.0
+<11101561.1075856190102.JavaMail.evans@thyme>,<24359914.1075856502752.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2001-04-23T16:33:00+00:00,100.0
+<11623157.1075856425367.JavaMail.evans@thyme>,<24359914.1075856502752.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2001-04-23T16:33:00+00:00,100.0
+<33171485.1075856439384.JavaMail.evans@thyme>,<24359914.1075856502752.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-23T16:33:00+00:00,2001-04-23T16:33:00+00:00,100.0
+<30056632.1075856425389.JavaMail.evans@thyme>,<20848440.1075856502730.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2001-04-23T16:35:00+00:00,100.0
+<30939735.1075856190080.JavaMail.evans@thyme>,<20848440.1075856502730.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2001-04-23T16:35:00+00:00,100.0
+<5847596.1075856439363.JavaMail.evans@thyme>,<20848440.1075856502730.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-23T16:35:00+00:00,2001-04-23T16:35:00+00:00,100.0
 <16550031.1075856048061.JavaMail.evans@thyme>,<22280286.1075855932370.JavaMail.evans@thyme>,Status Report Template,fred.philipson@enron.com,2001-04-23T16:49:00+00:00,2001-04-23T16:49:00+00:00,100.0
 <31134111.1075845070162.JavaMail.evans@thyme>,<22280286.1075855932370.JavaMail.evans@thyme>,Status Report Template,fred.philipson@enron.com,2001-04-24T02:49:00+00:00,2001-04-23T16:49:00+00:00,100.0
 <23687712.1075856048084.JavaMail.evans@thyme>,<32657352.1075855932348.JavaMail.evans@thyme>,Operational Issues,rick.buy@enron.com,2001-04-23T16:55:00+00:00,2001-04-23T16:55:00+00:00,100.0
@@ -35087,6 +35013,12 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <16654349.1075856428836.JavaMail.evans@thyme>,<13906671.1075856500875.JavaMail.evans@thyme>,,vince.kaminski@enron.com,2001-04-27T18:00:00+00:00,2001-04-27T18:00:00+00:00,100.0
 <21313839.1075858470991.JavaMail.evans@thyme>,<13906671.1075856500875.JavaMail.evans@thyme>,,vince.kaminski@enron.com,2001-04-28T04:00:00+00:00,2001-04-27T18:00:00+00:00,100.0
 <21786316.1075856428814.JavaMail.evans@thyme>,<30980423.1075856185804.JavaMail.evans@thyme>,Slides for SIAM Workshop,yliao2@mail.uh.edu,2001-04-27T18:00:00+00:00,2001-04-27T18:00:00+00:00,100.0
+<19811499.1075856185761.JavaMail.evans@thyme>,<24022183.1075856500854.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
+<32140117.1075856428859.JavaMail.evans@thyme>,<24022183.1075856500854.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
+<4324941.1075856437472.JavaMail.evans@thyme>,<24022183.1075856500854.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
+<19642310.1075856185739.JavaMail.evans@thyme>,<24599760.1075856500833.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
+<19700597.1075856428881.JavaMail.evans@thyme>,<24599760.1075856500833.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
+<7606753.1075856437450.JavaMail.evans@thyme>,<24599760.1075856500833.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-04-27T18:01:00+00:00,2001-04-27T18:01:00+00:00,100.0
 <24846344.1075856437429.JavaMail.evans@thyme>,<19578708.1075856500811.JavaMail.evans@thyme>,Re: Short Term Private Firm Model: Static historical snapshot+performance data for model development,vince.kaminski@enron.com,2001-04-27T18:02:00+00:00,2001-04-27T18:02:00+00:00,100.0
 <26355752.1075856428905.JavaMail.evans@thyme>,<19578708.1075856500811.JavaMail.evans@thyme>,Re: Short Term Private Firm Model: Static historical snapshot+performance data for model development,vince.kaminski@enron.com,2001-04-27T18:02:00+00:00,2001-04-27T18:02:00+00:00,100.0
 <7529803.1075856185718.JavaMail.evans@thyme>,<19578708.1075856500811.JavaMail.evans@thyme>,Re: Short Term Private Firm Model: Static historical snapshot+performance data for model development,vince.kaminski@enron.com,2001-04-27T18:02:00+00:00,2001-04-27T18:02:00+00:00,100.0
@@ -35848,6 +35780,14 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <3345088.1075856611583.JavaMail.evans@thyme>,<10090033.1075856498673.JavaMail.evans@thyme>,Tony Hamilton,vince.kaminski@enron.com,2001-05-07T12:12:00+00:00,2001-05-07T12:12:00+00:00,100.0
 <7631254.1075856434597.JavaMail.evans@thyme>,<10090033.1075856498673.JavaMail.evans@thyme>,Tony Hamilton,vince.kaminski@enron.com,2001-05-07T12:12:00+00:00,2001-05-07T12:12:00+00:00,100.0
 <29984605.1075863413111.JavaMail.evans@thyme>,<10090033.1075856498673.JavaMail.evans@thyme>,Tony Hamilton,vince.kaminski@enron.com,2001-05-07T22:12:00+00:00,2001-05-07T12:12:00+00:00,100.0
+<1269846.1075856435257.JavaMail.evans@thyme>,<18739334.1075856498651.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2001-05-07T12:27:00+00:00,100.0
+<17025544.1075856434642.JavaMail.evans@thyme>,<18739334.1075856498651.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2001-05-07T12:27:00+00:00,100.0
+<3336331.1075856179106.JavaMail.evans@thyme>,<18739334.1075856498651.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T12:27:00+00:00,2001-05-07T12:27:00+00:00,100.0
+<15689141.1075858473221.JavaMail.evans@thyme>,<18739334.1075856498651.JavaMail.evans@thyme>,Btu Weekly,vince.kaminski@enron.com,2001-05-07T22:27:00+00:00,2001-05-07T12:27:00+00:00,100.0
+<1768935.1075856435236.JavaMail.evans@thyme>,<27897591.1075856498629.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2001-05-07T12:28:00+00:00,100.0
+<29685668.1075856434666.JavaMail.evans@thyme>,<27897591.1075856498629.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2001-05-07T12:28:00+00:00,100.0
+<30945262.1075856179085.JavaMail.evans@thyme>,<27897591.1075856498629.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T12:28:00+00:00,2001-05-07T12:28:00+00:00,100.0
+<16667304.1075858473243.JavaMail.evans@thyme>,<27897591.1075856498629.JavaMail.evans@thyme>,Btu's Weekly Power Report,vince.kaminski@enron.com,2001-05-07T22:28:00+00:00,2001-05-07T12:28:00+00:00,100.0
 <5085739.1075845505877.JavaMail.evans@thyme>,<22060009.1075845490262.JavaMail.evans@thyme>,PEP user id./password,sherri.sera@enron.com,2001-05-07T12:29:00+00:00,2001-05-07T12:29:00+00:00,100.0
 <22306718.1075856434711.JavaMail.evans@thyme>,<21005994.1075856179029.JavaMail.evans@thyme>,Another Bet,david.port@enron.com,2001-05-07T12:57:00+00:00,2001-05-07T12:57:00+00:00,100.0
 <2749039.1075856641181.JavaMail.evans@thyme>,<21005994.1075856179029.JavaMail.evans@thyme>,Another Bet,david.port@enron.com,2001-05-07T12:57:00+00:00,2001-05-07T12:57:00+00:00,100.0
@@ -36049,10 +35989,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <24045228.1075852660093.JavaMail.evans@thyme>,<4292637.1075845491534.JavaMail.evans@thyme>,Crown Energy,richard.lydecker@enron.com,2001-05-12T03:14:00+00:00,2001-05-11T17:14:00+00:00,100.0
 <10408698.1075845507129.JavaMail.evans@thyme>,<4333372.1075845491560.JavaMail.evans@thyme>,Enron In Action 05.14.01,enron.announcements@enron.com,2001-05-11T17:27:00+00:00,2001-05-11T17:27:00+00:00,100.0
 <22676845.1075845514432.JavaMail.evans@thyme>,<4333372.1075845491560.JavaMail.evans@thyme>,Enron In Action 05.14.01,enron.announcements@enron.com,2001-05-11T17:27:00+00:00,2001-05-11T17:27:00+00:00,100.0
-<11135868.1075858474129.JavaMail.evans@thyme>,<27477066.1075858474158.JavaMail.evans@thyme>,FW: Btu's Weekly Power Report,kaminski@enron.com,2001-05-29T13:04:37+00:00,2001-05-11T21:38:55+00:00,97.1
-<29039111.1075858474100.JavaMail.evans@thyme>,<27477066.1075858474158.JavaMail.evans@thyme>,FW: Btu's Weekly Power Report,kaminski@enron.com,2001-06-04T15:52:54+00:00,2001-05-11T21:38:55+00:00,97.5
-<32880731.1075858474041.JavaMail.evans@thyme>,<18516858.1075858474071.JavaMail.evans@thyme>,FW: Btu Weekly,kaminski@enron.com,2001-05-21T18:46:10+00:00,2001-05-11T21:45:07+00:00,99.0
-<33145118.1075858474018.JavaMail.evans@thyme>,<18516858.1075858474071.JavaMail.evans@thyme>,FW: Btu Weekly,kaminski@enron.com,2001-05-29T13:03:54+00:00,2001-05-11T21:45:07+00:00,97.8
 <11932109.1075856564848.JavaMail.evans@thyme>,<6658349.1075856195317.JavaMail.evans@thyme>,Re: got a hold of Fiona Grant,julie@lacimagroup.com,2001-05-11T23:13:00+00:00,2001-05-11T23:13:00+00:00,100.0
 <4844980.1075856420963.JavaMail.evans@thyme>,<6658349.1075856195317.JavaMail.evans@thyme>,Re: got a hold of Fiona Grant,julie@lacimagroup.com,2001-05-11T23:13:00+00:00,2001-05-11T23:13:00+00:00,100.0
 <13323698.1075845514405.JavaMail.evans@thyme>,<17876302.1075845491695.JavaMail.evans@thyme>,Remote control your air-conditioner and heater,enron.announcements@enron.com,2001-05-13T19:33:00+00:00,2001-05-13T19:33:00+00:00,100.0
@@ -36382,7 +36318,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <5396397.1075852211172.JavaMail.evans@thyme>,<28452652.1075860776615.JavaMail.evans@thyme>,Moving the list...,rtackett@abacustech.net,2001-06-28T16:54:04+00:00,2001-06-28T16:54:04+00:00,100.0
 <13510337.1075852211148.JavaMail.evans@thyme>,<19513530.1075860776637.JavaMail.evans@thyme>,Your CDNOW Username,manager@cdnow.com,2001-06-28T21:04:43+00:00,2001-06-28T21:04:43+00:00,100.0
 <21338923.1075852211122.JavaMail.evans@thyme>,<2886009.1075860776686.JavaMail.evans@thyme>,New tax law update,byronellis@usa.net,2001-06-30T15:24:12+00:00,2001-06-30T15:24:12+00:00,100.0
-<28058935.1075852198073.JavaMail.evans@thyme>,<10278012.1075852653132.JavaMail.evans@thyme>,Supervisor Evaluation Forms,perfmgmt@enron.com,2001-07-13T20:22:48+00:00,2001-07-03T01:03:39+00:00,97.6
 <15627528.1075852211073.JavaMail.evans@thyme>,<19007711.1075860776710.JavaMail.evans@thyme>,Your Order with Amazon.com (#102-6820014-8227326),auto-confirm@amazon.com,2001-07-09T17:53:19+00:00,2001-07-09T17:53:19+00:00,100.0
 <12380952.1075852211049.JavaMail.evans@thyme>,<24417840.1075860776734.JavaMail.evans@thyme>,July 4th Pictures,rtackett@abacustech.net,2001-07-09T22:31:39+00:00,2001-07-09T22:31:39+00:00,100.0
 <16164042.1075852211026.JavaMail.evans@thyme>,<19943165.1075860776756.JavaMail.evans@thyme>,Your Amazon.com order (#102-6820014-8227326),orders@amazon.com,2001-07-13T17:11:35+00:00,2001-07-13T17:11:35+00:00,100.0
@@ -36657,12 +36592,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <15602630.1075859094920.JavaMail.evans@thyme>,<176236.1075860778182.JavaMail.evans@thyme>,From your clerk. Its been great!,jason.panos@enron.com,2001-12-07T15:46:46+00:00,2001-12-07T15:46:46+00:00,100.0
 <16928447.1075855467824.JavaMail.evans@thyme>,<16488866.1075840775601.JavaMail.evans@thyme>,Research Group Power Point Presentations,j.kaminski@enron.com,2001-12-07T20:30:13+00:00,2001-12-07T20:30:13+00:00,100.0
 <25344654.1075855465847.JavaMail.evans@thyme>,<16488866.1075840775601.JavaMail.evans@thyme>,Research Group Power Point Presentations,j.kaminski@enron.com,2001-12-07T20:30:13+00:00,2001-12-07T20:30:13+00:00,100.0
-<9302128.1075840794640.JavaMail.evans@thyme>,<31458351.1075840795483.JavaMail.evans@thyme>,FW: Btu Weekly,j.kaminski@enron.com,2001-12-14T23:39:51+00:00,2001-12-07T22:46:14+00:00,97.7
-<9061306.1075840794267.JavaMail.evans@thyme>,<31458351.1075840795483.JavaMail.evans@thyme>,FW: Btu Weekly,j.kaminski@enron.com,2001-12-26T15:30:23+00:00,2001-12-07T22:46:14+00:00,94.5
-<8026821.1075840793150.JavaMail.evans@thyme>,<31458351.1075840795483.JavaMail.evans@thyme>,FW: Btu Weekly,j.kaminski@enron.com,2001-12-31T15:56:07+00:00,2001-12-07T22:46:14+00:00,94.9
-<10772720.1075840794666.JavaMail.evans@thyme>,<28972441.1075840795460.JavaMail.evans@thyme>,FW: Btu's Weekly Power Report,j.kaminski@enron.com,2001-12-14T23:39:29+00:00,2001-12-08T00:12:06+00:00,98.4
-<23363899.1075840794290.JavaMail.evans@thyme>,<28972441.1075840795460.JavaMail.evans@thyme>,FW: Btu's Weekly Power Report,j.kaminski@enron.com,2001-12-26T15:30:07+00:00,2001-12-08T00:12:06+00:00,94.2
-<14656174.1075840793104.JavaMail.evans@thyme>,<28972441.1075840795460.JavaMail.evans@thyme>,FW: Btu's Weekly Power Report,j.kaminski@enron.com,2001-12-31T16:07:43+00:00,2001-12-08T00:12:06+00:00,94.9
 <15689112.1075859094783.JavaMail.evans@thyme>,<17789116.1075860777989.JavaMail.evans@thyme>,NEON Retreat,bstephen@academicplanet.com,2001-12-08T15:47:22+00:00,2001-12-08T15:47:22+00:00,100.0
 <8221149.1075855467869.JavaMail.evans@thyme>,<30922087.1075840775578.JavaMail.evans@thyme>,FW: Arthur Anderson and Duffie Var model reviews,david.port@enron.com,2001-12-09T23:08:32+00:00,2001-12-09T23:08:32+00:00,100.0
 <21393986.1075855467944.JavaMail.evans@thyme>,<3272112.1075840775529.JavaMail.evans@thyme>,I've joined Charles River Associates,wbalson@crai.com,2001-12-10T23:13:36+00:00,2001-12-10T23:13:36+00:00,100.0
@@ -36795,9 +36724,6 @@ duplicate_message_id,original_message_id,subject,from_address,duplicate_date,ori
 <20987575.1075840762307.JavaMail.evans@thyme>,<20639318.1075840768014.JavaMail.evans@thyme>,Restructuring Transmission Operations,cbi_mail@igate.cbinet.com,2002-01-16T09:43:30+00:00,2002-01-11T11:34:29+00:00,99.8
 <12741803.1075840754348.JavaMail.evans@thyme>,<20639318.1075840768014.JavaMail.evans@thyme>,Restructuring Transmission Operations,cbi_mail@igate.cbinet.com,2002-01-23T10:23:11+00:00,2002-01-11T11:34:29+00:00,99.8
 <24967910.1075840767844.JavaMail.evans@thyme>,<16929399.1075840767940.JavaMail.evans@thyme>,<<Concur Expense Document>> - GMAT Expenses,enron_update@concureworkplace.com,2002-01-11T17:48:01+00:00,2002-01-11T17:33:00+00:00,97.1
-<20137786.1075840750934.JavaMail.evans@thyme>,<13852199.1075840767587.JavaMail.evans@thyme>,Btu Weekly,subs@btu.net,2002-01-26T00:06:33+00:00,2002-01-11T23:46:05+00:00,99.1
-<18634761.1075840758270.JavaMail.evans@thyme>,<32795618.1075840767502.JavaMail.evans@thyme>,Btu's Weekly Power Report,subs@btu.net,2002-01-18T23:03:47+00:00,2002-01-11T23:58:48+00:00,99.2
-<14040275.1075840750911.JavaMail.evans@thyme>,<32795618.1075840767502.JavaMail.evans@thyme>,Btu's Weekly Power Report,subs@btu.net,2002-01-26T00:11:40+00:00,2002-01-11T23:58:48+00:00,98.4
 <22083480.1075840765613.JavaMail.evans@thyme>,<22652560.1075840765566.JavaMail.evans@thyme>,Research Group,athomas80@aol.com,2002-01-14T17:09:39+00:00,2002-01-14T17:09:31+00:00,97.6
 <12998240.1075840765589.JavaMail.evans@thyme>,<22652560.1075840765566.JavaMail.evans@thyme>,Research Group,athomas80@aol.com,2002-01-14T17:09:43+00:00,2002-01-14T17:09:31+00:00,97.3
 <29494755.1075840349861.JavaMail.evans@thyme>,<18152237.1075840783898.JavaMail.evans@thyme>,Retention of Documents,jr..legal@enron.com,2002-01-14T22:03:00+00:00,2002-01-14T22:02:26+00:00,100.0
